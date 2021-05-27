@@ -1,0 +1,24 @@
+Antes de tudo, espero que leia este documento! :)
+
+Este arquivo é importante, para que todos os integrantes possam adicionar e entender o código por completo, sem nenhuma dúvida.
+
+1 - Publicação de um arquivo nesse repositório
+  
+  - Todo e qualquer aquivo relacionado ao site/sistema, DEVE ser colocado nesse repositório;
+  - Cada vez que um arquivo for adicionado, é NECESSÁRIO que descreva a função ou papel do arquivo no projeto;
+  - Quando for editar um arquivo, é NECESSÁRIO que explique de forma entendível o que foi alterado;
+  - NUNCA duplique um arquivo neste repositório, mantenha o arquivo editado UNÍCO.
+
+
+
+2 - HTML
+
+  - Os arquivos em HTML possuem um padrão de criação que precisa ser seguido;
+  - No repositório, há um arquivo chamado "padrao.html", ele tem o essencial para seguir de modelo;
+  - TODA vez que adicionar um "box" ou "sessão" no site, deixe um comentario dizendo o que essa caixa possui (Exemplo no "padrao.html");
+  - Relembrando que, ao adicionar uma alteração no arquivo, você deve "Commitar" uma descrição do que foi alterado.
+
+
+3 - CSS 
+  - Os arquivos css de cores ficarão separados e serão nomeados com classes, para não confundir;
+  - Os codigos dentro do css padrão é separado por funcão e páginas através de comentários (Olha de exemplo o "cores.css");
