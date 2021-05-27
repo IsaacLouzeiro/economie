@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo-economie.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/cores.css"><!-- COR -->
+    <link rel="stylesheet" href="css/estilo.css"><!-- ESTILO -->
+    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Economie - Entrar</title>
+</head>
+<body class="bg-entrar-color">
+    <!-- conteúdo principal -->
+    <main class="bg-entrar">
+        <!-- caixa do formulario -->
+        <section class="box-conteudo-entrar">
+            <!-- logo economie -->
+            <div id="logo-economie-entrar"></div>
+            <!-- formulario -->
+            <form action="" method="post">
+                <h1 class="titulo-entrar">Login</h1>
+
+                <!-- input email -->
+                <div class="bloco-input">
+                    <!-- icone -->
+                    <div class="icone-input">
+                    <i class="fas fa-user" style="line-height: 2;"></i>
+                    </div>
+                    <!-- input -->
+                    <input type="email" name="email" style="box-shadow: none;" placeholder="Insira o seu e-mail" required>
+                </div>
+                <!-- // input email -->
+
+                <!-- input senha -->
+                <div class="bloco-input">
+                    <!-- icone -->
+                    <div class="icone-input">
+                    <i class="fas fa-lock" style="line-height: 2;"></i>
+                    </div>
+                    <!-- input -->
+                    <input type="password" name="senha" style="box-shadow: none;" placeholder="Insira a sua senha" required>
+                </div>
+                <!-- // input senha -->
+
+                <!-- mantenha conectado -->
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <small>Manter conectado</small>
+                </label>
+                <!-- // mantenha conectado -->
+                
+                <!-- esqueci a senha -->
+                <a href="#" id="esqueci-a-senha"><small>Esqueci a senha</small></a>
+                
+                <div style="clear: both;"></div>
+
+                <!-- botao entrar -->
+                <input class="btn-verde" type="submit" value="Logar">
+            </form>
+            <!-- // formulario -->
+            
+            <!-- se não tiver conta -->
+            <small style="display: block; text-align: center; margin-top: 8px;">Você não tem uma conta?</small>
+
+            <a href="cadastro.html" id="btn-cadastro" class="btn-azul-claro"><small>CADASTRE-SE</small></a>
+
+            <small style="display: block; text-align: center; margin-top: 10px;">ou entre com</small>
+
+            <!-- redes sociais -->
+            <ul class="entrar-redes-sociais">
+                <li><a href="#"><img src="img/facebook.png" alt="entrar com facebook"></a></li>
+                <li><a href="#"><img src="img/google.png" alt="entrar com google"></a></li>
+            </ul>
+
+                
+        </section>
+    </main>
+</body>
+</html>
