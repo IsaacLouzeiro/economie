@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo-economie.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/cores-escuro.css"><!-- COR MODO ESCURO -->
+    <link rel="stylesheet" href="css/cores.css"><!-- COR -->
+    <link rel="stylesheet" href="css/estilo.css"><!-- ESTILO -->
+    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Economie - Resumo do mês</title>
+</head>
+<body>
+    <!-- conteudo flex -->
+    <div class="flex">
+        <!-- menu de navegação -->
+        <nav class="bg-navegacao">
+            <!-- box logo -->
+            <div class="box-logo bg-box-logo">
+                <div class="logo-menu"></div><!-- Logo economie -->
+
+                <span class="nome-economie">Economie</span>
+            </div>
+
+            <!-- lista -->
+            <ul class="bg-lista">
+                <li><a href="" class="selecionado"><i class="fas fa-chart-pie"></i> RESUMO</a></li>
+                <li><a href=""><i class="fa fa-user"></i> MEU PERFIL</a></li>
+                <li><a href=""><i class="fa fa-chart-line"></i> METAS</a></li>
+                <li><a href=""><i class="fa fa-money-bill-wave"></i> SALDOS</a></li>
+                <li><a href=""><i class="fa fa-cash-register"></i> DESPESAS</a></li>
+                <li><a href=""><i class="fa fa-book-open"></i> APRENDER</a></li>
+                <br><br>
+                <li><a href=""><i class="fa fa-tools"></i> CONFIGURAÇÕES</a></li>
+                <li><a href=""><i class="fa fa-users"></i> SOBRE NÓS</a></li>
+                <li><a href=""><i class="fa fa-sign-out-alt"></i> SAIR</a></li>
+            </ul>
+        </nav>
+        <!-- // menu de navegação -->
+
+        <div class="flex-box">
+
+            <!-- cabeçalho -->
+            <header class="cabecalho bg-cabecalho">
+                <h2>Resumo do mês</h2>
+
+                <ul>
+                    <li><a href="#"><i class="fas fa-medal"></i></a></li>
+                    <li><a href="#"><i class="fas fa-wallet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                    <li>|</li>
+                    <li><a href="#" id="nome-usuario">José Silva <img src="img/user.png" alt="foto do usuario" width="35"></a></li>
+                </ul>
+            </header>
+            <!-- // cabeçalho -->
+
+            <!-- conteúdo principal -->
+            <main class="principal bg-principal">
+                <!-- caixa de conteudo -->
+                <div id="caixa-conteudo">
+                    Modo escuro
+
+                    <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" />
+                </div>
+                <!-- // caixa de conteudo -->
+            </main>
+            <!-- // conteúdo principal -->
+
+        </div>
+
+    </div>
+    <!-- // conteudo flex -->
+
+
+    <script src="js/cor-modo.js"></script>
+</body>
+</html>
