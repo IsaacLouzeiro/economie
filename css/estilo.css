@@ -11,7 +11,18 @@ body, html {
     font-family: ubuntu;
 }
 
-/* LOGIN E CADASTRAR */
+body {
+  position: relative;
+}
+
+@font-face {
+  font-family: TypoGraphica;
+  src: url('../font/TypoGraphica.otf');
+}
+
+/******************* 
+  LOGIN E CADASTRAR 
+********************/
 
 /* conteudo principal */
 .bg-entrar {
@@ -226,3 +237,133 @@ ul.entrar-redes-sociais {
     margin: 5px;
     margin-top: 10px;
   }
+
+
+/******************* 
+      SISTEMA
+********************/
+
+/********* MENU DE NAVEGAÇÃO ***********/
+
+/* conteudo flex */
+.flex {
+  display: flex;
+  height: 100%;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+
+/* caixa que contem o logo */
+.box-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 45px;
+  height: 80px;
+}
+
+/* logo economie */
+.logo-menu {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/logo-economie.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  
+}
+
+/* texto economie */
+.nome-economie {
+  font-family: TypoGraphica;
+  font-size: 1.3em;
+}
+
+/* lista */
+nav {
+  height: 100%;
+  width: 260px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px 0;
+  width: 100%;
+  text-indent: 15px;
+}
+
+nav ul li a i {
+  margin-right: 5px;
+  width: 20px;
+  text-align: right;
+  text-indent: 0px;
+}
+
+/********* CABEÇALHO ***********/
+
+/* cabeçalho */
+
+.cabecalho {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.cabecalho h2 {
+  font-weight: 500;
+}
+
+/* lista */
+.cabecalho ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.cabecalho ul li a {
+  font-size: 1.1em;
+}
+
+/* nome do usuario */
+#nome-usuario {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#nome-usuario img {
+  margin: 5px;
+}
+
+/********* CONTEÚDO PRINCIPAL ***********/
+
+/* conteudo principal */
+.principal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+/* caixa de conteudo */
+#caixa-conteudo {
+  margin: 30px;
+  margin-top: 110px;
+}
