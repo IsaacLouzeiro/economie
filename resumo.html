@@ -12,15 +12,34 @@
     <link rel="stylesheet" href="css/cores-escuro.css"><!-- COR MODO ESCURO -->
     <link rel="stylesheet" href="css/cores.css"><!-- COR -->
     <link rel="stylesheet" href="css/estilo.css"><!-- ESTILO -->
+    <link rel="stylesheet" href="css/estilo-responsivo.css"><!-- ESTILO RESPONSIVO -->
     
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+
+    <!-- javascipt -->
+    <!-- apexcharts -->
+    <script>
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+          )
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+          )
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+          )
+    </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      
     <title>Economie - Resumo do mês</title>
 </head>
 <body>
@@ -30,40 +49,56 @@
         <nav class="bg-navegacao">
             <!-- box logo -->
             <div class="box-logo bg-box-logo">
-                <div class="logo-menu"></div><!-- Logo economie -->
+                <div style="display: flex; align-items: center;">
+                    <div class="logo-menu"></div><!-- Logo economie -->
 
-                <span class="nome-economie">Economie</span>
+                    <span class="nome-economie">Economie</span>
+                </div>
+
+                <a href="#" id="fechar"><i class="fa fa-times"></i></a><!-- parte responsivo -->
             </div>
 
             <!-- lista -->
             <ul class="bg-lista">
-                <li><a href="" class="selecionado"><i class="fas fa-chart-pie"></i> RESUMO</a></li>
+                <li><a href="#" class="selecionado"><i class="fas fa-chart-pie"></i> RESUMO</a></li>
                 <li><a href=""><i class="fa fa-user"></i> MEU PERFIL</a></li>
                 <li><a href=""><i class="fa fa-chart-line"></i> METAS</a></li>
                 <li><a href=""><i class="fa fa-money-bill-wave"></i> SALDOS</a></li>
                 <li><a href=""><i class="fa fa-cash-register"></i> DESPESAS</a></li>
                 <li><a href=""><i class="fa fa-book-open"></i> APRENDER</a></li>
                 <br><br>
-                <li><a href=""><i class="fa fa-tools"></i> CONFIGURAÇÕES</a></li>
+                <li><a href="configuracoes.html"><i class="fa fa-tools"></i> CONFIGURAÇÕES</a></li>
                 <li><a href=""><i class="fa fa-users"></i> SOBRE NÓS</a></li>
-                <li><a href=""><i class="fa fa-sign-out-alt"></i> SAIR</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out-alt"></i> SAIR</a></li><br><br>
             </ul>
+            <!-- // lista -->
         </nav>
         <!-- // menu de navegação -->
 
+        <!-- (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
         <div class="flex-box">
 
             <!-- cabeçalho -->
-            <header class="cabecalho bg-cabecalho">
-                <h2>Resumo do mês</h2>
+            <header class="cabecalho">
+                <div class="bg-cabecalho circulo">
+                    
+                    <a href="#" id="bars"><i class="fa fa-bars"></i></a><!-- parte responsivo -->
 
-                <ul>
-                    <li><a href="#"><i class="fas fa-medal"></i></a></li>
-                    <li><a href="#"><i class="fas fa-wallet"></i></a></li>
-                    <li><a href="#"><i class="fa fa-bell"></i></a></li>
-                    <li>|</li>
-                    <li><a href="#" id="nome-usuario">José Silva <img src="img/user.png" alt="foto do usuario" width="35"></a></li>
-                </ul>
+                    <h2>Resumo do mês</h2>
+
+                    
+
+                    <ul>
+                        <li><a href="#"><i class="fas fa-medal"></i></a></li>
+                        <li><a href="#"><i class="fas fa-wallet"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                        <li class="remove-espacador">|</li>
+                        <li><a href="#" id="nome-usuario"><span>José Silva</span> <img src="img/user.png" alt="foto do usuario" width="35"></a></li>
+                    </ul>
+                </div>
+                <!-- gráfico de donut -->
+                <div id="chart"></div>
+                <!-- // gráfico de donut -->
             </header>
             <!-- // cabeçalho -->
 
@@ -71,20 +106,239 @@
             <main class="principal bg-principal">
                 <!-- caixa de conteudo -->
                 <div id="caixa-conteudo">
-                    Modo escuro
+                    <!-- conteúdo primário -->
+                    <section class="conteudo-primario">
 
-                    <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" />
+                        <div class="divisor-conteudo-primario">
+                            <!-- pre visualização saldos despesas -->
+                            <div class="preview-saldo">
+                                <span class="titulo-preview">Despesas</span>
+
+                                <div>
+                                    <i class="fas fa-chart-area"></i>
+                                    <span class="valor-preview">R$ 1.200</span>
+                                </div>
+                            </div>
+                            <!-- // pre visualização saldos despesas -->
+
+                            <!-- pre visualização saldos dívidas -->
+                            <div class="preview-saldo">
+                                <span class="titulo-preview">Dívidas</span>
+
+                                <div>
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span class="valor-preview">R$ 1.200</span>
+                                </div>
+                            </div>
+                            <!-- // pre visualização saldos dívidas -->
+                        </div>
+
+
+                        <!-- pre visualização gráfico -->
+                        <div class="preview-grafico">
+                            <div class="preview-grafico-circulo">
+
+                                <!-- aqui aparece o grafico de donut -->
+                                <!-- gráfico de donut -->
+                                <!-- <div class="chart"></div> -->
+                                <!-- // gráfico de donut -->
+
+
+                            </div>
+                        </div>
+                        <!-- // pre visualização gráfico -->
+
+                        <div class="divisor-conteudo-primario">
+                            <!-- pre visualização saldos -->
+                            <div class="preview-saldo">
+                                <span class="titulo-preview">Ganhos</span>
+
+                                <div>
+                                    <i class="fas fa-chart-line"></i>
+                                    <span class="valor-preview">R$ 1.950</span>
+                                </div>
+                            </div>
+                            <!-- // pre visualização saldos -->
+
+                            <!-- pre visualização saldos guardados -->
+                            <div class="preview-saldo">
+                                <span class="titulo-preview">Guardado</span>
+
+                                <div>
+                                    <i class="fas fa-chart-pie"></i>
+                                    <span class="valor-preview">R$ 200</span>
+                                </div>
+                            </div>
+                            <!-- // pre visualização saldos -->
+                        </div>
+
+                    </section>
+                    <!-- // conteúdo primário -->
+
+                    <!-- conteúdo secundario -->
+                    <section class="conteudo-secundario">
+                        <!-- dica do dia -->
+                        <div class="dica-do-dia">
+                            <h3>Dica do dia</h3>
+
+                            <p class="texto-dica">Você quer economizar? Então pare de gastar o seu dinheiro com besteira.</p>
+                        </div>
+                        <!-- // dica do dia -->
+
+                        <!-- flex box -->
+                        <div class="conteudo-flex">
+                            <!-- grafico de saldo mensal -->
+                            <div class="saldo-mensal">
+                                <h3>Saldo mensal</h3>
+                                
+                                <div id="chartLine"></div>
+                            </div>
+                            <!-- // grafico de saldo mensal -->
+
+                            <!-- lembretes -->
+                            <div class="lembrete">
+                                <span class="titulo-lembrete">
+                                    <h3>Lembretes</h3>
+                                    <span>Metas</span>
+                                </span>
+
+                                <!-- caixa de conteudo dos lembretes -->
+                                <div class="caixa-conteudo-lembrete">
+                                    <!-- caixa de lembretes -->
+                                    <div class="box-lembretes">
+
+                                        <h4 class="titulo">Viajar para o acre</h4>
+                                        
+                                        <p class="tempo">
+                                            <span class="subtitulo"><i class="fas fa-clock"></i> Tempo: </span><span>15 meses</span>
+                                        </p>
+
+                                        <p class="notificar">
+                                            <span class="subtitulo"><i class="fas fa-user-clock"></i> Notificar: </span><span>01/12/2022</span>
+                                        </p>
+
+                                        <p class="valor">
+                                            <span class="subtitulo"><i class="fas fa-coins"></i> Valor: </span><span>5.000,00</span>
+                                        </p>
+
+                                        <a href="#" class="acessar">Acessar</a>
+                                        
+                                        <hr>
+                                    </div>
+                                    <!-- caixa de lembretes -->
+                                </div>
+                                <!-- // caixa de conteudo dos lembretes -->
+
+                            </div>
+                            <!-- // lembretes -->
+                        </div>
+                    </section>
+                    <!-- // conteúdo secundario -->
                 </div>
                 <!-- // caixa de conteudo -->
             </main>
             <!-- // conteúdo principal -->
 
         </div>
+        <!-- // (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
 
     </div>
     <!-- // conteudo flex -->
 
 
-    <script src="js/cor-modo.js"></script>
+    <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
+    
+    <script src="js/navbar.js"></script><!-- Abrir e fechar menu responsivo -->
+
+    <!-- apexcharts grafico de gastos do mes -->
+    <script>
+        var options = {
+            series: [44, 55, 41, 17, 45, 40, 32, 20, 31],
+            labels: ['Comunicação', 'Moradia', 'Alimentação', 'Educação', 'Transporte', 'Presente', 'Lazer', 'Banco', 'Outros' ],
+            colors:['#00F038', '#4EF036', '#39F765', '#3FE09A', '#39F7E5', '#37C6F0', '#3AB4E0', '#1B78FA', '#3043F0'],
+            chart: {
+            type: 'donut',
+        },
+
+        dataLabels: {
+            enabled: false,
+        },
+
+        legend: {
+                show: false
+        },
+
+        plotOptions: {
+                pie: {
+                    customScale: 1.0
+                }
+            }
+        };
+        
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+
+
+    <!-- apexcharts grafico de ganhos do mes -->
+    <script>
+        
+        var options = {
+        series: [{
+        name: 'Ganhos',
+        data: [31, 40, 28, 51, 42, 109, 100],
+        // color: '#188F38',
+        }, {
+        name: 'Guardado',
+        data: [11, 32, 45, 32, 34, 52, 41],
+        // color: '#00FFB4'
+        }],
+
+        // cores do fundo
+        grid: {
+        row: {
+            // colors: ['#080A15']
+        },
+        },
+
+        chart: {
+        toolbar: {
+            show: false,
+        },
+        type: 'area'
+        },
+        dataLabels: {
+        enabled: false
+        },
+        stroke: {
+        curve: 'smooth'
+        },
+        xaxis: {
+        type: 'datetime',
+        categories: ["11/Jan", "12/Jan", "13/Jan", "14/Jan", "15/Jan", "16/Jan", "17/Jan"]
+        },
+        tooltip: {
+        x: {
+            format: 'dd/MM/yy HH:mm'
+        },
+        },
+        
+        responsive: [
+            {
+            breakpoint: 280,
+            options: {
+                height: 500,
+            }
+            }
+        ],
+
+        };
+
+        var chartLine = new ApexCharts(document.querySelector("#chartLine"), options);
+        chartLine.render();
+    
+    
+    </script>
 </body>
 </html>
