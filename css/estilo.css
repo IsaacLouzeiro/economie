@@ -13,6 +13,7 @@ body, html {
 
 body {
   position: relative;
+  overflow: hidden;
 }
 
 @font-face {
@@ -243,21 +244,28 @@ ul.entrar-redes-sociais {
       SISTEMA
 ********************/
 
+/********* PAGINA DO SISTEMA ***********/
+
 /********* MENU DE NAVEGAÇÃO ***********/
 
-/* conteudo flex */
-.flex {
-  display: flex;
-  height: 100%;
+
+/***** menu responsivo *****/
+
+/* botao para abrir o menu */
+#bars {
+  display: none;
 }
 
-.flex-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
+/* botao para fechar o menu */
+#fechar {
+  display: none;
+}
+
+
+/* nav modo normal */
+.bg-navegacao {
   height: 100%;
-  position: relative;
-  z-index: 10;
+  min-height: 530px;
 }
 
 
@@ -278,7 +286,7 @@ ul.entrar-redes-sociais {
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
-  
+  margin-right: 5px;
 }
 
 /* texto economie */
@@ -286,6 +294,8 @@ ul.entrar-redes-sociais {
   font-family: TypoGraphica;
   font-size: 1.3em;
 }
+
+
 
 /* lista */
 nav {
@@ -319,10 +329,14 @@ nav ul li a i {
 .cabecalho {
   width: 100%;
   height: 80px;
+}
+
+.bg-cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+  height: 80px;
 }
 
 .cabecalho h2 {
@@ -353,6 +367,26 @@ nav ul li a i {
 
 /********* CONTEÚDO PRINCIPAL ***********/
 
+
+/* conteudo flex */
+.flex {
+  display: flex;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  overflow: auto;
+}
+
 /* conteudo principal */
 .principal {
   width: 100%;
@@ -360,6 +394,7 @@ nav ul li a i {
   position: absolute;
   top: 0;
   z-index: -1;
+  overflow: visible;
 }
 
 /* caixa de conteudo */
@@ -367,3 +402,159 @@ nav ul li a i {
   margin: 30px;
   margin-top: 110px;
 }
+
+/********* FIM PAGINA DO SISTEMA ***********/
+
+
+
+/********* RESUMO DO MÊS ***********/
+
+/*** box conteudo primario ***/
+.conteudo-primario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.divisor-conteudo-primario {
+  width: 100%;
+  min-width: 100px;
+  display: flex;
+  margin-top: 15px;
+}
+
+/* box pre visualização dos saldos */
+.preview-saldo {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.preview-saldo div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.preview-saldo .titulo-preview {
+  display: block;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 0 0 15px;
+}
+
+.preview-saldo .valor-preview {
+  display: inline;
+  float: right;
+}
+
+.preview-saldo i {
+  font-size: 2em;
+}
+
+/* box pre visualização do grafico de gastos */
+
+.preview-grafico-circulo {
+  width: 180px;
+}
+
+/* grafico de rosquinha*/
+#chart {
+  width: 250px;
+  height: 180px;
+  position: relative;
+  top: -20px;
+  margin: auto;
+}
+
+/*** box conteudo secundário ***/
+.conteudo-secundario {
+  margin: 0 10px;
+}
+
+.dica-do-dia {
+  padding: 15px;
+  margin-top: 130px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.conteudo-secundario h3 {
+  margin-bottom: 10px;
+}
+
+/* conteudo flex para saldo e lembretes */
+
+.conteudo-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* saldo mensal */
+.saldo-mensal {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+/* lembretes */
+.lembrete {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.titulo-lembrete {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-lembrete span {
+  font-weight: bold;
+}
+
+/* caixa de conteudo dos lembretes */
+
+.caixa-conteudo-lembrete {
+  overflow-y: auto;
+  height: 350px;
+  padding-right: 10px;
+}
+
+.caixa-conteudo-lembrete .box-lembretes {
+  text-align: right;
+}
+
+.box-lembretes h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.box-lembretes p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.box-lembretes p i {
+  width: 20px;
+}
+
+.box-lembretes a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/********* FIM RESUMO DO MÊS ***********/
+
