@@ -23,7 +23,7 @@
     background-attachment: fixed;
 }
 
-/*********PAGINA DO SISTEMA***********/
+/********* PAGINA DO SISTEMA ***********/
 
 /****menu*****/
 
@@ -75,7 +75,7 @@
 /*****cabecalho******/
 
 /* background cabecalho normal*/
-.bg-cabecalho {
+.cabecalho {
     background-image: linear-gradient(to right, #21CF65, #55F093);
     color: #fff;
 }
@@ -102,9 +102,56 @@
 /*****conteudo principal*****/
 
 /* background conteudo principal */
-.bg-principal {
+.bg-principal,
+.flex {
     color: #5B5B5B;
     background-image: linear-gradient(#E6FFF0, #E6FFF0);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/********* FIM PAGINA DO SISTEMA ***********/
+
+
+
+/********* RESUMO DO MÊS ***********/
+
+/* box conteudo primario */
+.conteudo-primario {
+    color: #fff;
+  }
+  
+  /* box pre visualização dos saldos */
+  .preview-saldo {
+    background-image: linear-gradient( to bottom right, #6e7dff, #0D1D9F);
+  }
+  
+  /* box pre visualização do grafico de gastos */
+  
+  /* circulo no cabecalho */
+  .circulo {
+    background-image: url(../img/meio-circulo.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 180px;
+    }
+
+/*** box conteudo secundário ***/
+.dica-do-dia,
+.saldo-mensal,
+.lembrete {
+    background-color: #fff;
+  }
+
+/* caixa de conteudo dos lembretes */
+
+.titulo-lembrete span,
+.box-lembretes p i {
+  color: #5CDBD0;
+}
+
+.box-lembretes a {
+    color: #233FEB;
+}
+
+/********* FIM RESUMO DO MÊS ***********/

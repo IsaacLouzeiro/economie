@@ -1,4 +1,4 @@
-/*********PAGINA DO SISTEMA***********/
+/********* PAGINA DO SISTEMA ***********/
 
 /****menu*****/
 
@@ -50,7 +50,7 @@
 /*****cabecalho******/
 
 /* background cabecalho normal*/
-.night-mode  .bg-cabecalho {
+.night-mode  .cabecalho {
     background-image: linear-gradient(to right, #080A15, #080A15);
     color: #fff;
 }
@@ -77,9 +77,54 @@
 /*****conteudo principal*****/
 
 /* background conteudo principal */
-.night-mode  .bg-principal {
+.night-mode  .bg-principal,
+.night-mode .flex {
     color: #fff;
     background-image: linear-gradient(#0A4462, #04161F);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/********* FIM PAGINA DO SISTEMA ***********/
+
+
+/********* RESUMO DO MÊS ***********/
+
+/*** box conteudo primario ***/
+.conteudo-primario {
+    color: #fff;
+  }
+  
+  /* box pre visualização dos saldos */
+  .night-mode .preview-saldo {
+    background-image: linear-gradient( to bottom right, #00ffb3d2, #0a7e4caf);
+  }
+  
+  /* box pre visualização do grafico de gastos */
+  
+  /* circulo no cabecalho */
+  .night-mode .circulo {
+    background-image: url(../img/meio-circulo-dark.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 180px;
+    }
+
+
+/*** box conteudo secundário ***/
+.night-mode .dica-do-dia,
+.night-mode .saldo-mensal,
+.night-mode .lembrete {
+    background-color: #080A15;
+  }
+
+.night-mode .titulo-lembrete span
+.night-mode .box-lembretes p i {
+  color: #00FFB4;
+}
+
+.night-mode .box-lembretes a {
+    color: #60D624;
+}
+
+/********* FIM RESUMO DO MÊS ***********/
