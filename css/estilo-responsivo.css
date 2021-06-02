@@ -1,0 +1,189 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /********* PAGINA DO SISTEMA ***********/
+
+  /********* CABEÇALHO ***********/
+
+  /* diminuindo o espacamento lateral do cabecalho */
+  .bg-cabecalho {
+      padding: 0;
+      padding-left: 17px;
+  }
+
+  /* arrumando a lista do cabecalho superior */
+  .bg-cabecalho ul {
+      width: 107px;
+      display: flex;
+  }
+
+
+  /* remover nome do usuario e espacamento */
+  #nome-usuario,
+  ul li.remove-espacador {
+    display: none;
+  }
+
+  /********* FIM PAGINA DO SISTEMA ***********/
+
+
+  /********* RESUMO DO MÊS ***********/
+
+  /*** box conteudo primario ***/
+  .conteudo-primario .divisor-conteudo-primario {
+    width: 100%;
+  }
+  /* box pre visualização dos saldos */
+  .preview-saldo {
+    height: 80px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .preview-saldo div {
+    justify-content: space-around;
+  }
+
+  .preview-saldo .titulo-preview {
+    padding: 10px 0 0 0;
+  }
+
+  .preview-saldo i {
+    font-size: 1.5em;
+  }
+
+  /*** box conteudo secundário ***/
+  .dica-do-dia {
+    margin-top: 70px;
+  }
+
+  /********* FIM RESUMO DO MÊS ***********/
+
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+  
+  /********* RESUMO DO MÊS ***********/
+
+  /*** box conteudo primario ***/
+  .conteudo-primario,
+  .divisor-conteudo-primario {
+    flex-wrap: wrap;
+  }
+
+  .conteudo-primario {
+    margin-top: 230px;
+  }
+
+
+  .divisor-conteudo-primario {
+    width: 50%;
+  }
+
+
+   /* box pre visualização do grafIco */
+  .preview-grafico {
+    display: none;
+  }
+  
+
+  /*** box conteudo secundário ***/
+  .conteudo-secundario {
+    margin: 0;
+  }
+
+    
+  /* conteudo flex para saldo e lembretes */
+
+  .conteudo-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* saldo mensal */
+  .saldo-mensal {
+    margin-right: 0;
+  }
+
+  /* lembretes */
+  .lembrete {
+    width: 100%;
+  }
+
+  .box-lembretes h4 {
+    font-size: 1.2em;
+  }
+
+  /********* FIM RESUMO DO MÊS ***********/
+
+  
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) {
+  /********* PAGINA DO SISTEMA ***********/
+
+  /********* MENU DE NAVEGAÇÃO ***********/
+
+
+  /***** menu responsivo *****/
+
+  /* menu navegacao */
+  .bg-navegacao {
+      position: absolute;
+      z-index: 99;
+      width: 210px;
+      margin-left: -210px;
+      transition: margin-left 1s;
+  }
+
+  .bg-navegacao-abrir {
+      margin-left: 0px;
+  }
+
+
+  /* botao para abrir o menu */
+  #bars {
+    display: inline-block;
+    position: absolute;
+  }
+  
+  /* botao para fechar o menu */
+  #fechar {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #00F241;
+  }
+  
+
+  /* caixa que contem o logo */
+  .box-logo {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+
+  /********* CABEÇALHO ***********/
+
+  /* cabeçalho */
+  .cabecalho h2 {
+      margin-left: 30px;
+  }
+
+/********* FIM PAGINA DO SISTEMA ***********/
+
+  
+}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
