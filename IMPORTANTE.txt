@@ -14,8 +14,8 @@ Este arquivo é importante, para que todos os integrantes possam adicionar e ent
 2 - HTML
 
   - Os arquivos em HTML possuem um padrão de criação que precisa ser seguido;
-  - No repositório, ha um arquivo "login.html", ele tem o essencial para seguir de modelo;
-  - TODA vez que adicionar um "box" ou "sessão" no site, deixe um comentario dizendo o que essa caixa possui (Exemplo no "login.html");
+  - No repositório, ha um arquivo "padrao.html", ele tem o essencial para seguir de modelo;
+  - TODA vez que adicionar um "box" ou "sessão" no site, deixe um comentario dizendo o que essa caixa possui (Exemplo no "padrao.html");
   - Relembrando que, ao adicionar uma alteração no arquivo, você deve "Commitar" uma descrição do que foi alterado.
 
 
