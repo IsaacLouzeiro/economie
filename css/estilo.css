@@ -28,6 +28,7 @@ body {
 /* conteudo principal */
 .bg-entrar {
     display: flex;
+    overflow: auto;
 }
 
 .bg-entrar form {
