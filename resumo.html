@@ -97,7 +97,11 @@
                     </ul>
                 </div>
                 <!-- gráfico de donut -->
-                <div id="chart"></div>
+                <div class="chart chart-claro"></div>
+                <!-- // gráfico de donut -->
+
+                <!-- gráfico de donut -->
+                <div class="chart chart-escuro"></div>
                 <!-- // gráfico de donut -->
             </header>
             <!-- // cabeçalho -->
@@ -190,8 +194,15 @@
                             <!-- grafico de saldo mensal -->
                             <div class="saldo-mensal">
                                 <h3>Saldo mensal</h3>
-                                
-                                <div id="chartLine"></div>
+
+                                <!-- gráfico de linnha claro -->
+                                <div class="chartline-claro"></div>
+                                <!-- // gráfico de claro -->
+
+                                <!-- gráfico de linnha escuro -->
+                                <div class="chartline-escuro"></div>
+                                <!-- // gráfico de escuro -->
+
                             </div>
                             <!-- // grafico de saldo mensal -->
 
@@ -231,14 +242,22 @@
 
                             </div>
                             <!-- // lembretes -->
-                        </div>
+                        </div><br><br>
                     </section>
                     <!-- // conteúdo secundario -->
                 </div>
                 <!-- // caixa de conteudo -->
             </main>
             <!-- // conteúdo principal -->
+            
 
+
+            <!-- botao do chatbot -->
+            <a href="#" id="chatbot-btn"><i class="fa fa-comment-alt" style="transform: rotateY(180deg);"></i></a>
+            <!-- // botao do chatbot -->
+
+
+            
         </div>
         <!-- // (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
 
@@ -250,7 +269,7 @@
     
     <script src="js/navbar.js"></script><!-- Abrir e fechar menu responsivo -->
 
-    <!-- apexcharts grafico de gastos do mes -->
+    <!-- apexcharts grafico de gastos do mes claro -->
     <script>
         var options = {
             series: [44, 55, 41, 17, 45, 40, 32, 20, 31],
@@ -276,12 +295,42 @@
         };
         
 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart = new ApexCharts(document.querySelector(".chart-claro"), options);
+        chart.render();
+    </script>
+
+    <!-- apexcharts grafico de gastos do mes escuro -->
+    <script>
+        var options = {
+            series: [44, 55, 41, 17, 45, 40, 32, 20, 31],
+            labels: ['Comunicação', 'Moradia', 'Alimentação', 'Educação', 'Transporte', 'Presente', 'Lazer', 'Banco', 'Outros' ],
+            colors:['#008A5D', '#00AD6B', '#00E08A', '#39E6A4', '#3EC9D0', '#4192D0', '#0D67C7', '#255B7D', '#00588F'],
+            chart: {
+            type: 'donut',
+        },
+
+        dataLabels: {
+            enabled: false,
+        },
+
+        legend: {
+                show: false
+        },
+
+        plotOptions: {
+                pie: {
+                    customScale: 1.0
+                }
+            }
+        };
+        
+
+        var chart = new ApexCharts(document.querySelector(".chart-escuro"), options);
         chart.render();
     </script>
 
 
-    <!-- apexcharts grafico de ganhos do mes -->
+    <!-- apexcharts grafico de ganhos do mes claro -->
     <script>
         
         var options = {
@@ -294,13 +343,6 @@
         data: [11, 32, 45, 32, 34, 52, 41],
         // color: '#00FFB4'
         }],
-
-        // cores do fundo
-        grid: {
-        row: {
-            // colors: ['#080A15']
-        },
-        },
 
         chart: {
         toolbar: {
@@ -335,7 +377,65 @@
 
         };
 
-        var chartLine = new ApexCharts(document.querySelector("#chartLine"), options);
+        var chartLine = new ApexCharts(document.querySelector(".chartline-claro"), options);
+        chartLine.render();
+    
+    
+    </script>
+
+    <!-- apexcharts grafico de ganhos do mes escuro -->
+    <script>
+        
+        var options = {
+        series: [{
+        name: 'Ganhos',
+        data: [31, 40, 28, 51, 42, 109, 100],
+        color: '#188F38',
+        }, {
+        name: 'Guardado',
+        data: [11, 32, 45, 32, 34, 52, 41],
+        color: '#00FFB4'
+        }],
+
+        theme: {
+            mode: 'dark',
+        },
+        chart: {
+            background: '#00000000',
+        toolbar: {
+            show: false,
+        },
+        type: 'area'
+        },
+        dataLabels: {
+        enabled: false
+        },
+        stroke: {
+        curve: 'smooth'
+        },
+        xaxis: {
+        type: 'datetime',
+        categories: ["11/Jan", "12/Jan", "13/Jan", "14/Jan", "15/Jan", "16/Jan", "17/Jan"]
+        },
+        tooltip: {
+            theme: true,
+        x: {
+            format: 'dd/MM/yy HH:mm'
+        },
+        },
+        
+        responsive: [
+            {
+            breakpoint: 280,
+            options: {
+                height: 500,
+            }
+            }
+        ],
+
+        };
+
+        var chartLine = new ApexCharts(document.querySelector(".chartline-escuro"), options);
         chartLine.render();
     
     
