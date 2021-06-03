@@ -85,6 +85,18 @@
     background-attachment: fixed;
 }
 
+/********* CHATBOT ***********/
+
+/* botao chatbot */
+.night-mode #chatbot-btn {
+    background-color: #00FFB4;
+}
+
+.night-mode #chatbot-btn:hover {
+    background-color: #04d193;
+}
+
+
 /********* FIM PAGINA DO SISTEMA ***********/
 
 
@@ -110,6 +122,15 @@
     background-size: 180px;
     }
 
+    /* grafico */
+    .night-mode .chart-claro {
+        display: none;
+    }
+
+    .night-mode .chart-escuro {
+        display: block;
+    }
+
 
 /*** box conteudo secundário ***/
 .night-mode .dica-do-dia,
@@ -117,6 +138,15 @@
 .night-mode .lembrete {
     background-color: #080A15;
   }
+
+/* grafico */
+.night-mode .chartline-claro {
+    display: none;
+}
+
+.night-mode .chartline-escuro {
+    display: block;
+}
 
 .night-mode .titulo-lembrete span
 .night-mode .box-lembretes p i {
@@ -126,5 +156,6 @@
 .night-mode .box-lembretes a {
     color: #60D624;
 }
+
 
 /********* FIM RESUMO DO MÊS ***********/

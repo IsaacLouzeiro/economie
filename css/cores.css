@@ -110,6 +110,14 @@
     background-attachment: fixed;
 }
 
+/********* CHATBOT ***********/
+
+/* botao chatbot */
+#chatbot-btn {
+    background-color: #5CDBD0;
+
+  }
+
 /********* FIM PAGINA DO SISTEMA ***********/
 
 
@@ -136,6 +144,16 @@
     background-size: 180px;
     }
 
+
+    /* grafico */
+    .chart-claro {
+        display: block;
+    }
+
+    .chart-escuro {
+        display: none;
+    }
+
 /*** box conteudo secundário ***/
 .dica-do-dia,
 .saldo-mensal,
@@ -143,6 +161,14 @@
     background-color: #fff;
   }
 
+/* grafico */
+.chartline-claro {
+    display: block;
+}
+
+.chartline-escuro {
+    display: none;
+}
 /* caixa de conteudo dos lembretes */
 
 .titulo-lembrete span,
