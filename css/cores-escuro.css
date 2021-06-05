@@ -159,3 +159,74 @@
 
 
 /********* FIM RESUMO DO MÊS ***********/
+
+
+/********* MEU PERFIL ***********/
+
+/* adicionar css da pagina de meu perfil aqui */
+
+/********* FIM MEU PERFIL ***********/
+
+
+/********* METAS ***********/
+
+/* adicionar css da pagina de metas aqui */
+
+/********* FIM METAS ***********/
+
+
+/********* SALDOS ***********/
+
+/* adicionar css da pagina de saldos aqui */
+
+/********* FIM SALDOS ***********/
+
+
+/********* DESPESAS ***********/
+
+/* adicionar css da pagina de despesas aqui */
+
+/********* FIM DESPESAS ***********/
+
+
+/********* APRENDER ***********/
+
+/* adicionar css da pagina de aprender aqui */
+
+/********* FIM APRENDER ***********/
+
+
+/********* CONFIGURAÇÕES ***********/
+
+/* caixa de configurações */
+  
+.night-mode .caixa-configuracao hr {
+    border: none;
+    border-top: 2px solid #00FFB4;
+  }
+  
+  .night-mode .caixa-configuracao h3 a,
+  .night-mode .caixa-configuracao h3 a i {
+    color: #fff;
+  }
+
+
+  /* radio buttons */
+  
+  .night-mode [type="radio"]:checked + label:before,
+  .night-mode [type="radio"]:not(:checked) + label:before {
+      border: 2px solid #00FFB4;
+  }
+  .night-mode [type="radio"]:checked + label:after,
+  .night-mode [type="radio"]:not(:checked) + label:after {
+      background: #00FFB4;
+  }
+
+/********* FIM CONFIIGURAÇÕES ***********/
+
+
+/********* SOBRE NÓS ***********/
+
+/* adicionar css da pagina de sobre nós aqui */
+
+/********* FIM SOBRE NÓS ***********/

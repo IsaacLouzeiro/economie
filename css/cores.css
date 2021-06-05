@@ -181,3 +181,74 @@
 }
 
 /********* FIM RESUMO DO MÊS ***********/
+
+
+/********* MEU PERFIL ***********/
+
+/* adicionar css da pagina de meu perfil aqui */
+
+/********* FIM MEU PERFIL ***********/
+
+
+/********* METAS ***********/
+
+/* adicionar css da pagina de metas aqui */
+
+/********* FIM METAS ***********/
+
+
+/********* SALDOS ***********/
+
+/* adicionar css da pagina de saldos aqui */
+
+/********* FIM SALDOS ***********/
+
+
+/********* DESPESAS ***********/
+
+/* adicionar css da pagina de despesas aqui */
+
+/********* FIM DESPESAS ***********/
+
+
+/********* APRENDER ***********/
+
+/* adicionar css da pagina de aprender aqui */
+
+/********* FIM APRENDER ***********/
+
+
+/********* CONFIGURAÇÕES ***********/
+
+/* caixa de configurações */
+  
+  .caixa-configuracao hr {
+    border: none;
+    border-top: 2px solid #5CDBD0;
+  }
+  
+  .caixa-configuracao h3 a,
+  .caixa-configuracao h3 a i {
+    color: #5B5B5B;
+  }
+
+
+  /* radio buttons */
+  
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+      border: 2px solid #5CDBD0;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+      background: #5CDBD0;
+  }
+
+/********* FIM CONFIIGURAÇÕES ***********/
+
+
+/********* SOBRE NÓS ***********/
+
+/* adicionar css da pagina de sobre nós aqui */
+
+/********* FIM SOBRE NÓS ***********/
