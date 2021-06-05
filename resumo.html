@@ -348,9 +348,10 @@
         }],
 
         chart: {
-            width: '100%',
+        background: '#00000000',
+        height: 350,
         toolbar: {
-            show: false,
+            show: false
         },
         type: 'area'
         },
@@ -365,11 +366,10 @@
         categories: ["11/Jan", "12/Jan", "13/Jan", "14/Jan", "15/Jan", "16/Jan", "17/Jan"]
         },
         tooltip: {
-        x: {
+            x: {
             format: 'dd/MM/yy HH:mm'
-        }
-        }
-
+            },
+        },
         };
 
         var chartLine = new ApexCharts(document.querySelector(".chartline-claro"), options);
@@ -396,10 +396,10 @@
             mode: 'dark',
         },
         chart: {
-            width: '100%',
-            background: '#00000000',
+        background: '#00000000',
+        height: 350,
         toolbar: {
-            show: false,
+            show: false
         },
         type: 'area'
         },
@@ -414,12 +414,10 @@
         categories: ["11/Jan", "12/Jan", "13/Jan", "14/Jan", "15/Jan", "16/Jan", "17/Jan"]
         },
         tooltip: {
-            theme: true,
-        x: {
+            x: {
             format: 'dd/MM/yy HH:mm'
-        }
-        }
-
+            },
+        },
         };
 
         var chartLine = new ApexCharts(document.querySelector(".chartline-escuro"), options);
