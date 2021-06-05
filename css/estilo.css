@@ -532,9 +532,7 @@ nav ul li a i {
 
 /* grafico de rosquinha*/
 .chartline {
-  position: relative;
-  width: 250px;
-  height: 250px;
+  width: 100%;
 }
 
 /* lembretes */
