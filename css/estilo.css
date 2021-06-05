@@ -581,3 +581,132 @@ nav ul li a i {
 
 /********* FIM RESUMO DO MÊS ***********/
 
+
+/********* MEU PERFIL ***********/
+
+/* adicionar css da pagina de meu perfil aqui */
+
+/********* FIM MEU PERFIL ***********/
+
+
+/********* METAS ***********/
+
+/* adicionar css da pagina de metas aqui */
+
+/********* FIM METAS ***********/
+
+
+/********* SALDOS ***********/
+
+/* adicionar css da pagina de saldos aqui */
+
+/********* FIM SALDOS ***********/
+
+
+/********* DESPESAS ***********/
+
+/* adicionar css da pagina de despesas aqui */
+
+/********* FIM DESPESAS ***********/
+
+
+/********* APRENDER ***********/
+
+/* adicionar css da pagina de aprender aqui */
+
+/********* FIM APRENDER ***********/
+
+
+/********* CONFIGURAÇÕES ***********/
+
+/* caixa de configurações */
+
+.caixa-configuracao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  max-width: 830px;
+  margin: auto;
+}
+
+.caixa-configuracao hr {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.caixa-configuracao label {
+  margin: auto 5px;
+}
+
+.caixa-configuracao label,
+.caixa-configuracao input[type=radio] {
+  cursor: pointer;
+}
+
+.caixa-configuracao h3 a {
+  text-decoration: none;
+}
+
+.caixa-configuracao h3 a i {
+  font-size: .8em;
+}
+
+/* radio buttons */
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 4.45px;
+    left: 4.3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/********* FIM CONFIIGURAÇÕES ***********/
+
+
+/********* SOBRE NÓS ***********/
+
+/* adicionar css da pagina de sobre nós aqui */
+
+/********* FIM SOBRE NÓS ***********/
