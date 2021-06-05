@@ -84,9 +84,100 @@
             <main class="principal bg-principal">
                 <!-- caixa de conteudo -->
                 <div id="caixa-conteudo">
-                    Modo escuro
+                    <!-- Modo escuro -->
 
-                    <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" />
+                    <!-- <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" /> -->
+
+                    <!-- configurar idioma -->
+                    <div class="caixa-configuracao">
+                        <h3>Idioma</h3>
+
+                        <div>
+                            <input id="portugues" class="radio" type="radio" name="idioma" checked />
+                            <label for="portugues">Português</label>
+
+                            <input id="ingles" class="radio" type="radio" name="idioma" disabled />
+                            <label for="ingles" style="cursor: default;">Inglês</label>
+                        </div>
+                        <hr>
+                    </div>
+                    <!-- // configurar idioma -->
+
+                    <!-- configurar modo claro/escuro -->
+                    <div class="caixa-configuracao">
+                        <h3>Modo</h3>
+
+                        <div>
+                            <input id="light-mode" class="radio" type="radio" name="modo" aria-label="light-mode" checked />
+                            <label for="light-mode">Claro</label>
+
+                            <input id="night-mode" class="radio" type="radio" name="modo" aria-label="night-mode"  />
+                            <label for="night-mode">Escuro</label>
+                        </div>
+                        <hr>
+                    </div>
+                    <!-- // configurar modo claro/escuro -->
+
+                    <!-- configurar moeda -->
+                    <div class="caixa-configuracao">
+                        <h3>Moeda</h3>
+
+                        <div>
+                            <input id="valor-euro" class="radio" type="radio" name="moeda" aria-label="valor-euro" />
+                            <label for="valor-euro">Euro</label>
+
+                            <input id="valor-dolar" class="radio" type="radio" name="moeda" aria-label="valor-dolar" />
+                            <label for="valor-dolar">Dólar</label>
+                            
+                            
+                            <input id="valor-real" class="radio" type="radio" name="moeda" aria-label="valor-real" checked />
+                            <label for="valor-real">Real</label>
+                        </div>
+                        <hr> 
+                    </div>
+                    <!-- // configurar moeda -->
+
+                    <!-- alterar meus dados -->
+                    <div class="caixa-configuracao">
+                        <h3><a href="#">Alterar meus dados</a></h3>
+
+                        <hr>
+                    </div>
+                    <!-- // alterar meus dados -->
+                    
+                    <!-- excluir conta -->
+                    <div class="caixa-configuracao">
+                        <h3><a href="#">Excluir conta</a></h3>
+                        
+                        <hr>
+                    </div>
+                    <!-- // excluir conta -->
+                    
+                    <!-- termos de uso -->
+                    <div class="caixa-configuracao">
+                        <h3><a href="#">Termos de uso <i class="fas fa-link"></i></a></h3>
+
+                        <hr>
+                    </div>
+                    <!-- // termos de uso -->
+
+                    <!-- ajuda -->
+                    <div class="caixa-configuracao">
+                        <h3><a href="#">Ajuda <i class="fas fa-link"></i></a></h3>
+
+                        <hr>
+                    </div>
+                    <!-- // ajuda -->
+
+                    <!-- sair -->
+                    <div class="caixa-configuracao">
+                        <h3><a href="login.html">Sair</a></h3>
+
+                        <hr>
+                    </div>
+                    <!-- // sair -->
+
+
                 </div>
                 <!-- // caixa de conteudo -->
             </main>
@@ -108,6 +199,8 @@
 
 
     <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
+
+    <script src="js/moeda.js"></script><!-- Alterar moeda -->
     
     <script src="js/navbar.js"></script><!-- Abrir e fechar menu responsivo -->
 </body>
