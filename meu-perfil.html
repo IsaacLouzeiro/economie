@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo-economie.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/cores-escuro.css"><!-- COR MODO ESCURO -->
+    <link rel="stylesheet" href="css/cores.css"><!-- COR -->
+    <link rel="stylesheet" href="css/estilo.css"><!-- ESTILO -->
+    <link rel="stylesheet" href="css/estilo-responsivo.css"><!-- ESTILO RESPONSIVO -->
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+      
+    <title>Economie - Meu perfil</title>
+</head>
+<body>
+    <!-- conteudo flex -->
+    <div class="flex">
+        <!-- menu de navegação -->
+        <nav class="bg-navegacao">
+            <!-- box logo -->
+            <div class="box-logo bg-box-logo">
+                <div style="display: flex; align-items: center;">
+                    <div class="logo-menu"></div><!-- Logo economie -->
+
+                    <span class="nome-economie">Economie</span>
+                </div>
+
+                <a href="#" id="fechar"><i class="fa fa-times"></i></a><!-- parte responsivo -->
+            </div>
+
+            <!-- lista -->
+            <ul class="bg-lista">
+                <li><a href="resumo.html"><i class="fas fa-chart-pie"></i> RESUMO</a></li>
+                <li><a href="#" class="selecionado"><i class="fa fa-user"></i> MEU PERFIL</a></li>
+                <li><a href="#"><i class="fa fa-chart-line"></i> METAS</a></li>
+                <li><a href="#"><i class="fa fa-money-bill-wave"></i> SALDOS</a></li>
+                <li><a href="#"><i class="fa fa-cash-register"></i> DESPESAS</a></li>
+                <li><a href="#"><i class="fa fa-book-open"></i> APRENDER</a></li>
+                <br><br>
+                <li><a href="configuracoes.html"><i class="fa fa-tools"></i> CONFIGURAÇÕES</a></li>
+                <li><a href="#"><i class="fa fa-users"></i> SOBRE NÓS</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out-alt"></i> SAIR</a></li><br><br>
+            </ul>
+        </nav>
+        <!-- // menu de navegação -->
+
+        <!-- (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+        <div class="flex-box">
+
+            <!-- cabeçalho -->
+            <header class="cabecalho">
+                <div class="bg-cabecalho circulo-imagem">
+                    
+                    <a href="#" id="bars"><i class="fa fa-bars"></i></a><!-- botao para abrir menu (parte responsivo) -->
+
+                    <h2>Meu perfil</h2>
+
+                    
+                    <!-- lista no cabecalho -->
+                    <ul>
+                        <li><a href="#"><i class="fas fa-medal"></i></a></li>
+                        <li><a href="#"><i class="fas fa-wallet"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                        <li class="remove-espacador">|</li>
+                        <li><a href="#" id="nome-usuario"><span>José Silva</span> <img src="img/user.png" alt="foto do usuario" width="35"></a></li>
+                    </ul>
+                    <!-- // lista no cabecalho -->
+                </div>
+
+                <!-- inserir imagem -->
+                <div class="imagem-usuario">
+                    <!-- imagem e botao de inserir -->
+                    <div class="caixa-imagem">
+                        
+                        <img id="output" class="img-inserida" src="img/user-lg.png"/><!-- imagem do usuario -->
+
+                        <!-- botao de inserir imagem -->
+                        <label for="upload-photo" class="botao-inserir"><i class="fa fa-camera"></i></label>
+                        <input type="file" id="upload-photo" accept="image/*" onchange="loadFile(event)">
+                        <!-- // botao de inserir imagem -->
+                        
+                    </div>
+                    <!-- // imagem e botao de inserir -->
+
+                    <!-- carregar a pre visualização da imagem -->
+                    <script>
+                        var loadFile = function(event) {
+                            var output = document.getElementById('output');
+                            output.src = URL.createObjectURL(event.target.files[0]);
+                            output.onload = function() {
+                            URL.revokeObjectURL(output.src) // free memory
+                        }
+                    };
+                    </script>
+                    <!-- // carregar a pre visualização da imagem -->
+                </div>
+                <!-- // inserir imagem -->
+
+            </header>
+            <!-- // cabeçalho -->
+
+            <!-- conteúdo principal -->
+            <main class="principal bg-principal">
+                <!-- caixa de conteudo -->
+                <div id="caixa-conteudo" style="margin-top: 250px;">
+
+                <!-- conteudo da pagina perfil -->
+                        
+                    <!-- sessão de meus dados -->
+                    <div class="perfil-flex">
+                        <!-- nome -->
+                        <div class="box-dados">
+                            <h3>Nome</h3>
+                            <span id="nome-do-usuario">José da Silva</span>
+
+                            <a href="#" id="edit-nome" class="edit-dados"><i class="fa fa-pencil"></i></a>
+                        </div>
+                        <!-- // nome -->
+
+                        <!-- e-mail -->
+                        <div class="box-dados">
+                            <h3>E-mail</h3>
+                            <span id="email-do-usuario">josedasilva@gmail.com</span>
+
+                            <a href="#" id="edit-nome" class="edit-dados"><i class="fa fa-pencil"></i></a>
+                        </div>
+                        <!-- // e-mail -->
+
+                        <!-- senha -->
+                        <div class="box-dados">
+                            <h3>Senha</h3>
+                            <span id="senha-do-usuario">***********</span>
+
+                            <a href="#" id="edit-nome" class="edit-dados"><i class="fa fa-pencil"></i></a>
+                        </div>
+                        <!-- // senha -->
+                    </div>
+                    <!-- // sessão de meus dados -->
+
+                    <!-- sessão de conteudo meu perfil -->
+                    <div class="perfil-flex">
+                        <!-- minhas metas -->
+                        <div class="box-dados box-cont">
+                            <h3>Minhas metas</h3>
+
+                            <!-- meta -->
+                            <div class="minha-meta">
+                                <span>viajar para o acre</span>
+                                <a href="#">Acessar <i class="fa fa-chevron-circle-right"></i></a>
+                            </div>
+                            <!-- //  meta -->
+                        </div>
+                        <!-- // minhas metas -->
+
+                        <!-- meus cartões -->
+                        <div class="box-dados box-cont">
+                            <h3>Meus cartões</h3>
+                            
+                            <!-- cartão -->
+                            <div class="meus-cartoes">
+                                
+                                <!-- bandeira do cartão -->
+                                <img src="img/mastercard.png" class="imagem-cartao" alt="cartao">
+                                <!-- // bandeira do cartão -->
+
+                                <div>
+                                    <span id="nome-cartao">José da Silva</span><br>
+                                    <small>Débito: <span id="valor-debito"><span class="tipomoeda"> R$</span> 1.950,00</span></small>
+                                </div>
+
+                                <a href="#">Acessar <i class="fa fa-chevron-circle-right"></i></a>
+                            </div>
+                            <!-- //  catão -->
+
+                            <!-- adicionar  cartão -->
+                            <div class="meus-cartoes">
+                                    <span>Adicionar cartão</span><br>
+
+                                <a href="#"><i class="fa fa-plus-circle"></i></a>
+                            </div>
+                            <!-- //  adicionar catão -->
+                        </div>
+                        <!-- // meus cartões -->
+
+                        <!-- meu nível aprender -->
+                        <div class="box-dados box-cont">
+                            <h3>Meu nível aprender</h3>
+                            
+                            <!-- organizar conteudo meu nivel aprender -->
+                            <div class="aprender-flex">
+
+                                <!-- mostrando o nivel -->
+                                <div class="box-nivel-aprender">
+                                    <div class="imagem-do-dinie"></div><!-- imagem do dinie -->
+
+                                    <span>Nível</span>
+
+                                    <span id="nivel-aprender">1</span>
+                                </div>
+                                <!-- // mostrando o nivel -->
+
+                                <!-- apresentação dinie -->
+                                <div class="apresentacao-dinie">
+                                    <h4>Olá, meu nome é Dinie!</h4>
+
+                                    <p>Quem num gosta di mé, boa gentis num é. Mais vale um bebadis, que um alcoolatra. Interessantiss quisso pudia ce receita de bolis.</p>
+                                </div>
+                                <!-- // apresentação dinie -->
+
+                            </div>
+                            <!-- // organizar conteudo meu nivel aprender -->
+                        </div>
+                        <!-- // meu nível aprender --><br><br>
+                    </div>
+                    <!-- // sessão de conteudo meu perfil -->
+
+                <!-- // conteudo da pagina perfil -->
+                
+                </div>
+                <!-- // caixa de conteudo -->
+            </main>
+            <!-- // conteúdo principal -->
+
+
+
+            <!-- botao do chatbot -->
+            
+            <!-- adicionar chatbot aqui -->
+
+            <!-- // botao do chatbot -->
+
+
+            
+        </div>
+        <!-- // (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+
+    </div>
+    <!-- // conteudo flex -->
+
+
+    <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
+    
+    <script src="js/navbar.js"></script><!-- Abrir e fechar menu responsivo -->
+
+    <script src="js/moeda.js"></script><!-- Alterar moeda -->
+
+</body>
+</html>
