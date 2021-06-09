@@ -173,8 +173,34 @@
 
 
   /********* MEU PERFIL ***********/
+  /* circulo no cabecalho */
+.circulo-imagem,
+.night-mode .circulo-imagem {
+  background-position-x: center;
+}
 
-/* adicionar css da pagina de meu perfil aqui */
+/* adicionar imagem do usuario */
+.imagem-usuario {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem-usuario .img-inserida {
+  display: inline-block;
+  margin: 0;
+}
+
+
+/* sessão flex conteudo da pagina */
+.perfil-flex {
+  flex-wrap: wrap;
+}
+
+/* apresentação dinie */
+.apresentacao-dinie p {
+  margin-right: 0;
+}
 
 /********* FIM MEU PERFIL ***********/
 
