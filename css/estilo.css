@@ -179,10 +179,13 @@ body {
       width: 100%;
       margin: 10px auto;
       padding: 12px 0;
-      font-size: 1em;
+      font-size: 1.2em;
       border-radius: 5px;
       background-color: #1DEB05;
       color: #fff;
+      display: block;
+      text-align: center;
+      text-decoration: none;
   }
 
   .btn-verde:hover {
