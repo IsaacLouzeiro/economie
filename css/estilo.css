@@ -667,7 +667,9 @@ input[type="file"]#upload-photo {
   text-transform: uppercase;
 }
 
-.box-dados #edit-nome {
+.box-dados #edit-nome,
+.box-dados #edit-email,
+.box-dados #edit-senha {
   position: absolute;
   top: -15px;
   right: 15px;
@@ -817,7 +819,66 @@ input[type="file"]#upload-photo {
   margin-right: 10px;
 }
 
+/******** CAIXA DE FORMULARIOS *******/
 
+.box-formularios {
+  width: 100%; 
+  height: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-alterar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.formulario-alterar h3 {
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+.formulario-alterar input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 7px;
+  font-size: 1em;
+}
+
+.formulario-alterar input[type="submit"] {
+  cursor: pointer;
+}
+
+
+.fechar-form-nome,
+.fechar-form-email,
+.fechar-form-senha {
+  position: absolute;
+  top: -18px;
+  right: 10px;
+  font-size: 1.8em;
+}
+
+/* formularios desativados */
+#alterar-nome,
+#alterar-email,
+#alterar-senha {
+  display: none;
+}
 
 /********* FIM MEU PERFIL ***********/
 

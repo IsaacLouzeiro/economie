@@ -57,6 +57,46 @@
 
         <!-- (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
         <div class="flex-box">
+            
+            <!-- formularios para alteração de nome, e-mail e senha -->
+            <div class="box-formularios">
+                
+                <!-- alteração do nome -->
+                <form action="" class="formulario-alterar" id="alterar-nome">
+                    <a href="#" class="fechar-form-nome"><i class="fas fa-times-circle"></i></a>
+
+                    <h3>Alterar o nome</h3>
+                    <input type="text" name="nome" placeholder="Novo nome" required>
+                    <input type="password" name="senha" placeholder="Insira sua senha" required>
+                    <input type="submit" value="alterar">
+                </form>
+                <!-- // alteração do nome -->
+
+                <!-- alteração do e-mail -->
+                <form action="" class="formulario-alterar" id="alterar-email">
+                    <a href="#" class="fechar-form-email"><i class="fas fa-times-circle"></i></a>
+
+                    <h3>Alterar o e-mail</h3>
+                    <input type="email" name="email" placeholder="Novo email" required>
+                    <input type="password" name="senha" placeholder="Insira sua senha" required>
+                    <input type="submit" value="alterar">
+                </form>
+                <!-- // alteração do e-mail -->
+
+                <!-- alteração de senha -->
+                <form action="" class="formulario-alterar" id="alterar-senha">
+                    <a href="#" class="fechar-form-senha"><i class="fas fa-times-circle"></i></a>
+
+                    <h3>Alterar a senha</h3>
+                    <input type="password" name="novaSenha" placeholder="Nova senha" required>
+                    <input type="password" name="repeteSenha" placeholder="Repita a senha" required>
+                    <input type="password" name="senha" placeholder="Insira a senha atual" required>
+                    <input type="submit" value="alterar">
+                </form>
+                <!-- // alteração do senha -->
+            
+            </div>
+            <!-- // formularios para alteração de nome, e-mail e senha -->
 
             <!-- cabeçalho -->
             <header class="cabecalho">
@@ -133,7 +173,7 @@
                             <h3>E-mail</h3>
                             <span id="email-do-usuario">josedasilva@gmail.com</span>
 
-                            <a href="#" id="edit-nome" class="edit-dados"><i class="fa fa-pencil"></i></a>
+                            <a href="#" id="edit-email" class="edit-dados"><i class="fa fa-pencil"></i></a>
                         </div>
                         <!-- // e-mail -->
 
@@ -142,7 +182,7 @@
                             <h3>Senha</h3>
                             <span id="senha-do-usuario">***********</span>
 
-                            <a href="#" id="edit-nome" class="edit-dados"><i class="fa fa-pencil"></i></a>
+                            <a href="#" id="edit-senha" class="edit-dados"><i class="fa fa-pencil"></i></a>
                         </div>
                         <!-- // senha -->
                     </div>
@@ -248,6 +288,57 @@
     </div>
     <!-- // conteudo flex -->
 
+    <!-- Ativar/Desativar formularios -->
+    <script>
+        var boxFormularios = document.querySelector('.box-formularios');
+        var alterarNome = document.querySelector('#alterar-nome');
+        var alterarEmail = document.querySelector('#alterar-email');
+        var alterarSenha = document.querySelector('#alterar-senha');
+
+
+        var editNome = document.querySelector('#edit-nome');
+        var editEmail = document.querySelector('#edit-email');
+        var editSenha = document.querySelector('#edit-senha');
+
+        var fecharNome = document.querySelector('.fechar-form-nome');
+        var fecharEmail = document.querySelector('.fechar-form-email');
+        var fecharSenha = document.querySelector('.fechar-form-senha');
+
+        editNome.addEventListener('click', function() {
+            boxFormularios.style.display = "flex";
+            alterarNome.style.display = "flex";
+        });
+
+        fecharNome.addEventListener('click', function() {
+            boxFormularios.style.display = "none";
+            alterarNome.style.display = "none";
+        });
+
+
+        editEmail.addEventListener('click', function() {
+            boxFormularios.style.display = "flex";
+            alterarEmail.style.display = "flex";
+        });
+
+        fecharEmail.addEventListener('click', function() {
+            boxFormularios.style.display = "none";
+            alterarEmail.style.display = "none";
+        });
+
+
+        editSenha.addEventListener('click', function() {
+            boxFormularios.style.display = "flex";
+            alterarSenha.style.display = "flex";
+        });
+
+        fecharSenha.addEventListener('click', function() {
+            boxFormularios.style.display = "none";
+            alterarSenha.style.display = "none";
+        });
+
+        
+    </script>
+    <!-- // Ativar/Desativar formularios -->
 
     <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
     

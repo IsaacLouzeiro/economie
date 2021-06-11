@@ -257,12 +257,16 @@ label.botao-inserir:hover {
     background-color: #fff;
 }
   
-.box-dados #edit-nome {
+.box-dados #edit-nome,
+.box-dados #edit-email,
+.box-dados #edit-senha {
     background-color: #5CDBD0;
     color: #fff;
 } 
 
-.box-dados #edit-nome:hover {
+.box-dados #edit-nome:hover,
+.box-dados #edit-email:hover,
+.box-dados #edit-senha:hover {
     background-color: #47beb5;
 }
 
@@ -281,6 +285,43 @@ label.botao-inserir:hover {
 #nivel-aprender {
     color: #233FEB;
 }
+
+
+/******** CAIXA DE FORMULARIOS *******/
+
+.box-formularios {
+    background-color: rgba(0, 255, 115, 0.137);
+  }
+  
+  .formulario-alterar {
+    background-color: #fff;
+    box-shadow: 1px 1px 15px #21cf6452;
+  }
+  .formulario-alterar input {
+    border: 1px solid #ddd;
+  }
+  
+  .formulario-alterar input[type="submit"] {
+    background-color: #4ab9b0;
+    color: #fff;
+  }
+  
+  .formulario-alterar input[type="submit"]:hover {
+    background-color: #5CDBD0;
+  }
+  
+  .fechar-form-nome,
+  .fechar-form-email,
+  .fechar-form-senha {
+    color: #4ab9b0;
+  }
+  
+  .fechar-form-nome:hover,
+  .fechar-form-email:hover,
+  .fechar-form-senha:hover {
+    color: #5CDBD0;
+  }
+
 
 /********* FIM MEU PERFIL ***********/
 

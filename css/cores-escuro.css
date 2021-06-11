@@ -234,12 +234,16 @@
     background-color: #080A15;
 }
   
-.night-mode .box-dados #edit-nome {
+.night-mode .box-dados #edit-nome,
+.night-mode .box-dados #edit-email,
+.night-mode .box-dados #edit-senha {
     background-color: #00FFB4;
     color: #fff;
 } 
 
-.night-mode .box-dados #edit-nome:hover {
+.night-mode .box-dados #edit-nome:hover,
+.night-mode .box-dados #edit-email:hover,
+.night-mode .box-dados #edit-senha:hover {
     background-color: #0edb9e;
 }
 
@@ -258,6 +262,45 @@
 .night-mode #nivel-aprender {
     color: #60D624;
 }
+
+
+/******** CAIXA DE FORMULARIOS *******/
+
+.night-mode .box-formularios {
+    background-color: rgba(0, 174, 255, 0.137);
+  }
+  
+.night-mode .formulario-alterar {
+    background-color: #080A15;
+    box-shadow: 1px 1px 15px #21cf6452;
+  }
+
+.night-mode input{
+    background-color : #080A15; 
+    color: #fff;
+  }
+  
+.night-mode .formulario-alterar input[type="submit"] {
+    background-color: #00FFB4;
+    color: #000;
+  }
+  
+.night-mode .formulario-alterar input[type="submit"]:hover {
+    background-color: #0edb9e;
+  }
+  
+.night-mode .fechar-form-nome,
+.night-mode .fechar-form-email,
+.night-mode .fechar-form-senha {
+    color: #0edb9e;
+  }
+  
+.night-mode .fechar-form-nome:hover,
+.night-mode .fechar-form-email:hover,
+.night-mode .fechar-form-senha:hover {
+    color: #00FFB4;
+  }
+
 
 /********* FIM MEU PERFIL ***********/
 
