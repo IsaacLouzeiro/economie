@@ -259,8 +259,17 @@
 
 .night-mode .minha-meta a,
 .night-mode .meus-cartoes a,
-.night-mode #nivel-aprender {
+.night-mode #nivel-aprender,
+.night-mode .img-cartao {
     color: #60D624;
+}
+
+.night-mode #add-cartao {
+  color: #00FFB4;
+}
+
+.night-mode #add-cartao:hover {
+  color: #0edb9e;
 }
 
 
@@ -291,13 +300,15 @@
   
 .night-mode .fechar-form-nome,
 .night-mode .fechar-form-email,
-.night-mode .fechar-form-senha {
+.night-mode .fechar-form-senha,
+.night-mode .fechar-form-cartao {
     color: #0edb9e;
   }
   
 .night-mode .fechar-form-nome:hover,
 .night-mode .fechar-form-email:hover,
-.night-mode .fechar-form-senha:hover {
+.night-mode .fechar-form-senha:hover,
+.night-mode .fechar-form-cartao:hover {
     color: #00FFB4;
   }
 

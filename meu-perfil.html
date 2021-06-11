@@ -58,11 +58,11 @@
         <!-- (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
         <div class="flex-box">
             
-            <!-- formularios para alteração de nome, e-mail e senha -->
+            <!-- formularios para alteração de nome, e-mail e senha e adicionar cartao -->
             <div class="box-formularios">
                 
                 <!-- alteração do nome -->
-                <form action="" class="formulario-alterar" id="alterar-nome">
+                <form action="" class="formulario-alterar alterar-nome">
                     <a href="#" class="fechar-form-nome"><i class="fas fa-times-circle"></i></a>
 
                     <h3>Alterar o nome</h3>
@@ -73,7 +73,7 @@
                 <!-- // alteração do nome -->
 
                 <!-- alteração do e-mail -->
-                <form action="" class="formulario-alterar" id="alterar-email">
+                <form action="" class="formulario-alterar alterar-email">
                     <a href="#" class="fechar-form-email"><i class="fas fa-times-circle"></i></a>
 
                     <h3>Alterar o e-mail</h3>
@@ -84,7 +84,7 @@
                 <!-- // alteração do e-mail -->
 
                 <!-- alteração de senha -->
-                <form action="" class="formulario-alterar" id="alterar-senha">
+                <form action="" class="formulario-alterar alterar-senha">
                     <a href="#" class="fechar-form-senha"><i class="fas fa-times-circle"></i></a>
 
                     <h3>Alterar a senha</h3>
@@ -94,9 +94,28 @@
                     <input type="submit" value="alterar">
                 </form>
                 <!-- // alteração do senha -->
+
+                <!-- adicionar cartao -->
+                <form action="" class="formulario-alterar adicionar-cartao">
+                    <a href="#" class="fechar-form-cartao"><i class="fas fa-times-circle"></i></a>
+
+                    <h3>Adicionar cartão</h3>
+                    <input type="text" name="nomeCartao" placeholder="Nome do cartão" required>
+
+                    <div style="margin: 8px auto;">
+                        <input id="debito" class="radio" type="radio" name="cartao" value="debito" checked />
+                        <label for="debito">Débito</label>
+
+                        <input id="credito" class="radio" type="radio" name="cartao" value="credito" />
+                        <label for="credito">Crédito</label>
+                    </div>
+
+                    <input type="submit" value="inserir">
+                </form>
+                <!-- // adicionar cartao -->
             
             </div>
-            <!-- // formularios para alteração de nome, e-mail e senha -->
+            <!-- // formularios para alteração de nome, e-mail e senha e adicionar cartao -->
 
             <!-- cabeçalho -->
             <header class="cabecalho">
@@ -123,12 +142,18 @@
                     <!-- imagem e botao de inserir -->
                     <div class="caixa-imagem">
                         
-                        <img id="output" class="img-inserida" src="img/user-lg.png"/><!-- imagem do usuario -->
+                        <!-- formulario imagem usuario -->
+                        <form action="">
+                            <img id="output" class="img-inserida" src="img/user-lg.png"/><!-- imagem do usuario -->
 
-                        <!-- botao de inserir imagem -->
-                        <label for="upload-photo" class="botao-inserir"><i class="fa fa-camera"></i></label>
-                        <input type="file" id="upload-photo" accept="image/*" onchange="loadFile(event)">
-                        <!-- // botao de inserir imagem -->
+                            <!-- botao de inserir imagem -->
+                            <label for="upload-photo" class="botao-inserir"><i class="fa fa-camera"></i></label>
+                            <input type="file" id="upload-photo" accept="image/*" onchange="loadFile(event)" required>
+                            <!-- // botao de inserir imagem -->
+
+                            <input type="submit" value="inserir">
+                        </form>
+                        <!-- formulario imagem usuario -->
                         
                     </div>
                     <!-- // imagem e botao de inserir -->
@@ -211,7 +236,8 @@
                             <div class="meus-cartoes">
                                 
                                 <!-- bandeira do cartão -->
-                                <img src="img/mastercard.png" class="imagem-cartao" alt="cartao">
+                                <!-- <img src="img/mastercard.png" class="imagem-cartao" alt="cartao"> -->
+                                <i class="far fa-credit-card fa-2x img-cartao"></i>
                                 <!-- // bandeira do cartão -->
 
                                 <div>
@@ -227,7 +253,7 @@
                             <div class="meus-cartoes">
                                     <span>Adicionar cartão</span><br>
 
-                                <a href="#"><i class="fa fa-plus-circle"></i></a>
+                                <a href="#" id="add-cartao"><i class="fa fa-plus-circle"></i></a>
                             </div>
                             <!-- //  adicionar catão -->
                         </div>
@@ -292,54 +318,68 @@
     <script>
         var rolagem = document.querySelector('.flex-box');
         var boxFormularios = document.querySelector('.box-formularios');
-        var alterarNome = document.querySelector('#alterar-nome');
-        var alterarEmail = document.querySelector('#alterar-email');
-        var alterarSenha = document.querySelector('#alterar-senha');
+        var alterarNome = document.querySelector('.alterar-nome');
+        var alterarEmail = document.querySelector('.alterar-email');
+        var alterarSenha = document.querySelector('.alterar-senha');
+        var adicionarCartao = document.querySelector('.adicionar-cartao');
 
-
+        var addCartao = document.querySelector('#add-cartao')
         var editNome = document.querySelector('#edit-nome');
         var editEmail = document.querySelector('#edit-email');
         var editSenha = document.querySelector('#edit-senha');
-
+        
+        var fecharCartao = document.querySelector('.fechar-form-cartao');
         var fecharNome = document.querySelector('.fechar-form-nome');
         var fecharEmail = document.querySelector('.fechar-form-email');
         var fecharSenha = document.querySelector('.fechar-form-senha');
 
         editNome.addEventListener('click', function() {
-            boxFormularios.style.display = "flex";
-            alterarNome.style.display = "flex";
+            boxFormularios.classList.add('transicao-form');
+            alterarNome.classList.add('transicao-form');
             rolagem.style.overflow = "hidden";
         });
 
         fecharNome.addEventListener('click', function() {
-            boxFormularios.style.display = "none";
-            alterarNome.style.display = "none";
+            boxFormularios.classList.remove('transicao-form');
+            alterarNome.classList.remove('transicao-form');
             rolagem.style.overflow = "auto";
         });
 
 
         editEmail.addEventListener('click', function() {
-            boxFormularios.style.display = "flex";
-            alterarEmail.style.display = "flex";
+            boxFormularios.classList.add('transicao-form');
+            alterarEmail.classList.add('transicao-form');
             rolagem.style.overflow = "hidden";
         });
 
         fecharEmail.addEventListener('click', function() {
-            boxFormularios.style.display = "none";
-            alterarEmail.style.display = "none";
+            boxFormularios.classList.remove('transicao-form');
+            alterarEmail.classList.remove('transicao-form');
             rolagem.style.overflow = "auto";
         });
 
 
         editSenha.addEventListener('click', function() {
-            boxFormularios.style.display = "flex";
-            alterarSenha.style.display = "flex";
+            boxFormularios.classList.add('transicao-form');
+            alterarSenha.classList.add('transicao-form');
             rolagem.style.overflow = "hidden";
         });
 
         fecharSenha.addEventListener('click', function() {
-            boxFormularios.style.display = "none";
-            alterarSenha.style.display = "none";
+            boxFormularios.classList.remove('transicao-form');
+            alterarSenha.classList.remove('transicao-form');
+            rolagem.style.overflow = "auto";
+        });
+
+        addCartao.addEventListener('click', function() {
+            boxFormularios.classList.add('transicao-form');
+            adicionarCartao.classList.add('transicao-form');
+            rolagem.style.overflow = "hidden";
+        });
+
+        fecharCartao.addEventListener('click', function() {
+            boxFormularios.classList.remove('transicao-form');
+            adicionarCartao.classList.remove('transicao-form');
             rolagem.style.overflow = "auto";
         });
 

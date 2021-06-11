@@ -282,8 +282,17 @@ label.botao-inserir:hover {
 
 .minha-meta a,
 .meus-cartoes a,
-#nivel-aprender {
+#nivel-aprender,
+.img-cartao {
     color: #233FEB;
+}
+
+#add-cartao {
+  color: #5CDBD0;
+}
+
+#add-cartao:hover {
+  color: #39bdb2;
 }
 
 
@@ -312,13 +321,15 @@ label.botao-inserir:hover {
   
   .fechar-form-nome,
   .fechar-form-email,
-  .fechar-form-senha {
+  .fechar-form-senha,
+  .fechar-form-cartao {
     color: #4ab9b0;
   }
   
   .fechar-form-nome:hover,
   .fechar-form-email:hover,
-  .fechar-form-senha:hover {
+  .fechar-form-senha:hover,
+  .fechar-form-cartao:hover {
     color: #5CDBD0;
   }
 
