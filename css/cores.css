@@ -252,6 +252,17 @@ label.botao-inserir:hover {
     background-color: #4ab9b0;
 }
 
+.caixa-imagem input[type="submit"] {
+  background-color: #233FEB;
+  color: #fff;
+  cursor: pointer;
+}
+
+.caixa-imagem input[type="submit"]:hover {
+  background-color: #4157e7;
+  color: #fff;
+}
+
 /* caixa de dados do usuario */
 .box-dados {
     background-color: #fff;

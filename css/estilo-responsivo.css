@@ -191,6 +191,9 @@
   margin: 0;
 }
 
+.caixa-imagem input[type="submit"] {
+  left: 0;
+}
 
 /* sessão flex conteudo da pagina */
 .perfil-flex {
