@@ -290,6 +290,7 @@
 
     <!-- Ativar/Desativar formularios -->
     <script>
+        var rolagem = document.querySelector('.flex-box');
         var boxFormularios = document.querySelector('.box-formularios');
         var alterarNome = document.querySelector('#alterar-nome');
         var alterarEmail = document.querySelector('#alterar-email');
@@ -307,33 +308,39 @@
         editNome.addEventListener('click', function() {
             boxFormularios.style.display = "flex";
             alterarNome.style.display = "flex";
+            rolagem.style.overflow = "hidden";
         });
 
         fecharNome.addEventListener('click', function() {
             boxFormularios.style.display = "none";
             alterarNome.style.display = "none";
+            rolagem.style.overflow = "auto";
         });
 
 
         editEmail.addEventListener('click', function() {
             boxFormularios.style.display = "flex";
             alterarEmail.style.display = "flex";
+            rolagem.style.overflow = "hidden";
         });
 
         fecharEmail.addEventListener('click', function() {
             boxFormularios.style.display = "none";
             alterarEmail.style.display = "none";
+            rolagem.style.overflow = "auto";
         });
 
 
         editSenha.addEventListener('click', function() {
             boxFormularios.style.display = "flex";
             alterarSenha.style.display = "flex";
+            rolagem.style.overflow = "hidden";
         });
 
         fecharSenha.addEventListener('click', function() {
             boxFormularios.style.display = "none";
             alterarSenha.style.display = "none";
+            rolagem.style.overflow = "auto";
         });
 
         
