@@ -842,7 +842,6 @@ input[type="file"]#upload-photo {
   position: fixed;
   display: flex;
   bottom: 0;
-  left: 0;
   opacity: 0;
   z-index: -10;
   justify-content: center;
