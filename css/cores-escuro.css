@@ -391,15 +391,15 @@
   background-color: #080A16;
 }
 
-.night-mode .jogo-palavras-cruzadas div ::-webkit-input-placeholder {
+.night-mode ::-webkit-input-placeholder {
   color: #b5f7f0;
 }
 
-.night-mode .jogo-palavras-cruzadas div :-moz-placeholder { /* Firefox 18- */
+.night-mode :-moz-placeholder { /* Firefox 18- */
   color: #b5f7f0;
 }
 
-.night-mode .jogo-palavras-cruzadas div ::-moz-placeholder {  /* Firefox 19+ */
+.night-mode ::-moz-placeholder {  /* Firefox 19+ */
   color: #b5f7f0;
   float: left;
   padding: 0 5px;
@@ -407,7 +407,7 @@
   font-size: .5em;
 }
 
-.night-mode .jogo-palavras-cruzadas div :-ms-input-placeholder {  
+.night-mode :-ms-input-placeholder {  
   color: #b5f7f0;
 }
 

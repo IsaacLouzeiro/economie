@@ -1046,28 +1046,28 @@ input[type="file"]#upload-photo {
 }
 
 /* numero da palavra */
-.jogo-palavras-cruzadas div ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
   font-size: .5em;
 }
 
-.jogo-palavras-cruzadas div :-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder { /* Firefox 18- */
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
   font-size: .5em; 
 }
 
-.jogo-palavras-cruzadas div ::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder {  /* Firefox 19+ */
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
   font-size: .5em;
 }
 
-.jogo-palavras-cruzadas div :-ms-input-placeholder {
+:-ms-input-placeholder {
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
