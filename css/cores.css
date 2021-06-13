@@ -413,34 +413,18 @@ label.botao-inserir:hover {
 
 ::-webkit-input-placeholder {
   color: #08524b;
-  float: left;
-  padding: 0 5px;
-  margin-bottom: 200px;
-  font-size: .5em;
 }
 
 :-moz-placeholder { /* Firefox 18- */
   color: #08524b;
-  float: left;
-  padding: 0 5px;
-  margin-bottom: 200px;
-  font-size: .5em; 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
   color: #08524b;
-  float: left;
-  padding: 0 5px;
-  margin-bottom: 200px;
-  font-size: .5em;
 }
 
 :-ms-input-placeholder {  
   color: #08524b;
-  float: left;
-  padding: 0 5px;
-  margin-bottom: 200px;
-  font-size: .5em;
 }
 
 

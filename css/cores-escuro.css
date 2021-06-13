@@ -401,10 +401,6 @@
 
 .night-mode ::-moz-placeholder {  /* Firefox 19+ */
   color: #b5f7f0;
-  float: left;
-  padding: 0 5px;
-  margin-bottom: 200px;
-  font-size: .5em;
 }
 
 .night-mode :-ms-input-placeholder {  

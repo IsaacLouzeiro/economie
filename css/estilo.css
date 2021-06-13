@@ -1050,7 +1050,7 @@ input[type="file"]#upload-photo {
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
-  font-size: .5em;
+  font-size: .7em;
 }
 
 :-moz-placeholder { /* Firefox 18- */
