@@ -947,9 +947,10 @@ input[type="file"]#upload-photo {
 
 /* caixa lista */
 .box-lista-palavras {
-  width: 27%;
+  width: 37%;
   text-align: justify;
   border-radius: 15px;
+  position: relative;
 }
 
 .box-lista-palavras h2 {
@@ -961,29 +962,39 @@ input[type="file"]#upload-photo {
   list-style-type: none;
   cursor: pointer;
   max-height: 50px;
-  padding: 5px 0;
+  padding: 5px 15px;
   margin: 25px auto;
-  width: 80%;
   font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box-lista-palavras ul li.lista-palavra-principal>span {
+  padding: 0;
+  margin: 0;
 }
 
 .box-lista-palavras ul li ul {
   display: none;
-  max-width: 220px;
-  position: absolute;
   padding: 20px;
   list-style-type: none;
   z-index: 100;
   font-size: 1em;
   border-radius: 5px;
-  margin-top: 5px;
-  margin-left: 50px;
+  margin: 5px auto;
   box-shadow: 1px 1px 15px rgba(20, 20, 20, 0.226);
 }
 
-.box-lista-palavras ul li:hover ul {
+.box-lista-palavras ul li.texto-ativo ul {
   display: block;
 }
+
+.box-lista-palavras ul li.texto-ativo i {
+  transform: scaleY(-1);
+}
+
 
 .box-lista-palavras ul li .num-palavra {
   font-weight: bold;
@@ -992,17 +1003,20 @@ input[type="file"]#upload-photo {
   text-align: center;
   line-height: 30px;
   display: inline-block;
-  margin: auto 10px;
+  margin: auto;
+  margin-right: 10px;
   border-radius: 30px;
 }
 
+.box-lista-palavras ul li p{
+  display: inline-block;
+}
 
 /* principal palavras cruzadas */
 .principal-palavras-cruzadas {
-  width: 27%;
   text-align: justify;
   border-radius: 15px;
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
@@ -1029,6 +1043,35 @@ input[type="file"]#upload-photo {
   padding: 0;
   margin:  -2px;
   display: inline-block;
+}
+
+/* numero da palavra */
+::-webkit-input-placeholder {
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em;
+}
+
+:-ms-input-placeholder {
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em;
 }
 
 

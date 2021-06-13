@@ -380,13 +380,12 @@ label.botao-inserir:hover {
    background-color: #fff;
 }
 
-.box-lista-palavras ul li ul {
-  background-color: #5CDBD0;
-  color: #fff;
+.box-lista-palavras ul li.lista-palavra-principal {
+  border: 1px solid rgb(226, 226, 226);
 }
 
-.box-lista-palavras ul li:hover ul {
-  display: block;
+.box-lista-palavras ul li ul {
+  background-color: #5CDBD0;
   color: #424242;
 }
 
@@ -410,6 +409,38 @@ label.botao-inserir:hover {
 .jogo-palavras-cruzadas div input {
   border: 4px solid #868686;
   color: #424242;
+}
+
+::-webkit-input-placeholder {
+  color: #08524b;
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #08524b;
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #08524b;
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em;
+}
+
+:-ms-input-placeholder {  
+  color: #08524b;
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em;
 }
 
 

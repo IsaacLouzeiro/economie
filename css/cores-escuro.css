@@ -359,15 +359,15 @@
   background-color: #080A16;
 }
 
+.night-mode .box-lista-palavras ul li.lista-palavra-principal {
+  border: 1px solid rgb(54, 54, 54);
+}
+
+
 .night-mode .box-lista-palavras ul li ul {
  background-color: #00FEB5;
-}
-
-.night-mode .box-lista-palavras ul li:hover ul {
- display: block;
  color: #424242;
 }
-
 .night-mode .box-lista-palavras ul li .num-palavra {
  background-color: #00FEB5;
  color: #424242;
@@ -389,6 +389,26 @@
   border: 4px solid #fff;
   color: #fff;
   background-color: #080A16;
+}
+
+.night-mode ::-webkit-input-placeholder {
+  color: #b5f7f0;
+}
+
+.night-mode :-moz-placeholder { /* Firefox 18- */
+  color: #b5f7f0;
+}
+
+.night-mode ::-moz-placeholder {  /* Firefox 19+ */
+  color: #b5f7f0;
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 200px;
+  font-size: .5em;
+}
+
+.night-mode :-ms-input-placeholder {  
+  color: #b5f7f0;
 }
 
 
