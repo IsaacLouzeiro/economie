@@ -350,7 +350,70 @@
 
 /********* APRENDER ***********/
 
-/* adicionar css da pagina de aprender aqui */
+
+
+/* PALAVRAS CRUZADAS */
+
+/* caixa lista */
+.night-mode .box-lista-palavras {
+  background-color: #080A16;
+}
+
+.night-mode .box-lista-palavras ul li ul {
+ background-color: #00FEB5;
+}
+
+.night-mode .box-lista-palavras ul li:hover ul {
+ display: block;
+ color: #424242;
+}
+
+.night-mode .box-lista-palavras ul li .num-palavra {
+ background-color: #00FEB5;
+ color: #424242;
+}
+
+
+/* principal palavras cruzadas */
+.night-mode .principal-palavras-cruzadas {
+  background-color: #00FEB5;
+}
+
+.night-mode .principal-palavras-cruzadas h2 {
+  color: #424242;
+}
+
+/* jogo palavras cruzadas */
+
+.night-mode .jogo-palavras-cruzadas div input {
+  border: 4px solid #fff;
+  color: #fff;
+  background-color: #080A16;
+}
+
+
+/* botao voltar e proximo */
+.night-mode #voltar {
+  background-color: #198F39;
+  color: #fff;
+}
+
+.night-mode #voltar:hover {
+  background-color: #21af47;
+  color: #fff;
+}
+
+.night-mode #proximo {
+  background-color: #00D12A;
+  color: #fff;
+}
+
+.night-mode #proximo:hover {
+  background-color: #14ee3f;
+  color: #fff;
+}
+
+
 
 /********* FIM APRENDER ***********/
 

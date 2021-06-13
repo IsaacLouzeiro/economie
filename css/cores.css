@@ -371,7 +371,70 @@ label.botao-inserir:hover {
 
 /********* APRENDER ***********/
 
-/* adicionar css da pagina de aprender aqui */
+
+
+/* PALAVRAS CRUZADAS */
+
+/* caixa lista */
+.box-lista-palavras {
+   background-color: #fff;
+}
+
+.box-lista-palavras ul li ul {
+  background-color: #5CDBD0;
+  color: #fff;
+}
+
+.box-lista-palavras ul li:hover ul {
+  display: block;
+  color: #424242;
+}
+
+.box-lista-palavras ul li .num-palavra {
+  background-color: #5CDBD0;
+  color: #fff;
+}
+
+
+/* principal palavras cruzadas */
+.principal-palavras-cruzadas {
+  background-color: #5CDBD0;
+}
+
+.principal-palavras-cruzadas h2 {
+  color: #fff;  
+}
+
+/* jogo palavras cruzadas */
+
+.jogo-palavras-cruzadas div input {
+  border: 4px solid #868686;
+  color: #424242;
+}
+
+
+/* botao voltar e proximo */
+#voltar {
+  background-color: #28F57C;
+  color: #fff;
+}
+
+#voltar:hover {
+  background-color: #1cc462;
+  color: #fff;
+}
+
+#proximo {
+  background-color: #1DEB05;
+  color: #fff;
+}
+
+#proximo:hover {
+  background-color: #13b102;
+  color: #fff;
+}
+
+
 
 /********* FIM APRENDER ***********/
 
