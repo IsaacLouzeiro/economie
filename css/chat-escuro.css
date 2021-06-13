@@ -1,0 +1,287 @@
+iframe {
+    margin: 0 !important;
+}
+
+#_botChatFrameBody {
+    
+    margin: 0;
+    padding: 0;
+}
+
+#chatWindow {
+    width: 360px !important;
+    background-color: #080a15;
+    box-shadow: 1px 1px 12px 0 #8A8A8A;
+    -webkit-box-shadow: 1px 1px 12px 0 #121a4b;
+    -moz-box-shadow: 1px 1px 12px 0 #0d1036;
+    border-radius: 4px 4px 0 0;
+    border: 3px solid #080c2c !important;
+    border-bottom: none;
+    font-family: Helvetica, sans-serif;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0 !important;
+    right: 1%!important;
+    max-width: 98%!important;
+    height: 460px;
+    
+}
+
+#chatWindow-header {
+    background-color: #080a15;
+    width: 100%;
+    float: left;
+    cursor: pointer;
+    height: 36px !important;
+    margin-bottom: 1px;
+}
+
+#chatWindow-header #avatar {
+    height: 35px;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    width: 70px;
+    background-color: rgb(11, 38, 75);
+    margin: 5px;
+}
+
+#chatWindow-header h1 {
+    font-size: 14px !important;
+    color: floralwhite;
+    float: left;
+    font-weight: 700 !important;
+    margin: 0px !important;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 0px 0px 12px;
+    max-height: 100% !important;
+    max-width: 100% !important;
+}
+
+#_botChatFrame {
+    width: 100% !important;
+    padding: 2px 2px !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.message-text p {
+    margin: 0;
+}
+
+.message-text q {
+    display: inline;
+}
+
+.message-text b>p {
+    display: inline;
+    margin: 0;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+#chatWindow-content {
+    float: left;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 99%;
+    font-family: Helvetica, sans-serif;
+    height: 325px;
+    padding: 0 0 8px 3px;
+}
+
+#dialog {
+    list-style-type: none;
+    height: 330px;
+    width: 350px;
+}
+
+#dialog .message {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+    line-height: 23px;
+    font-size: 14px;
+    padding: 3px 4px;
+}
+
+#dialog .message .content {
+    display: inline-block;
+}
+
+#dialog .message.user {
+    color: #3c372e;
+}
+
+#dialog .message a {
+    text-decoration: none;
+    color: #080A15;
+}
+
+#dialog .message a:hover {
+    text-decoration: underline;
+}
+
+#dialog .message.bot,
+.message.Bot {
+    color: #8e3422;
+}
+
+.message-text {
+    word-break: break-word;
+    display: inline;
+}
+
+.speech-buble {
+    float: left;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    margin: 3px 5px 0 10px;
+}
+
+#chatWindow-form {
+    height: 37px;
+    float: left;
+    margin-top: 4px;
+}
+
+#chatWindow-form #shoutbox {
+    font-size: 16px;
+    height: 33px;
+    width: 347px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    outline: inherit;
+    -webkit-box-shadow: inset 2px 3px 6px 0 #ddd;
+    -moz-box-shadow: inset 2px 3px 6px 0 #ddd;
+    box-shadow: inset 2px 3px 6px 0 #ddd;
+    margin-left: 5px;
+    padding: 1px 0 0 10px;
+}
+
+#chatWindow .caret {
+    width: 13px;
+    float: right;
+    height: 0;
+    border: 1px solid #fff;
+    margin: 16px 11px 0 0;
+}
+
+.ui-autocomplete span.hl_results {
+    background-color: #ff6;
+    max-width: 350px;
+}
+
+.ui-menu .ui-menu-item {
+    max-width: 350px;
+}
+
+.ui-autocomplete-loading {
+    background: #FFF url(ui-theme/images/ui-anim_basic_16x16.gif) right center no-repeat;
+}
+
+.ui-autocomplete {
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+
+.ui-autocomplete li {
+    font-size: 13px;
+}
+
+* html .ui-autocomplete {
+    height: 250px;
+}
+
+#_chatBubble {
+    display: block;
+    width: 40px;
+    height: 100px;
+    z-index: 999;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #00FFB4 !important;
+    bottom: 15px!important;
+    box-shadow: none !important;
+    padding: 8px !important;
+    transition: .2s;
+    right: 35px !important;
+}
+
+#_chatBubble:hover {
+    background-color: #080A15 !important;
+}
+
+._bubble-label {
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+._bubble-label h4 {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 10px 0px 40px;
+    margin: 0 !important;
+    line-height: 60px;
+    background: url(../img/dinie_responsavel_oculos_2-removebg-preview.png) 6px center no-repeat;
+    background-size: 30px;
+}
+
+._bubble-label img {
+    display: none;
+    float: left;
+    margin-bottom: 3px;
+    height: 26px;
+    width: 26px;
+}
+
+#chatWindow-header .speech-buble {
+    margin-top: 10px;
+}
+
+#chatWindow #chatWindow-header {
+    background-color: #080A15!important;
+}
+
+#chatWindow-content .message.bot {
+    color: #5CDDB0!important;
+    font-size: 14px!important;
+}
+
+#chatWindow-content .message.user {
+    color: #6b6b6b!important;
+    font-size: 14px!important;
+}
+
+#dialog .message.user .avatar,
+#dialog .message.bot .avatar,
+#dialog .user.message .avatar,
+#dialog .bot.message .avatar,
+._disable,
+.message-text>br {
+    display: none;
+}
+
+#chatWindow-form #shoutbox::-webkit-input-placeholder,
+#chatWindow-form #shoutbox:-moz-placeholder,
+#chatWindow-form #shoutbox::-moz-placeholder,
+#chatWindow-form #shoutbox:-ms-input-placeholder {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 350;
+    color: #0a1430;
+}
+
+
