@@ -101,8 +101,19 @@
 }
 
 .jogo-palavras-cruzadas div input {
-  width: 25px;
-  height: 25px;
+  border: 3px solid #868686;
+  margin:  0 -1px;
+  width: 26px;
+  height: 26px;
+  font-size: 1em;
+}
+
+.night-mode .jogo-palavras-cruzadas div input {
+  border: 3px solid #fff;
+  margin:  0 -1px;
+  width: 26px;
+  height: 26px;
+  font-size: 1em;
 }
 
 /* botao voltar e proximo */
