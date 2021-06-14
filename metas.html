@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo-economie.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/cores-escuro.css"><!-- COR MODO ESCURO -->
+    <link rel="stylesheet" href="css/cores.css"><!-- COR -->
+    <link rel="stylesheet" href="css/estilo.css"><!-- ESTILO -->
+    <link rel="stylesheet" href="css/estilo-responsivo.css"><!-- ESTILO RESPONSIVO -->
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+      
+    <title>Economie - Minhas Metas</title>
+</head>
+<body>
+    <!-- conteudo flex -->
+    <div class="flex">
+        <!-- menu de navegação -->
+        <nav class="bg-navegacao">
+            <!-- box logo -->
+            <div class="box-logo bg-box-logo">
+                <div style="display: flex; align-items: center;">
+                    <div class="logo-menu"></div><!-- Logo economie -->
+
+                    <span class="nome-economie">Economie</span>
+                </div>
+
+                <a href="#" id="fechar"><i class="fa fa-times"></i></a><!-- parte responsivo -->
+            </div>
+
+            <!-- lista -->
+            <ul class="bg-lista">
+                <li><a href="resumo.html"><i class="fas fa-chart-pie"></i> RESUMO</a></li>
+                <li><a href="meu-perfil.html"><i class="fa fa-user"></i> MEU PERFIL</a></li>
+                <li><a href="metas.html" class="selecionado"><i class="fa fa-chart-line"></i> METAS</a></li>
+                <li><a href="saldos.html"><i class="fa fa-money-bill-wave"></i> SALDOS</a></li>
+                <li><a href="despesas.html"><i class="fa fa-cash-register"></i> DESPESAS</a></li>
+                <li><a href="aprender.html"><i class="fa fa-book-open"></i> APRENDER</a></li>
+                <br><br>
+                <li><a href="configuracoes.html"><i class="fa fa-tools"></i> CONFIGURAÇÕES</a></li>
+                <li><a href="sobre-nos.html"><i class="fa fa-users"></i> SOBRE NÓS</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out-alt"></i> SAIR</a></li><br><br>
+            </ul>
+        </nav>
+        <!-- // menu de navegação -->
+
+        <!-- (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+        <div class="flex-box">
+
+            <!-- cabeçalho -->
+            <header class="cabecalho cabecalho-metas">
+                <div class="bg-cabecalho circulo-metas">
+                    
+                    <a href="#" id="bars"><i class="fa fa-bars"></i></a><!-- botao para abrir menu (parte responsivo) -->
+
+                    <h2 style="opacity: 0; cursor: default;">Minhas metas</h2>
+
+                    
+                    <!-- lista no cabecalho -->
+                    <ul>
+                        <li><a href="#"><i class="fas fa-medal"></i></a></li>
+                        <li><a href="#"><i class="fas fa-wallet"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                        <li class="remove-espacador">|</li>
+                        <li><a href="#" id="nome-usuario"><span>José Silva</span> <img src="img/user.png" alt="foto do usuario" width="35"></a></li>
+                    </ul>
+                    <!-- // lista no cabecalho -->
+                </div>
+
+                <!-- arco com titulo -->
+                <div class="arco-com-titulo">
+                    <h2>Minhas metas</h2>
+                </div>
+                <!-- // arco com titulo -->
+            </header>
+            <!-- // cabeçalho -->
+
+            <!-- conteúdo principal -->
+            <main class="principal bg-principal">
+                <!-- caixa de conteudo -->
+                <div id="caixa-conteudo" style="margin-top: 127px;">
+
+                <!-- conteudo da pagina metas -->  
+                <div class="meta-flex">
+
+                    <!-- metas cadastradas -->
+                    <div class="meta-cadastrada">
+                        <!-- caixa de lembretes -->
+                        <div class="box-lembretes">
+
+                            <h4 class="titulo">Viajar para o acre</h4>
+                            
+                            <p class="tempo">
+                                <span class="subtitulo"><i class="fas fa-clock"></i> Tempo: </span><span>15 meses</span>
+                            </p>
+
+                            <p class="tempo">
+                                <span class="subtitulo"><i class="fas fa-clock"></i> Lembrete: </span><span>Sim</span>
+                            </p>
+
+                            <p class="valor">
+                                <span class="subtitulo"><i class="fas fa-coins"></i> Valor: </span><span><span class="tipomoeda">R$</span> 5.000,00</span>
+                            </p>
+
+                            <p class="desc">
+                                <span class="subtitulo"><i class="fa fa-sticky-note"></i> descrição: </span><p>Meu sonho é conhecer os dinossauros no zoológico.</p>
+                            </p>
+
+                            <div class="box-botoes-lembretes">
+                                <a href="#" class="excluir-lembrete">Excluir</a>
+                                
+                                <a href="#" class="editar-lembrete">editar</a>
+                            </div>
+
+                            
+                            <hr>
+                        </div>
+                        <!-- caixa de lembretes -->
+                    </div>
+                    <!-- // metas cadastradas -->
+
+                    <!-- formulario cadastrar metas -->
+                    <form action="" class="cadastrar-meta">
+                        <input type="text" name="nomeObjetivo" id="" placeholder="Nome do objetivo" required>
+
+                        <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição"></textarea>
+
+                        <input type="text" name="nomeObjetivo" id="" placeholder="0,00" required>
+
+                        <input type="text" name="nomeObjetivo" id="" placeholder="Quanto tempo" required>
+
+                        <label class="container">
+                            <input type="checkbox" name="lembrete">
+                            <span class="checkmark"></span>
+                            <small>Adicionar lembrete à tela principal</small>
+                        </label>
+                        
+                        <!-- caixa com botao apagar e salvar -->
+                        <div class="caixa-botoes-meta">
+                            <button id="apagar">Apagar</button>
+                            <button id="salvar">Salvar</button>
+                        </div>
+                        <!-- // caixa com botao apagar e salvar -->
+                    </form>
+                    <!-- // formulario cadastrar metas -->
+
+                    <!-- dinie falando -->
+                    <div class="dinie-falando">
+                        <!-- balao escuro -->
+                        <div class="balao-escuro">
+                            <img src="img/balao-escuro.png" width="230" alt="">
+                        </div>
+                        <!-- // balao escuro -->
+
+                        <!-- balao claro -->
+                        <div class="balao-claro">
+                            <img src="img/balao-claro.png" width="230" alt="">
+                        </div>
+                        <!-- // balao claro -->
+
+                        <img src="img/baby_dinie.png" width="135" class="dinie-normal" alt="">
+                        <!-- <img src="img/dinie_gif.gif" width="130" class="dinie-gif" alt=""> -->
+                    </div>
+                    <!-- // dinie falando -->
+
+                </div>
+                <!-- // conteudo da pagina metas -->
+                
+                </div>
+                <!-- // caixa de conteudo -->
+            </main>
+            <!-- // conteúdo principal -->
+
+
+
+            <!-- botao do chatbot -->
+            
+            <script type="text/javascript">
+                let headID = document.getElementsByTagName("head")[0];
+                let newCss = document.createElement('link');
+                newCss.rel = 'stylesheet';
+                newCss.type = 'text/css';
+                newCss.href = "https://botmake.io/embed/bot574089.css";
+                let newScript = document.createElement('script');
+                newScript.src = "https://botmake.io/embed/bot574089.js";
+                newScript.type = 'text/javascript';
+                headID.appendChild(newScript);
+                headID.appendChild(newCss);
+            </script>
+            <link rel="stylesheet" href="css/chat.css"><!-- CHATBOT -->
+
+            <!-- // botao do chatbot -->
+
+
+            
+        </div>
+        <!-- // (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+
+    </div>
+    <!-- // conteudo flex -->
+
+    
+
+    <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
+    
+    <script src="js/navbar.js"></script><!-- Abrir e fechar menu responsivo -->
+
+    <script src="js/moeda.js"></script><!-- Alterar moeda -->
+
+</body>
+</html>

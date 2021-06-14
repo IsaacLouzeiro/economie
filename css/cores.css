@@ -359,6 +359,55 @@ label.botao-inserir:hover {
   background-size: 240px 60px;
 }
 
+/* arco com titulo */
+.arco-com-titulo {
+  background-color: #fff;
+  color: #5B5B5B;
+}
+
+
+/* metas cadastradas */
+.meta-cadastrada {
+  background-color: #fff;
+}
+
+.meta-cadastrada .box-lembretes {
+  background-color: #F7F9F8;
+}
+
+
+/* botao apagar e salvar */
+#apagar {
+  background-color: #28F57C;
+  color: #fff;
+}
+
+#apagar:hover {
+  background-color: #1cc462;
+  color: #fff;
+}
+
+#salvar {
+  background-color: #1DEB05;
+  color: #fff;
+}
+
+#salvar:hover {
+  background-color: #13b102;
+  color: #fff;
+}
+
+
+/* balao fala dinie */
+
+.balao-claro {
+  display: block;
+}
+
+.balao-escuro {
+  display: none;
+}
+
 /********* FIM METAS ***********/
 
 

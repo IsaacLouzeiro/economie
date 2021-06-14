@@ -914,7 +914,154 @@ input[type="file"]#upload-photo {
 
 /********* METAS ***********/
 
-/* adicionar css da pagina de metas aqui */
+/* arco com titulo */
+.arco-com-titulo {
+  display: inline-block;
+  width: 210px;
+  height: 100px;
+  margin-left: 100px;
+  position: relative;
+  top: -53px;
+  border-radius: 200px 200px 0 0;
+}
+
+.arco-com-titulo h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* conteudo da pagina metas */
+.meta-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* metas cadastradas */
+.meta-cadastrada {
+  max-width: 210px;
+  min-width: 210px;
+  max-height: 450px;
+  position: relative;
+  margin-left: 85px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.meta-cadastrada .box-lembretes {
+  padding: 10px;
+}
+
+.box-botoes-lembretes {
+  display: flex; 
+  justify-content: space-between;
+}
+
+/* formulario cadastrar metas */
+form.cadastrar-meta {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 45px;
+}
+
+form.cadastrar-meta input,
+form.cadastrar-meta textarea {
+  max-width: 250px;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 5px auto;
+}
+
+form.cadastrar-meta textarea {
+  max-width: 250px;
+  min-width: 250px;
+  width: 100%;
+  max-height: 80px;
+  min-height: 80px;
+  font-size: 1.3em;
+}
+
+form.cadastrar-meta textarea::-webkit-input-placeholder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 100px;
+
+}
+
+form.cadastrar-meta ::-webkit-input-placeholder {
+  text-align: center;
+
+}
+
+form.cadastrar-meta :-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+form.cadastrar-meta ::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+
+form.cadastrar-meta :-ms-input-placeholder {
+  text-align: center;
+}
+
+
+
+form.cadastrar-meta .container {
+  margin: 5px auto;
+}
+
+/* botao apagar e salvar */
+.caixa-botoes-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 257px;
+}
+
+
+#apagar,
+#salvar {
+  padding: 9px 0;
+  margin: auto 0;
+  width: 100%;
+  max-width: 110px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* dinie falando */
+
+.dinie-falando {
+  align-self: flex-end;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  justify-content: flex-end;
+}
+
+.balao-claro,
+.balao-escuro {
+  left: auto;
+  position: relative;
+  top: 23px;
+}
+
 
 /********* FIM METAS ***********/
 

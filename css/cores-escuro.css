@@ -284,7 +284,8 @@
     box-shadow: 1px 1px 15px #21cf6452;
   }
 
-.night-mode input{
+.night-mode input,
+.night-mode textarea {
     background-color : #080A15; 
     color: #fff;
   }
@@ -329,7 +330,64 @@
 
 /********* METAS ***********/
 
-/* adicionar css da pagina de metas aqui */
+/* circulo no cabecalho */
+.night-mode .circulo-metas {
+  background-image: url(../img/meio-circulo-meta-dark.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-position-x: 102px;
+  background-size: 205px 60px;
+}
+
+/* arco com titulo */
+.night-mode .arco-com-titulo {
+  background-color: #080A15;
+  color: #fff;
+}
+
+
+/* metas cadastradas */
+.night-mode .meta-cadastrada {
+  background-color: #080A15;
+}
+
+.night-mode .meta-cadastrada .box-lembretes {
+  box-shadow: 1px 1px 10px rgba(151, 151, 151, 0.288);
+  background-image: linear-gradient(#029166, #01573d);
+}
+
+/* botao apagar e salvar */
+.night-mode #apagar {
+  background-color: #198F39;
+  color: #fff;
+}
+
+.night-mode #apagar:hover {
+  background-color: #21af47;
+  color: #fff;
+}
+
+.night-mode #salvar {
+  background-color: #00D12A;
+  color: #fff;
+}
+
+.night-mode #salvar:hover {
+  background-color: #14ee3f;
+  color: #fff;
+}
+
+
+/* balao fala dinie */
+
+.night-mode .balao-escuro {
+  display: block;
+}
+
+.night-mode .balao-claro {
+  display: none;
+}
+
 
 /********* FIM METAS ***********/
 
