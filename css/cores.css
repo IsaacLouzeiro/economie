@@ -350,7 +350,14 @@ label.botao-inserir:hover {
 
 /********* METAS ***********/
 
-/* adicionar css da pagina de metas aqui */
+/* circulo no cabecalho */
+.circulo-metas {
+  background-image: url(../img/meio-circulo-meta.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-position-x: 85px;
+  background-size: 240px 60px;
+}
 
 /********* FIM METAS ***********/
 
@@ -411,19 +418,19 @@ label.botao-inserir:hover {
   color: #424242;
 }
 
-::-webkit-input-placeholder {
+.texto-ativado ::-webkit-input-placeholder {
   color: #08524b;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+.texto-ativado :-moz-placeholder { /* Firefox 18- */
   color: #08524b;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+.texto-ativado ::-moz-placeholder {  /* Firefox 19+ */
   color: #08524b;
 }
 
-:-ms-input-placeholder {  
+.texto-ativado :-ms-input-placeholder {  
   color: #08524b;
 }
 
