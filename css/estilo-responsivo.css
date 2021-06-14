@@ -97,7 +97,14 @@
 /* metas cadastradas */
 .meta-cadastrada {
   margin: auto !important;
+  max-height: 330px !important;
 }
+
+/* formulario cadastrar metas */
+form.cadastrar-meta {
+  padding: 0 40px;
+}
+
 
 /* dinie falando */
 
