@@ -803,7 +803,7 @@ input[type="file"]#upload-photo {
 
 .aprender-flex:hover .imagem-do-dinie {
   background-image: url(../img/dinie_gif.gif);
-  background-size: 115%;
+  background-size: 65%;
 }
 
 .box-nivel-aprender span {
