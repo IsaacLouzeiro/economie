@@ -313,14 +313,16 @@
 .night-mode .fechar-form-nome,
 .night-mode .fechar-form-email,
 .night-mode .fechar-form-senha,
-.night-mode .fechar-form-cartao {
+.night-mode .fechar-form-cartao,
+.night-mode .fechar-form-saldo {
     color: #0edb9e;
   }
   
 .night-mode .fechar-form-nome:hover,
 .night-mode .fechar-form-email:hover,
 .night-mode .fechar-form-senha:hover,
-.night-mode .fechar-form-cartao:hover {
+.night-mode .fechar-form-cartao:hover,
+.night-mode .fechar-form-saldo:hover {
     color: #00FFB4;
   }
 
@@ -394,7 +396,81 @@
 
 /********* SALDOS ***********/
 
-/* adicionar css da pagina de saldos aqui */
+/* circulo no cabecalho */
+.night-mode .circulo-dinie {
+  background-image: url(../img/meio-circulo-dark.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-position-x: 16px;
+  background-size: 180px;
+}
+
+/* imagem do dinie no topo */
+.night-mode .imagem-cabecalho-dinie {
+  /* padding: 0 30px; */
+  border: 5px solid #0edb9e;
+  background-color: #080A15;
+}
+
+
+/* caixa de dica do dinie */
+.night-mode .dica-dinie {
+  background-color: #080A15;
+  box-shadow: 1px 1px 25px #00FEB5;
+  color: #fff;
+  /* height: 500px; */
+}
+
+/* caixa de dica parte inicio */
+.night-mode .dica-inicio {
+  background-image: url(../img/b-d-l.png);
+  color: #000;
+}
+
+/* caixa de dica parte inicio */
+.night-mode .dica-fim {
+  background-image: url(../img/b-d-r.png);
+  color: #000;
+}
+
+/* botao para depositar */
+.night-mode #btn-depositar {
+  color: #fff;
+  background-image: linear-gradient( to bottom, #00ffb3d2, #0a7e4cc5);
+}
+
+/* botao para depositar */
+.night-mode #btn-depositar:hover {
+  background-image: linear-gradient( to bottom, #0a7e4cc5, #00ffb3d2);
+}
+
+
+/* cateira virtual */
+/* dinheiro guardado */
+.night-mode .carteira-virtual,
+.night-mode .dinheiro-guardado {
+  background-color: #080A15;
+}
+
+.night-mode .header-box {
+  background-color: #0C1028;
+}
+
+.night-mode .header-box span {
+  color: #0edb9e;
+}
+
+/* conteudo cadastrado box */
+.night-mode .cad-conteudo {
+  box-shadow: 1px 1px 10px rgba(151, 151, 151, 0.288);
+  /* background-color: #F7F9F8; */
+  background-image: linear-gradient(#02917e, #015753);
+}
+
+.night-mode .cad-conteudo span {
+  color: #0edb9e;
+}
+
 
 /********* FIM SALDOS ***********/
 

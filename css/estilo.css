@@ -1068,7 +1068,151 @@ form.cadastrar-meta .container {
 
 /********* SALDOS ***********/
 
-/* adicionar css da pagina de saldos aqui */
+.fechar-form-saldo {
+  position: absolute;
+  top: -18px;
+  right: 10px;
+  font-size: 1.8em;
+}
+
+/* formulario desativado */
+.adicionar-saldo {
+  position: absolute;
+  opacity: 0;
+  margin-top: 200px;
+  z-index: -10;
+  transition: opacity 1s;
+}
+
+.transicao-form {
+  opacity: 1;
+  margin-top: 0;
+  z-index: 1;
+  transition: opacity 1s, margin 1s;
+}
+
+/* imagem do dinie no topo */
+.imagem-cabecalho-dinie {
+  /* padding: 0 30px; */
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 140px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -12px;
+}
+
+.imagem-cabecalho-dinie .img-dinie {
+  /* width: 140px; */
+  height: 120px;
+  /* border-radius: 140px;
+  border: 5px solid;
+  margin-left: 74px; */
+}
+
+/* sessão flex conteudo da pagina saldo */
+.saldo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* caixa de dica do dinie */
+.dica-dinie {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 730px;
+  padding: 15px 30px;
+  display: flex;
+  position: relative;
+  margin-left: 22%;
+  margin-right: auto;
+  /* height: 500px; */
+}
+
+/* caixa de dica parte inicio */
+.dica-inicio {
+  background-size: contain;
+  width: 50px;
+  height: 100%;
+  padding: 15px;
+  position: absolute;
+  top: -15px;
+  left: -55px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/* caixa de dica parte inicio */
+.dica-fim {
+  background-size: contain;
+  width: 50px;
+  height: 100%;
+  padding: 15px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+
+/* botao para depositar */
+#btn-depositar {
+  width: 100%;
+  max-width: 190px;
+  height: 60px;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* cateira virtual */
+/* dinheiro guardado */
+.carteira-virtual,
+.dinheiro-guardado {
+  border-radius: 10px;
+  width: 48%;
+  margin: 1%;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-box span {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* conteudo cadastrado box */
+.cad-conteudo {
+  margin: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cad-conteudo small {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.cad-conteudo span {
+  font-weight: bold;
+}
+
 
 /********* FIM SALDOS ***********/
 

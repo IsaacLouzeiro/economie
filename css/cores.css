@@ -333,14 +333,16 @@ label.botao-inserir:hover {
   .fechar-form-nome,
   .fechar-form-email,
   .fechar-form-senha,
-  .fechar-form-cartao {
+  .fechar-form-cartao,
+  .fechar-form-saldo {
     color: #4ab9b0;
   }
   
   .fechar-form-nome:hover,
   .fechar-form-email:hover,
   .fechar-form-senha:hover,
-  .fechar-form-cartao:hover {
+  .fechar-form-cartao:hover,
+  .fechar-form-saldo:hover {
     color: #5CDBD0;
   }
 
@@ -413,7 +415,76 @@ label.botao-inserir:hover {
 
 /********* SALDOS ***********/
 
-/* adicionar css da pagina de saldos aqui */
+/* circulo no cabecalho */
+.circulo-dinie {
+  background-image: url(../img/meio-circulo.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-position-x: 16px;
+  background-size: 180px;
+}
+
+/* imagem do dinie no topo */
+.imagem-cabecalho-dinie {
+  /* padding: 0 30px; */
+  border: 5px solid #28F57C;
+  background-color: #fff;
+}
+
+/* caixa de dica do dinie */
+.dica-dinie {
+  background-color: #fff;
+  box-shadow: 1px 1px 25px #44E584;
+  color: #000;
+  /* height: 500px; */
+}
+
+/* caixa de dica parte inicio */
+.dica-inicio {
+  background-image: url(../img/b-l.png);
+  color: #000;
+}
+
+/* caixa de dica parte inicio */
+.dica-fim {
+  background-image: url(../img/b-r.png);
+  color: #000;
+}
+
+/* botao para depositar */
+#btn-depositar {
+  color: #fff;
+  background-image: linear-gradient( to bottom, #6e7dff, #0D1D9F);
+}
+
+/* botao para depositar */
+#btn-depositar:hover {
+  color: #fff;
+  background-image: linear-gradient( to bottom, #0D1D9F, #6e7dff);  
+}
+
+/* cateira virtual */
+/* dinheiro guardado */
+.carteira-virtual,
+.dinheiro-guardado {
+  background-color: #fff;
+}
+
+.header-box span {
+  color: #5CDBD0;
+}
+
+/* conteudo cadastrado box */
+.cad-conteudo {
+  box-shadow: 1px 1px 10px rgba(151, 151, 151, 0.288);
+  background-color: #F7F9F8;
+}
+
+.cad-conteudo span {
+  color: #5CDBD0;
+}
+
+
 
 /********* FIM SALDOS ***********/
 

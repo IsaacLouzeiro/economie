@@ -256,6 +256,18 @@ form.cadastrar-meta {
 /********* FIM METAS ***********/
 
 
+/********* SALDOS ***********/
+
+/* cateira virtual */
+/* dinheiro guardado */
+.carteira-virtual,
+.dinheiro-guardado {
+  width: 100%;
+}
+
+/********* FIM SALDOS ***********/
+
+
 /********* APRENDER ***********/
 
 /* PALAVRAS CRUZADAS */
@@ -416,7 +428,30 @@ form.cadastrar-meta {
 
 /********* SALDOS ***********/
 
-/* adicionar css da pagina de saldos aqui */
+
+/* circulo no cabecalho */
+.circulo-dinie {
+  background-position: center bottom !important;
+}
+
+/* imagem do dinie no topo */
+.imagem-cabecalho-dinie {
+  margin: auto !important;
+}
+
+
+/* caixa de dica do dinie */
+.dica-dinie {
+  margin: auto;
+  margin-top: 140px;
+}
+
+/* caixa de dica parte inicio */
+.dica-inicio,
+.dica-fim {
+  background-image: none !important;
+}
+
 
 /********* FIM SALDOS ***********/
 
