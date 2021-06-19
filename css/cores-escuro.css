@@ -434,13 +434,13 @@
 }
 
 /* botao para depositar */
-.night-mode #btn-depositar {
+.night-mode .btn-add {
   color: #fff;
   background-image: linear-gradient( to bottom, #00ffb3d2, #0a7e4cc5);
 }
 
 /* botao para depositar */
-.night-mode #btn-depositar:hover {
+.night-mode .btn-add:hover {
   background-image: linear-gradient( to bottom, #0a7e4cc5, #00ffb3d2);
 }
 

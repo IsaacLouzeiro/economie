@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo-economie.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/cores-escuro.css"><!-- COR MODO ESCURO -->
+    <link rel="stylesheet" href="css/cores.css"><!-- COR -->
+    <link rel="stylesheet" href="css/estilo.css"><!-- ESTILO -->
+    <link rel="stylesheet" href="css/estilo-responsivo.css"><!-- ESTILO RESPONSIVO -->
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+
+    <!-- javascipt -->
+    <!-- apexcharts -->
+    <script>
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+          )
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+          )
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+          )
+    </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      
+    <title>Economie - Minhas despesas</title>
+</head>
+<body>
+    <!-- conteudo flex -->
+    <div class="flex">
+        <!-- menu de navegação -->
+        <nav class="bg-navegacao">
+            <!-- box logo -->
+            <div class="box-logo bg-box-logo">
+                <div style="display: flex; align-items: center;">
+                    <div class="logo-menu"></div><!-- Logo economie -->
+
+                    <span class="nome-economie">Economie</span>
+                </div>
+
+                <a href="#" id="fechar"><i class="fa fa-times"></i></a><!-- parte responsivo -->
+            </div>
+
+            <!-- lista -->
+            <ul class="bg-lista">
+                <li><a href="resumo.html"><i class="fas fa-chart-pie"></i> RESUMO</a></li>
+                <li><a href="meu-perfil.html"><i class="fa fa-user"></i> MEU PERFIL</a></li>
+                <li><a href="metas.html"><i class="fa fa-chart-line"></i> METAS</a></li>
+                <li><a href="saldos.html"><i class="fa fa-money-bill-wave"></i> SALDOS</a></li>
+                <li><a href="despesas.html" class="selecionado"><i class="fa fa-cash-register"></i> DESPESAS</a></li>
+                <li><a href="aprender.html"><i class="fa fa-book-open"></i> APRENDER</a></li>
+                <br><br>
+                <li><a href="configuracoes.html"><i class="fa fa-tools"></i> CONFIGURAÇÕES</a></li>
+                <li><a href="sobre-nos.html"><i class="fa fa-users"></i> SOBRE NÓS</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out-alt"></i> SAIR</a></li><br>
+            </ul>
+        </nav>
+        <!-- // menu de navegação -->
+
+        <!-- (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+        <div class="flex-box">
+            
+            <!-- formularios para adicionar despesa -->
+            <div class="box-formularios">
+
+                <!-- adicionar despesa -->
+                <form action="" class="formulario-alterar adicionar-despesa">
+                    <a href="#" class="fechar-form-saldo"><i class="fas fa-times-circle"></i></a>
+
+                    <h3>Adicionar despesa</h3>
+                    <input type="text" name="tituloDespesa" placeholder="Título" required>
+
+                    <input type="text" name="valorDespesa" placeholder="Valor" required>
+
+                    <div style="margin: 8px auto;">
+                        <input id="despesa" class="radio" type="radio" name="despesas" value="Despesa mensal" checked />
+                        <label for="despesa" style="margin: 4px;"><small>Despesa mensal</small></label>
+
+                        <input id="divida" class="radio" type="radio" name="despesas" value="Divida mensal" />
+                        <label for="divida" style="margin: 4px;"><small>Dívida mensal</small></label>
+                    </div>
+
+
+
+                    <input type="submit" value="inserir">
+                </form>
+                <!-- // adicionar despesa -->
+            
+            </div>
+            <!-- // formularios para adicionar despesa -->
+
+            <!-- cabeçalho -->
+            <header class="cabecalho">
+                <div class="bg-cabecalho circulo-dinie">
+                    
+                    <a href="#" id="bars"><i class="fa fa-bars"></i></a><!-- botao para abrir menu (parte responsivo) -->
+
+                    <h2>Minhas despesas</h2>
+
+                    
+                    <!-- lista no cabecalho -->
+                    <ul>
+                        <li><a href="#"><i class="fas fa-medal"></i></a></li>
+                        <li><a href="#"><i class="fas fa-wallet"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                        <li class="remove-espacador">|</li>
+                        <li><a href="#" id="nome-usuario"><span>José Silva</span> <img src="img/user.png" alt="foto do usuario" width="35"></a></li>
+                    </ul>
+                    <!-- // lista no cabecalho -->
+                </div>
+
+                <!-- grafico de despesas -->
+                <div class="grafico-despesa">
+                    <!-- gráfico de donut -->
+                    <div class="chart chart-claro"></div>
+                    <!-- // gráfico de donut -->
+
+                    <!-- gráfico de donut -->
+                    <div class="chart chart-escuro"></div>
+                    <!-- // gráfico de donut -->
+                </div>
+                <!-- // grafico de despesas -->
+                
+            </header>
+            <!-- // cabeçalho -->
+
+            <!-- conteúdo principal -->
+            <main class="principal bg-principal">
+                <!-- caixa de conteudo -->
+                <div id="caixa-conteudo" style="margin-top: 100px;">
+
+                <!-- conteudo da pagina despesas -->
+                        
+                    <!-- sessão de conteudo minhas despesas -->
+                    <div class="saldo-flex" style="margin-top: 235px;">
+                        
+                        <button id="btn-despesa" class="btn-add">Adicionar despesa</button><!-- botao para add despesa -->
+
+                        <!-- caixas com as despesas mensais e as dividas -->
+                        <div class="saldo-flex" style="width: 100%; margin-top: 20px;">
+                            
+                            <!-- despesas mensais -->
+                            <div class="carteira-virtual">
+                                <!-- header box -->
+                                <div class="header-box">
+                                    <h3>Despesas mensais</h3>
+                                    
+                                    <span><span class="tipomoeda"></span> 1.200 </span><!-- valor total -->
+                                </div>
+                                <!-- // header box -->
+                                
+                                <!-- main cadastro box -->
+                                <div class="main-cad-box">
+                                    <!-- conteudo cadastrado box -->
+                                    <div class="cad-conteudo">
+                                        <div>
+                                            <small>Alimentação</small>
+                                            <h4>Pastel de frango</h4><!-- titulo -->
+                                            <span style="display: flex; align-items: center; position: relative; top: 8px;"><img src="img/dinheiro.png" width="30px" alt=""> <small style="top: 3px; left: 5px; position: relative;">Dinheiro</small></span>
+                                        </div>
+
+                                        <div style="text-align: right;">
+                                            <small>14/02/21 15:20</small><!-- data de cadastro --><br>
+                                            <span><span class="tipomoeda" style="margin-top: 1.3em; display: inline-block;"></span> 15,00 </span><!-- valor do conteudo -->
+                                        </div>
+
+                                    </div>
+                                    <!-- // conteudo cadastrado box -->
+
+                                    <!-- conteudo cadastrado box -->
+                                    <div class="cad-conteudo">
+                                        <div>
+                                            <small>Alimentação</small>
+                                            <h4>Coxinha de 2kg</h4><!-- titulo -->
+                                            <span style="display: flex; align-items: center; position: relative; top: 8px;"><img src="img/dinheiro.png" width="30px" alt=""> <small style="top: 3px; left: 5px; position: relative;">Cartão</small></span>
+                                        </div>
+
+                                        <div style="text-align: right;">
+                                            <small>14/02/21 15:20</small><!-- data de cadastro --><br>
+                                            <span><span class="tipomoeda" style="margin-top: 1.3em; display: inline-block;"></span> 10,00 </span><!-- valor do conteudo -->
+                                        </div>
+
+                                    </div>
+                                    <!-- // conteudo cadastrado box -->
+
+                                    <!-- conteudo cadastrado box -->
+                                    <div class="cad-conteudo">
+                                        <div>
+                                            <small>Comunicação</small>
+                                            <h4>Netflix</h4><!-- titulo -->
+                                            <span style="display: flex; align-items: center; position: relative; top: 8px;"><img src="img/cartao.png" width="30px" alt=""> <small style="top: 3px; left: 5px; position: relative;">Cartão</small></span>
+                                        </div>
+
+                                        <div style="text-align: right;">
+                                            <small>20/02/21 19:20</small><!-- data de cadastro --><br>
+                                            <span><span class="tipomoeda" style="margin-top: 1.3em; display: inline-block;"></span> 55,00 </span><!-- valor do conteudo -->
+                                        </div>
+
+                                    </div>
+                                    <!-- // conteudo cadastrado box -->
+
+                                    <!-- conteudo cadastrado box -->
+                                    <div class="cad-conteudo">
+                                        <div>
+                                            <small>Comunicação</small>
+                                            <h4>Headset</h4><!-- titulo -->
+                                            <span style="display: flex; align-items: center; position: relative; top: 8px;"><img src="img/cartao.png" width="30px" alt=""> <small style="top: 3px; left: 5px; position: relative;">Cartão</small></span>
+                                        </div>
+
+                                        <div style="text-align: right;">
+                                            <small>22/02/21 14:20</small><!-- data de cadastro --><br>
+                                            <span><span class="tipomoeda" style="margin-top: 1.3em; display: inline-block;"></span> 420,00 </span><!-- valor do conteudo -->
+                                        </div>
+
+                                    </div>
+                                    <!-- // conteudo cadastrado box -->
+                                </div>
+                                <!-- // main cadastro box -->
+
+                            </div>
+                            <!-- // despesas mensais -->
+
+                            <!-- minhas dividas -->
+                            <div class="carteira-virtual">
+                                <!-- header box -->
+                                <div class="header-box">
+                                    <h3>Minhas dívidas</h3>
+                                    
+                                    <span><span class="tipomoeda"></span> 1.200 </span><!-- valor total -->
+                                </div>
+                                <!-- // header box -->
+
+                                <!-- main cadastro box -->
+                                <div class="main-cad-box">
+                                    <!-- conteudo cadastrado box -->
+                                    <div class="cad-conteudo">
+                                        <div>
+                                            <small>Título</small>
+                                            <h4>Devendo o seu zé</h4><!-- titulo -->
+                                            <span style="display: flex; align-items: center; position: relative; top: 8px;"><img src="img/dinheiro.png" width="30px" alt=""> <small style="top: 3px; left: 5px; position: relative;">Dinheiro</small></span>
+                                        </div>
+
+                                        <div style="text-align: right;">
+                                            <small>22/02/21 14:20</small><!-- data de cadastro --><br>
+                                            <span><span class="tipomoeda" style="margin-top: 1.3em; display: inline-block;"></span> 200,00 </span><!-- valor do conteudo -->
+                                        </div>
+
+                                    </div>
+                                    <!-- // conteudo cadastrado box -->
+
+                                    <!-- conteudo cadastrado box -->
+                                    <div class="cad-conteudo">
+                                        <div>
+                                            <small>Título</small>
+                                            <h4>Televisão</h4><!-- titulo -->
+                                            <span style="display: flex; align-items: center; position: relative; top: 8px;"><img src="img/cartao.png" width="30px" alt=""> <small style="top: 3px; left: 5px; position: relative;">Cartão</small></span>
+                                        </div>
+
+                                        <div style="text-align: right;">
+                                            <small>22/02/21 14:20</small><!-- data de cadastro --><br>
+                                            <span><span class="tipomoeda" style="margin-top: 1.3em; display: inline-block;"></span> 1.000,00 </span><!-- valor do conteudo -->
+                                        </div>
+
+                                    </div>
+                                    <!-- // conteudo cadastrado box -->
+                                </div>
+                                <!-- // main cadastro box -->
+
+                            </div><br><br>
+                            <!-- // minhas dividas -->
+
+                        </div>
+                        <!-- // caixas com as despesas mensais e as dividas -->
+
+                    </div>
+                    <!-- // sessão de conteudo minhas despesas -->
+
+                <!-- // conteudo da pagina despesas -->
+                
+                </div>
+                <!-- // caixa de conteudo -->
+            </main>
+            <!-- // conteúdo principal -->
+
+
+
+            <!-- botao do chatbot -->
+            
+            <script type="text/javascript">
+                let headID = document.getElementsByTagName("head")[0];
+                let newCss = document.createElement('link');
+                newCss.rel = 'stylesheet';
+                newCss.type = 'text/css';
+                newCss.href = "https://botmake.io/embed/bot574089.css";
+                let newScript = document.createElement('script');
+                newScript.src = "https://botmake.io/embed/bot574089.js";
+                newScript.type = 'text/javascript';
+                headID.appendChild(newScript);
+                headID.appendChild(newCss);
+            </script>
+            <link rel="stylesheet" href="css/chat.css"><!-- CHATBOT -->
+
+            <!-- // botao do chatbot -->
+
+
+            
+        </div>
+        <!-- // (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+
+    </div>
+    <!-- // conteudo flex -->
+
+    <!-- Ativar/Desativar formularios -->
+    <script>
+        var rolagem = document.querySelector('.flex-box');
+        var boxFormularios = document.querySelector('.box-formularios');
+        var adicionarDespesa = document.querySelector('.adicionar-despesa');
+
+        var addDespesa = document.querySelector('#btn-despesa');
+        
+        var fecharDespesa = document.querySelector('.fechar-form-saldo');
+
+        addDespesa.addEventListener('click', function() {
+            boxFormularios.classList.add('transicao-form');
+            adicionarDespesa.classList.add('transicao-form');
+            rolagem.style.overflow = "hidden";
+        });
+
+        fecharDespesa.addEventListener('click', function() {
+            boxFormularios.classList.remove('transicao-form');
+            adicionarDespesa.classList.remove('transicao-form');
+            rolagem.style.overflow = "auto";
+        });
+
+        
+    </script>
+    <!-- // Ativar/Desativar formularios -->
+
+
+    <!-- apexcharts grafico de gastos do mes claro -->
+    <script>
+        var options = {
+            series: [44, 55, 41, 17, 45, 40, 32, 20, 31],
+            labels: ['Comunicação', 'Moradia', 'Alimentação', 'Educação', 'Transporte', 'Presente', 'Lazer', 'Banco', 'Outros' ],
+            colors:['#00F038', '#4EF036', '#39F765', '#3FE09A', '#39F7E5', '#37C6F0', '#3AB4E0', '#1B78FA', '#3043F0'],
+            chart: {
+            type: 'donut',
+        },
+
+        dataLabels: {
+            enabled: false,
+        },
+
+        legend: {
+                show: false
+        },
+
+        plotOptions: {
+                pie: {
+                    customScale: 1.0
+                }
+            }
+        };
+        
+
+        var chart = new ApexCharts(document.querySelector(".chart-claro"), options);
+        chart.render();
+    </script>
+
+    <!-- apexcharts grafico de gastos do mes escuro -->
+    <script>
+        var options = {
+            series: [44, 55, 41, 17, 45, 40, 32, 20, 31],
+            labels: ['Comunicação', 'Moradia', 'Alimentação', 'Educação', 'Transporte', 'Presente', 'Lazer', 'Banco', 'Outros' ],
+            colors:['#008A5D', '#00AD6B', '#00E08A', '#39E6A4', '#3EC9D0', '#4192D0', '#0D67C7', '#255B7D', '#00588F'],
+            chart: {
+            type: 'donut',
+        },
+
+        dataLabels: {
+            enabled: false,
+        },
+
+        legend: {
+                show: false
+        },
+
+        plotOptions: {
+                pie: {
+                    customScale: 1.0
+                }
+            }
+        };
+        
+
+        var chart = new ApexCharts(document.querySelector(".chart-escuro"), options);
+        chart.render();
+    </script>
+
+    <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
+    
+    <script src="js/navbar.js"></script><!-- Abrir e fechar menu responsivo -->
+
+    <script src="js/moeda.js"></script><!-- Alterar moeda -->
+
+</body>
+</html>

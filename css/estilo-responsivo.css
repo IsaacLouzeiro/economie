@@ -458,7 +458,11 @@ form.cadastrar-meta {
 
 /********* DESPESAS ***********/
 
-/* adicionar css da pagina de despesas aqui */
+/* grafico de despesas */
+.grafico-despesa {
+  margin: auto;
+  left: -1px;
+}
 
 /********* FIM DESPESAS ***********/
 

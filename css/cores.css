@@ -452,13 +452,13 @@ label.botao-inserir:hover {
 }
 
 /* botao para depositar */
-#btn-depositar {
+.btn-add {
   color: #fff;
   background-image: linear-gradient( to bottom, #6e7dff, #0D1D9F);
 }
 
 /* botao para depositar */
-#btn-depositar:hover {
+.btn-add:hover {
   color: #fff;
   background-image: linear-gradient( to bottom, #0D1D9F, #6e7dff);  
 }
