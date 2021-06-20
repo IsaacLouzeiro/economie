@@ -82,7 +82,7 @@
 
                 <!-- adicionar despesa -->
                 <form action="" class="formulario-alterar adicionar-despesa">
-                    <a href="#" class="fechar-form-saldo"><i class="fas fa-times-circle"></i></a>
+                    <a href="#" class="fechar-form-despesa"><i class="fas fa-times-circle"></i></a>
 
                     <h3>Adicionar despesa</h3>
                     <input type="text" name="tituloDespesa" placeholder="Título" required>
@@ -355,7 +355,7 @@
 
         var addDespesa = document.querySelector('#btn-despesa');
         
-        var fecharDespesa = document.querySelector('.fechar-form-saldo');
+        var fecharDespesa = document.querySelector('.fechar-form-despesa');
 
         addDespesa.addEventListener('click', function() {
             boxFormularios.classList.add('transicao-form');

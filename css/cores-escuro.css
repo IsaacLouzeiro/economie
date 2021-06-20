@@ -314,7 +314,8 @@
 .night-mode .fechar-form-email,
 .night-mode .fechar-form-senha,
 .night-mode .fechar-form-cartao,
-.night-mode .fechar-form-saldo {
+.night-mode .fechar-form-saldo,
+.night-mode .fechar-form-despesa {
     color: #0edb9e;
   }
   
@@ -322,7 +323,8 @@
 .night-mode .fechar-form-email:hover,
 .night-mode .fechar-form-senha:hover,
 .night-mode .fechar-form-cartao:hover,
-.night-mode .fechar-form-saldo:hover {
+.night-mode .fechar-form-saldo:hover,
+.night-mode .fechar-form-despesa:hover {
     color: #00FFB4;
   }
 

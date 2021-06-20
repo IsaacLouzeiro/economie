@@ -1253,6 +1253,13 @@ form.cadastrar-meta .container {
   top: -10px;
 }
 
+.fechar-form-despesa {
+  position: absolute;
+  top: -18px;
+  right: 10px;
+  font-size: 1.8em;
+}
+
 /* formulario desativado */
 .adicionar-despesa {
   position: absolute;
