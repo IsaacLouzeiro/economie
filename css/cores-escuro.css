@@ -496,6 +496,15 @@
   /* height: 500px; */
 }
 
+/* botao para remover o item cadastrado */
+.night-mode .remover-cadastro a {
+  color: #ff2a3c;
+}
+
+.night-mode .remover-cadastro a:hover {
+  color: #fd4554;
+}
+
 /********* FIM DESPESAS ***********/
 
 

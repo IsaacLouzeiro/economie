@@ -1213,6 +1213,7 @@ form.cadastrar-meta .container {
 /* conteudo cadastrado box */
 .cad-conteudo {
   margin: 20px;
+  position: relative;
   padding: 10px 20px;
   padding-bottom: 15px;
   display: flex;
@@ -1268,6 +1269,21 @@ form.cadastrar-meta .container {
   z-index: -10;
   transition: opacity 1s;
 }
+
+/* botao para remover o item cadastrado */
+.remover-cadastro {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  text-align: right;
+  display: inline-block;
+}
+
+.remover-cadastro a {
+  font-size: 1.5em;
+}
+
 
 .transicao-form {
   opacity: 1;
