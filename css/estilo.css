@@ -1282,12 +1282,13 @@ form.cadastrar-meta .container {
 
 .ajuda-mexer {
   /* display: none; */
-  position: relative;
-  width: 0 !important;
+  position: absolute;
+  width: 50% !important;
   z-index: -100;
   opacity: 0;
   margin-left: auto;
-  transition: width 1s, opacity 1s, z-index 1s;
+  right: 0;
+  transition: width 1s, opacity 1s, z-index 1s, top 2s;
 }
 
 .help-button:hover ~ .ajuda-mexer,
