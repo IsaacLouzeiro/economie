@@ -1298,8 +1298,7 @@ form.cadastrar-meta .container {
   width: 0 !important;
   z-index: -100;
   opacity: 0;
-  margin-left: auto;
-  background-color: red;
+  margin-left: 10px;
   transition: width 1s, opacity 1s, z-index 1s;
 }
 
