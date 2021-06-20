@@ -1280,28 +1280,9 @@ form.cadastrar-meta .container {
   font-size: 1.2em;
 }
 
-/* caixa de dica do dinie */
-.ajuda-mexer {
-  width: 100vw;
-  position: relative;
-  /* background-color: red; */
-}
-
-
-.ajuda-mexer .dica-meio {
-  border-radius: 20px;
-  max-width: 730px;
-  padding: 15px 30px;
-  display: flex;
-  /* height: 500px; */
-  position: absolute;
-  top: -60px;
-  right: 20px;
-  z-index: 99;
-}
-
 .ajuda-mexer {
   /* display: none; */
+  position: relative;
   width: 0 !important;
   z-index: -100;
   opacity: 0;
@@ -1317,6 +1298,19 @@ form.cadastrar-meta .container {
   opacity: 1;
   z-index: 200;
 }
+
+.ajuda-mexer .dica-meio {
+  border-radius: 20px;
+  max-width: 730px;
+  padding: 15px 30px;
+  display: flex;
+  /* height: 500px; */
+  position: absolute;
+  top: -60px;
+  right: 20px;
+  z-index: 99;
+}
+
 
 /********* FIM DESPESAS ***********/
 
