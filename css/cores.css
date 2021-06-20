@@ -491,7 +491,22 @@ label.botao-inserir:hover {
 
 /********* DESPESAS ***********/
 
-/* adicionar css da pagina de despesas aqui */
+/* botao de ajuda para mostrar o que fazer na pagina */
+.help-button {
+  color: #5CDBD0;
+}
+
+.help-button:hover {
+  color: #4ab9b0;
+}
+
+/* caixa de ajuda para mexer na pagina */
+.ajuda-mexer .dica-meio {
+  background-color: #fff;
+  box-shadow: 1px 1px 25px #44E584;
+  color: #000;
+  /* height: 500px; */
+}
 
 /********* FIM DESPESAS ***********/
 

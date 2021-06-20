@@ -1197,6 +1197,14 @@ form.cadastrar-meta .container {
   overflow: auto;
 }
 
+/* botao de ajuda para mostrar o que fazer na pagina */
+.help-button {
+  position: absolute;
+  top: 90px; 
+  right: 20px;
+}
+
+
 .header-box span {
   font-weight: 500;
   font-size: 1.2rem;
@@ -1263,6 +1271,45 @@ form.cadastrar-meta .container {
 
 #btn-despesa {
   font-size: 1.2em;
+}
+
+/* caixa de dica do dinie */
+.ajuda-mexer {
+  width: 100vw;
+  position: relative;
+  /* background-color: red; */
+}
+
+
+.ajuda-mexer .dica-meio {
+  border-radius: 20px;
+  max-width: 730px;
+  padding: 15px 30px;
+  display: flex;
+  /* height: 500px; */
+  position: absolute;
+  top: -60px;
+  right: 20px;
+  z-index: 99;
+}
+
+.ajuda-mexer {
+  /* display: none; */
+  width: 0 !important;
+  z-index: -100;
+  opacity: 0;
+  margin-left: auto;
+  background-color: red;
+  transition: width 1s, opacity 1s, z-index 1s;
+}
+
+.help-button:hover ~ .ajuda-mexer,
+.help-button:active ~ .ajuda-mexer,
+.ajuda-mexer:hover {
+  /* display: flex; */
+  width: 100% !important;
+  opacity: 1;
+  z-index: 200;
 }
 
 /********* FIM DESPESAS ***********/

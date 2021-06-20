@@ -477,7 +477,22 @@
 
 /********* DESPESAS ***********/
 
-/* adicionar css da pagina de despesas aqui */
+/* botao de ajuda para mostrar o que fazer na pagina */
+.night-mode .help-button {
+  color: #00FFB4;
+}
+
+.night-mode .help-button:hover {
+  color: #0edb9e;
+}
+
+/* caixa de ajuda para mexer na pagina */
+.night-mode .ajuda-mexer .dica-meio {
+  background-color: #080A15;
+  box-shadow: 1px 1px 25px #00FEB5;
+  color: #fff;
+  /* height: 500px; */
+}
 
 /********* FIM DESPESAS ***********/
 
