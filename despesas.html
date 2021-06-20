@@ -89,6 +89,7 @@
 
                     <input type="text" name="valorDespesa" placeholder="Valor" required>
 
+                    <!-- radio button despesa ou divida -->
                     <div style="margin: 8px auto;">
                         <input id="despesa" class="radio" type="radio" name="despesas" value="Despesa mensal" checked />
                         <label for="despesa" style="margin: 4px;"><small>Despesa mensal</small></label>
@@ -96,17 +97,34 @@
                         <input id="divida" class="radio" type="radio" name="despesas" value="Divida mensal" />
                         <label for="divida" style="margin: 4px;"><small>Dívida mensal</small></label>
                     </div>
+                    <!-- // radio button despesa ou divida -->
 
-                    <select name="cars" id="cars" required>
-                        <optgroup label="Categorias cadastradas">
-                          <option>Categoria</option>
-                          <option value=""></option>
-                        </optgroup>
-                        <optgroup label="German Cars">
-                          <option value="mercedes">Mercedes</option>
-                          <option value="audi">Audi</option>
-                        </optgroup>
-                      </select>
+                    <!-- adicionar categoria -->
+                    <div id="alvo">
+                        <select name="categoria" id="select" required>
+                           <option value="" readonly>Categoria</option>
+                           <option value="alimentacao">Alimentação</option>
+                           <option value="comunicacao">Comunicação</option>
+                           <option value="outro">Nova categoria</option>
+                        </select>
+                        <span id="meuDiv" style="display: none; text-align: center; display: inline-block;">
+                            
+                           <input type="text" name="novaCategoria" placeholder="Nova categoria"/>
+                           <button type="button" class="botaoCancela" id="cancel">Cancelar</button>
+
+                        </span>
+                     </div>
+                     <!-- // adicionar categoria -->
+
+                     <!-- radio button dinheiro ou cartao -->
+                    <div style="margin: 8px auto;">
+                        <input id="dinheiro" class="radio" type="radio" name="pgto" value="dinheiro" checked />
+                        <label for="dinheiro" style="margin: 4px;"><small>Dinheiro</small></label>
+
+                        <input id="cartao" class="radio" type="radio" name="pgto" value="cartao" />
+                        <label for="cartao" style="margin: 4px;"><small>Cartão</small></label>
+                    </div>
+                    <!-- // radio button despesa ou divida -->
 
                     <input type="submit" value="inserir">
                 </form>
@@ -399,6 +417,30 @@
         
     </script>
     <!-- // Ativar/Desativar formularios -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- mostrar/ocultar input para inserir nova categoria -->
+    <script>
+        $(function() {
+            $('#meuDiv').hide();
+
+            $('#select').change(function() {
+                if ($(this).val() === 'outro') {
+                    $('#meuDiv').show();
+                    $('#select').hide();
+                }
+            });
+
+            $('#cancel').click(function () {
+                $('#select').show();
+                $('#select').val('');
+                $('#meuDiv').hide();
+            });
+        });
+    </script>
+    <!-- // mostrar/ocultar input para inserir nova categoria -->
+
 
 
     <!-- apexcharts grafico de gastos do mes claro -->

@@ -519,6 +519,16 @@ label.botao-inserir:hover {
   color: #ff707c;
 }
 
+/* categoria da despesa */
+select {
+  border: 1px solid #ddd;
+}
+
+.botaoCancela {
+  background-color: #1ceb0500;
+  color: rgb(92, 92, 92);
+}
+
 /********* FIM DESPESAS ***********/
 
 

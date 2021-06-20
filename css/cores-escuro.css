@@ -505,6 +505,17 @@
   color: #fd4554;
 }
 
+/* categoria da despesa */
+.night-mode select {
+  background-color : #080A15; 
+  color: #fff;
+}
+
+.night-mode .botaoCancela {
+  background-color: #1ceb0500;
+  color: #fff;
+}
+
 /********* FIM DESPESAS ***********/
 
 

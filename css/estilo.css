@@ -1292,6 +1292,37 @@ form.cadastrar-meta .container {
   transition: opacity 1s, margin 1s;
 }
 
+/* categoria da despesa */
+#alvo {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#alvo input {
+  padding: 10px 0;
+  text-indent: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+select {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.botaoCancela {
+  border: 2px solid;
+  padding: 5px 15px;
+  margin: 10px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #btn-despesa {
   font-size: 1.2em;
 }
