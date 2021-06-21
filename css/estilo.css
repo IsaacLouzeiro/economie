@@ -917,7 +917,7 @@ input[type="file"]#upload-photo {
 /* arco com titulo */
 .arco-com-titulo {
   display: inline-block;
-  width: 210px;
+  width: 225px;
   height: 100px;
   margin-left: 100px;
   position: relative;
@@ -940,7 +940,7 @@ input[type="file"]#upload-photo {
 
 /* metas cadastradas */
 .meta-cadastrada {
-  max-width: 210px;
+  max-width: 225px;
   min-width: 210px;
   max-height: 450px;
   position: relative;
