@@ -91,7 +91,7 @@
 
                     <!-- radio button despesa ou divida -->
                     <div style="margin: 8px auto;">
-                        <input id="despesa" class="radio" type="radio" name="despesas" value="Despesa mensal" checked />
+                        <input id="despesa" class="radio" type="radio" name="despesas" value="Despesa mensal" />
                         <label for="despesa" style="margin: 4px;"><small>Despesa mensal</small></label>
 
                         <input id="divida" class="radio" type="radio" name="despesas" value="Divida mensal" />
@@ -101,7 +101,7 @@
 
                     <!-- adicionar categoria -->
                     <div id="alvo">
-                        <select name="categoria" id="select" required>
+                        <select name="categoria" id="select">
                            <option value="" readonly>Categoria</option>
                            <option value="alimentacao">Alimentação</option>
                            <option value="comunicacao">Comunicação</option>
@@ -422,6 +422,7 @@
 
     <!-- mostrar/ocultar input para inserir nova categoria -->
     <script>
+        // SELECT
         $(function() {
             $('#meuDiv').hide();
 
@@ -437,6 +438,16 @@
                 $('#select').val('');
                 $('#meuDiv').hide();
             });
+        });
+
+        // RADIO BUTTON
+        $('#alvo').hide();
+        $('input[name="despesas"]').change(function () {
+            if ($('input[name="despesas"]:checked').val() === "Despesa mensal") {
+                $('#alvo').show();
+            } else {
+                $('#alvo').hide();
+            }
         });
     </script>
     <!-- // mostrar/ocultar input para inserir nova categoria -->
