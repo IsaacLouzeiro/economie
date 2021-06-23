@@ -522,6 +522,16 @@
 
 /********* APRENDER ***********/
 
+/* caixa de link para as aulas */
+.night-mode .caixa-aula {
+  background-image: radial-gradient(#00FFB4, #005180);
+  color: #fff;
+}
+
+.night-mode .caixa-aula.aberto {
+  background-image: radial-gradient(#00FFB4, #00805A);
+}
+
 
 
 /* PALAVRAS CRUZADAS */

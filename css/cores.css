@@ -534,6 +534,16 @@ select {
 
 /********* APRENDER ***********/
 
+/* caixa de link para as aulas */
+.caixa-aula {
+  background-image: radial-gradient(#233FEB, /*#122076*/ #4B1276);
+  color: #fff;
+}
+
+.caixa-aula.aberto {
+  background-image: radial-gradient(#233FEB, #122076);
+}
+
 
 
 /* PALAVRAS CRUZADAS */

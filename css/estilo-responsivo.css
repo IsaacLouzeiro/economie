@@ -141,7 +141,10 @@ form.cadastrar-meta {
 
 /********* APRENDER ***********/
 
-
+/* caixa de link para as aulas */
+.caixa-aula {
+  max-width: 100%;
+}
 
 
 /* PALAVRAS CRUZADAS */

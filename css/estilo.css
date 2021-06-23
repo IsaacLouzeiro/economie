@@ -1365,6 +1365,37 @@ select {
 
 /********* APRENDER ***********/
 
+/* sessão flex conteudo da pagina saldo */
+.sessao-aprender-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* caixa de link para as aulas */
+.caixa-aula {
+  width: 100%;
+  max-width: 150px;
+  height: 100vh;
+  max-height: 90px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9em;
+  transition: padding .5s;
+}
+
+.caixa-aula:hover {
+  padding: 15px;
+}
+
+
 
 
 /* PALAVRAS CRUZADAS */
