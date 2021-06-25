@@ -478,12 +478,25 @@ form.cadastrar-meta {
 
 /* caixa de dica parte aprender */
 .dica-dinie-aprender {
-  max-width: 600px;text-align: center;
+  max-width: 600px;
+  text-align: center;
 }
 
 
 .dica-inicio-aprender {
   display: none;
+}
+
+.aprender-flex-aula {
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* caixa de conteudo da aula */
+.box-conteudo-aprender {
+  width: 100%;
+  margin: 20px auto;
 }
 
 /********* FIM APRENDER ***********/
