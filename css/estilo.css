@@ -14,6 +14,9 @@ body, html {
 body {
   position: relative;
   overflow: hidden;
+  max-width: 1500px;
+  margin-inline: auto;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.282);
 }
 
 @font-face {
@@ -1385,6 +1388,10 @@ select {
   justify-content: center;
 }
 
+.aprender-flex-aula {
+  justify-content: space-around;
+}
+
 /* caixa de link para as aulas */
 .caixa-aula {
   width: 100%;
@@ -1408,6 +1415,71 @@ select {
   padding: 15px;
 }
 
+/* imagem do dinie no topo */
+.imagem-dinie-aprender {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 140px;
+  margin-inline: auto;
+}
+
+/* caixa de dica parte aprender */
+.dica-dinie-aprender {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 280px;
+  padding: 15px 30px;
+  display: flex;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 63%;
+  /* height: 500px; */
+}
+
+
+.dica-inicio-aprender {
+  background-size: cover;
+  width: 50px;
+  height: 100%;
+  padding: 14px;
+  position: absolute;
+  top: -14px;
+  right: -55px;
+  background-position: right;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+/* caixa de conteudo da aula */
+.box-conteudo-aprender {
+  width: 48%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box-conteudo-aprender h3 {
+  padding: 13px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.box-conteudo-aprender iframe {
+  width: 90%;
+  height: 250px;
+  padding: 2% 0;
+  margin-inline: auto;
+  border-radius: 15px;
+}
+
+.caixa-de-rolagem {
+  padding: 0 20px 13px 20px;
+  margin-bottom: 13px;
+  line-height: 25px;
+  text-align: justify;
+  max-height: 250px;
+  overflow: auto;
+}
 
 
 
@@ -1569,7 +1641,6 @@ select {
 
 #voltar,
 #proximo {
-  padding: 9px 0;
   margin: auto 5px;
   width: 100%;
   max-width: 110px;
@@ -1579,6 +1650,15 @@ select {
   cursor: pointer;
   position: relative;
   z-index: 1;
+}
+
+#voltar a,
+#proximo a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 9px 0;
 }
 
 /* dinie */

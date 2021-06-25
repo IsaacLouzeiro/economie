@@ -1,4 +1,8 @@
 /********* PAGINA DO SISTEMA ***********/
+html.night-mode {
+  background-color: #0A4462;
+}
+
 /* BARRA DE ROLAGEM */
 .night-mode ::-webkit-scrollbar {
     width: 16px;
@@ -522,6 +526,17 @@
 
 /********* APRENDER ***********/
 
+/* circulo no cabecalho */
+.night-mode .circulo-dinie-aprender {
+  background-image: url(../img/meio-circulo-dark.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-position-x: auto;
+  background-size: 180px;
+}
+
+
+
 /* caixa de link para as aulas */
 .night-mode .caixa-aula {
   background-image: linear-gradient(#00FFB4, #005180);
@@ -532,6 +547,23 @@
   background-image: linear-gradient(#00FFB4, #00805A);
 }
 
+
+/* caixa de dica parte aprender */
+.night-mode .dica-inicio-aprender {
+  background-image: url(../img/b-d-l.png);
+  color: #000;
+}
+
+
+/* caixa de conteudo da aula */
+.night-mode .box-conteudo-aprender {
+  background-color: #080A15;
+  color: #fff;
+}
+
+.night-mode .box-conteudo-aprender h3 {
+  background-color: #0C1028;
+}
 
 
 /* PALAVRAS CRUZADAS */

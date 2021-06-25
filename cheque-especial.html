@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo-economie.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/cores-escuro.css"><!-- COR MODO ESCURO -->
+    <link rel="stylesheet" href="css/cores.css"><!-- COR -->
+    <link rel="stylesheet" href="css/estilo.css"><!-- ESTILO -->
+    <link rel="stylesheet" href="css/estilo-responsivo.css"><!-- ESTILO RESPONSIVO -->
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+      
+    <title>Aprender - Cheque Especial</title>
+</head>
+<body>
+    <!-- conteudo flex -->
+    <div class="flex">
+        <!-- menu de navegação -->
+        <nav class="bg-navegacao">
+            <!-- box logo -->
+            <div class="box-logo bg-box-logo">
+                <div style="display: flex; align-items: center;">
+                    <div class="logo-menu"></div><!-- Logo economie -->
+
+                    <span class="nome-economie">Economie</span>
+                </div>
+
+                <a href="#" id="fechar"><i class="fa fa-times"></i></a><!-- parte responsivo -->
+            </div>
+
+            <!-- lista -->
+            <ul class="bg-lista">
+                <li><a href="resumo.html"><i class="fas fa-chart-pie"></i> RESUMO</a></li>
+                <li><a href="meu-perfil.html"><i class="fa fa-user"></i> MEU PERFIL</a></li>
+                <li><a href="metas.html"><i class="fa fa-chart-line"></i> METAS</a></li>
+                <li><a href="saldos.html"><i class="fa fa-money-bill-wave"></i> SALDOS</a></li>
+                <li><a href="despesas.html"><i class="fa fa-cash-register"></i> DESPESAS</a></li>
+                <li><a href="aprender.html" class="selecionado"><i class="fa fa-book-open"></i> APRENDER</a></li>
+                <br><br>
+                <li><a href="configuracoes.html"><i class="fa fa-tools"></i> CONFIGURAÇÕES</a></li>
+                <li><a href="sobre-nos.html"><i class="fa fa-users"></i> SOBRE NÓS</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out-alt"></i> SAIR</a></li><br>
+            </ul>
+        </nav>
+        <!-- // menu de navegação -->
+
+        <!-- (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+        <div class="flex-box">
+
+            <!-- cabeçalho -->
+            <header class="cabecalho">
+                <div class="bg-cabecalho circulo-dinie-aprender">
+                    
+                    <a href="#" id="bars"><i class="fa fa-bars"></i></a><!-- botao para abrir menu (parte responsivo) -->
+
+                    <h2>Aprender</h2>
+
+                    
+                    <!-- lista no cabecalho -->
+                    <ul>
+                        <li><a href="#"><i class="fas fa-medal"></i></a></li>
+                        <li><a href="#"><i class="fas fa-wallet"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                        <li class="remove-espacador">|</li>
+                        <li><a href="#" id="nome-usuario"><span>José Silva</span> <img src="img/user.png" alt="foto do usuario" width="35"></a></li>
+                    </ul>
+                    <!-- // lista no cabecalho -->
+                </div>
+
+                <!-- imagem cabecalho dinie -->
+                <div class="imagem-cabecalho-dinie imagem-dinie-aprender">
+                    <!-- imagem do dinie -->
+                    <div class="caixa-imagem-dinie">
+                        
+                        <img src="img/baby_dinie.png" alt="" class="img-dinie">
+                        
+                    </div>
+                    <!-- // imagem do dinie -->
+                </div>
+                <!-- // imagem cabecalho dinie -->
+                
+            </header>
+            <!-- // cabeçalho -->
+
+            <!-- conteúdo principal -->
+            <main class="principal bg-principal">
+                <!-- caixa de conteudo -->
+                <div id="caixa-conteudo" style="margin-top: 100px;">
+
+                <!-- conteudo da pagina aprender -->
+                        
+                    <!-- sessão de aprender -->
+                    <div class="saldo-flex">
+                        
+                        <!-- caixa de dica do dinie -->
+                        <div class="dica-dinie dica-dinie-aprender">
+                            <!-- box com escrita -->
+                            <div class="dica-meio" style="line-height: 27px;">
+
+                                Agora estamos no tema de Cheque
+                                Especial. Veja o vídeo e  leia o
+                                texto para conseguir responder!
+
+                            </div>
+
+                            <div class="dica-inicio-aprender"></div>
+                        </div>
+                        <!-- // caixa de dica do dinie -->
+
+                    </div>
+                    <!-- // sessão de aprender -->
+
+                    <!-- sessão de conteudo aprender -->
+                    <div class="sessao-aprender-flex aprender-flex-aula" style="margin-top: 40px;">
+                        
+                        <!-- caixa com o video -->
+                        <div class="box-conteudo-aprender">
+                            <h3>Cheque Especial: Como funciona?</h3>
+
+                            <iframe src="https://www.youtube.com/embed/ByiNh1qmM14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                        </div>
+                        <!-- // caixa com o video -->
+
+                         <!-- caixa com o texto -->
+                         <div class="box-conteudo-aprender">
+                            <h3>O que é Cheque Especial?</h3>
+
+                            <!-- caixa de rolagem -->
+                            <div class="caixa-de-rolagem">
+                                <p>Olá, Economie estudante! Que bom ter você aqui. Hoje vamos falar sobre Cheque
+                                    especial. Você sabe o que é? É um empréstimo pré-aprovado que o banco deixa na
+                                    sua conta corrente, se um dia você precisar de dinheiro. Para pagar, cai o saldo na
+                                    conta e ele já cobra o cheque especial. O banco libera o crédito e vai aumentando o
+                                    limite. E por quê? o banco pré-aprova sem garantia que você vai pagar, por isso os
+                                    juros do cheque ficam tão alto. Os bancos são obrigados a avisar os clientes quando
+                                    eles entrarem no cheque especial. Para que você tenha uma ideia, enquanto a
+                                    cobrança de juros no empréstimo consignado chega a uma média de 42,8% ao ano,
+                                    no cheque especial os juros sobem para 327% ao ano, de acordo com um
+                                    levantamento do Banco Central! Ou seja, uma dívida de R$ 500, em um ano, cresce
+                                    para R$ 2.408. No entanto, o melhor a fazer é ter um controle financeiro e um dinheiro
+                                    guardado. Aqui no Economie já temos dicas de como organizar sua reserva financeira,
+                                    é só conferir e começar agora mesmo.</p>
+                            </div>
+                            <!-- // caixa de rolagem -->
+                        </div>
+                        <!-- // caixa com o texto -->
+
+                        <!-- caixa com botao voltar e proximo -->
+                        <div class="caixa-botoes" style="width: 100%;">
+                            <button id="voltar"><a href="aprender.html">Voltar</a></button>
+                            <button id="proximo"><a href="palavras-cruzadas.html">Proximo</a></button>
+                        </div>
+                        <!-- // caixa com botao voltar e proximo -->
+
+                    </div>
+                    <!-- // sessão de conteudo aprender -->
+
+                <!-- // conteudo da pagina aprender -->
+                
+                </div>
+                <!-- // caixa de conteudo -->
+            </main>
+            <!-- // conteúdo principal -->
+
+
+
+            <!-- botao do chatbot -->
+            
+            <script type="text/javascript">
+                let headID = document.getElementsByTagName("head")[0];
+                let newCss = document.createElement('link');
+                newCss.rel = 'stylesheet';
+                newCss.type = 'text/css';
+                newCss.href = "https://botmake.io/embed/bot574089.css";
+                let newScript = document.createElement('script');
+                newScript.src = "https://botmake.io/embed/bot574089.js";
+                newScript.type = 'text/javascript';
+                headID.appendChild(newScript);
+                headID.appendChild(newCss);
+            </script>
+            <link rel="stylesheet" href="css/chat.css"><!-- CHATBOT -->
+
+            <!-- // botao do chatbot -->
+
+
+            
+        </div>
+        <!-- // (caixa criada para deixa o menu lateral ao lado do cabecalho e do conteudo) -->
+
+    </div>
+    <!-- // conteudo flex -->
+
+
+    <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
+    
+    <script src="js/navbar.js"></script><!-- Abrir e fechar menu responsivo -->
+
+    <script src="js/moeda.js"></script><!-- Alterar moeda -->
+
+</body>
+</html>

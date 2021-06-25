@@ -476,7 +476,15 @@ form.cadastrar-meta {
 
 /********* APRENDER ***********/
 
-/* adicionar css da pagina de aprender aqui */
+/* caixa de dica parte aprender */
+.dica-dinie-aprender {
+  max-width: 600px;text-align: center;
+}
+
+
+.dica-inicio-aprender {
+  display: none;
+}
 
 /********* FIM APRENDER ***********/
 
