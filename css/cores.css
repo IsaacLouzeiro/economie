@@ -14,6 +14,10 @@
 
 /***********sistema economie***********/
 
+html {
+  background-color: rgb(196, 233, 203);
+}
+
 /*********PAGINA DE LOGIN E CADASTRO***********/
 
 /* cor de fundo */
@@ -534,6 +538,15 @@ select {
 
 /********* APRENDER ***********/
 
+/* circulo no cabecalho */
+.circulo-dinie-aprender {
+  background-image: url(../img/meio-circulo.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-position-x: auto;
+  background-size: 180px;
+}
+
 /* caixa de link para as aulas */
 .caixa-aula {
   background-image: linear-gradient(#233FEB, /*#122076*/ #4B1276);
@@ -544,6 +557,19 @@ select {
   background-image: linear-gradient(#233FEB, #122076);
 }
 
+
+/* caixa de dica parte aprender */
+.dica-inicio-aprender {
+  background-image: url(../img/b-l.png);
+  color: #000;
+}
+
+
+/* caixa de conteudo da aula */
+.box-conteudo-aprender {
+  background-color: #fff;
+  color: #424242;
+}
 
 
 /* PALAVRAS CRUZADAS */
