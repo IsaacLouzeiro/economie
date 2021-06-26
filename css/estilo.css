@@ -346,6 +346,11 @@ nav ul li a i {
   height: 80px;
 }
 
+.bg-cabecalho img {
+  background-color: red;
+  border-radius: 35px;
+}
+
 .cabecalho h2 {
   font-weight: 500;
 }
