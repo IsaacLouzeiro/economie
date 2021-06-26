@@ -940,7 +940,7 @@ input[type="file"]#upload-photo {
   display: inline-block;
   width: 225px;
   height: 100px;
-  margin-left: 100px;
+  margin-left: 35px;
   position: relative;
   top: -53px;
   border-radius: 200px 200px 0 0;
@@ -965,7 +965,7 @@ input[type="file"]#upload-photo {
   min-width: 210px;
   max-height: 450px;
   position: relative;
-  margin-left: 85px;
+  margin-left: 20px;
   overflow: auto;
   margin-bottom: 10px;
 }
