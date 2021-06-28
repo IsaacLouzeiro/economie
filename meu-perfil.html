@@ -103,12 +103,24 @@
                     <input type="text" name="nomeCartao" placeholder="Nome do cartão" required>
 
                     <div style="margin: 8px auto;">
-                        <input id="debito" class="radio" type="radio" name="cartao" value="debito" checked />
+                        <input id="debito" class="radio" type="radio" name="cartao" value="debito" />
                         <label for="debito">Débito</label>
 
                         <input id="credito" class="radio" type="radio" name="cartao" value="credito" />
                         <label for="credito">Crédito</label>
                     </div>
+
+                    <!-- adicionar valor -->
+                    <div id="alvo">
+                        <span id="meuDiv" style="display: none; text-align: center; display: inline-block;">
+                            
+                           <input type="text" name="valor" placeholder="Valor"/>
+
+                           <button type="button" class="botaoCancela" id="cancel">Cancelar</button>
+
+                        </span>
+                     </div>
+                     <!-- // adicionar valor -->
 
                     <input type="submit" value="inserir">
                 </form>
@@ -399,6 +411,27 @@
         
     </script>
     <!-- // Ativar/Desativar formularios -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- mostrar/ocultar input para inserir valor cartao -->
+    <script>
+        // RADIO BUTTON
+        $('#alvo').hide();
+        $('input[name="cartao"]').change(function () {
+            if ($('input[name="cartao"]:checked').val() === "debito") {
+                $('#alvo').show();
+            } else {
+                $('#alvo').hide();
+            }
+        });
+        $('#cancel').click(function () {
+                $("input[type=radio][name=cartao]").prop('checked', false);
+                $('#alvo').show();
+                $('#alvo').hide();
+            });
+    </script>
+    <!-- // mostrar/ocultar input para inserir valor cartao -->
 
     <script src="js/cor-modo.js"></script><!-- Alterar modo de cor -->
     
