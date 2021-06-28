@@ -644,6 +644,30 @@ html.night-mode {
 }
 
 
+/* QUIZ QUESTÕES */
+
+.night-mode .caixa-porcentagem {
+  background-color: #00D12A;
+}
+
+.night-mode #porcentagem {
+  background-color: #00FEB5;
+  color: #1D1D1D;
+}
+
+.night-mode .titulo-questao {
+  color: #fff;
+  background-color: #080A16;
+}
+
+.night-mode .titulo-questao span{
+  color: #00FEB5;
+}
+
+.night-mode ul.choiceList li {
+  background-color: #080A16;
+}
+
 
 /********* FIM APRENDER ***********/
 

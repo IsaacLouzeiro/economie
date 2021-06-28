@@ -649,6 +649,30 @@ select {
 }
 
 
+/* QUIZ QUESTÕES */
+
+.caixa-porcentagem {
+  background-color: #28F57C;
+}
+
+#porcentagem {
+  background-color: #5CDBD0;
+  color: #fff;
+}
+
+.titulo-questao {
+  color: #424242;
+  background-color: #fff;
+}
+
+.titulo-questao span{
+  color: #5CDBD0;
+}
+
+ul.choiceList li {
+  background-color: #fff;
+}
+
 
 /********* FIM APRENDER ***********/
 
