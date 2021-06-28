@@ -1674,6 +1674,51 @@ select {
   z-index: 0;
 }
 
+
+/* QUIZ QUESTÕES */
+
+.caixa-porcentagem {
+  background-color: #28F57C;
+  margin: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+#porcentagem {
+  background-color: #5CDBD0;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  transition: width 1s;
+}
+
+.titulo-questao {
+  margin: 10px;
+  padding: 13px 20px;
+  color: #424242;
+  background-color: #fff;
+}
+
+.titulo-questao span{
+  color: #5CDBD0;
+}
+
+.titulo-questao h3{
+  padding: 8px 0;
+}
+
+ul.choiceList {
+  list-style-type: none;
+  margin: 10px;
+}
+
+ul.choiceList li {
+  padding: 13px 20px;
+  background-color: #fff;
+  margin: 20px auto;
+}
+
+
 /********* FIM APRENDER ***********/
 
 
