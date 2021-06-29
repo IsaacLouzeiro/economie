@@ -378,6 +378,8 @@ function displayCurrentQuestion() {
 	$(questionClass).text(question);
 
 
+	$(document).find(".finalizar-quiz").hide();
+
 	// Remove all current <li> elements (if any)
 	$(choiceList).find("li").remove();
 
@@ -399,6 +401,7 @@ function resetQuiz() {
 	$(document).find(".question").show();
 	$(document).find(".question").show();
 	$(document).find(".choiceList").show();
+	$(document).find(".voltar-inicio").show();
 	$(document).find('.fim').hide();
 	hideScore();
 	
@@ -413,6 +416,8 @@ function displayScore() {
 	$(document).find('.fim').show();
 	$(document).find('.fim').text("Fim");
 	$(document).find(".choiceList").hide();
+	$(document).find(".voltar-inicio").hide();
+	$(document).find(".finalizar-quiz").show();
 }
 
 function hideScore() {
