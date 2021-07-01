@@ -515,11 +515,13 @@ label.botao-inserir:hover {
 }
 
 /* botao para remover o item cadastrado */
-.remover-cadastro a {
+.remover-cadastro a,
+.remover-cadastro i {
   color: #fc5260;
 }
 
-.remover-cadastro a:hover {
+.remover-cadastro a:hover,
+.remover-cadastro i:hover {
   color: #ff707c;
 }
 

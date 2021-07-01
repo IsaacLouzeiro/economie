@@ -502,11 +502,13 @@ html.night-mode {
 }
 
 /* botao para remover o item cadastrado */
-.night-mode .remover-cadastro a {
+.night-mode .remover-cadastro a,
+.night-mode .remover-cadastro i {
   color: #ff2a3c;
 }
 
-.night-mode .remover-cadastro a:hover {
+.night-mode .remover-cadastro a:hover,
+.night-mode .remover-cadastro i:hover {
   color: #fd4554;
 }
 

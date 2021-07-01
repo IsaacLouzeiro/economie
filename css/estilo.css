@@ -1301,8 +1301,15 @@ form.cadastrar-meta .container {
   display: inline-block;
 }
 
-.remover-cadastro a {
-  font-size: 1.5em;
+.remover-cadastro button {
+  border: none;
+  background-color: #00000000;
+}
+
+.remover-cadastro a,
+.remover-cadastro i {
+  font-size: 1.6em;
+  cursor: pointer;
 }
 
 
