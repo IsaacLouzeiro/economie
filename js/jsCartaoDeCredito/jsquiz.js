@@ -2,52 +2,52 @@ var questions = [{
 	tamanhoPorcento: "10%",
 	numQuestao: "1/10",
 	numQuestao2: "Questão 1",
-	question: "O que é cheque especial",
-	choices: ["O Cheque Especial é um crédito que o banco te empresta.", "O cheque é um título de crédito", "O cheque é uma ordem de pagamento à vista"],
-	correctAnswer: 0
+	question: "O que é cartão de credito?",
+	choices: ["É um credito disponibilizado em um cartão onde você faz o pagamento a vista ", "É um credito libera do no cartão onde pode fazer pagamentos parcelado", "O cartão de credito é uma ordem de pagamento longa "],
+	correctAnswer: 1
 }, {
 	tamanhoPorcento: "20%",
 	numQuestao: "2/10",
 	numQuestao2: "Questão 2",
-	question: "Como funciona o cheque especial?",
-	choices: ["Um credito é liberado na sua conta todos os meses", "O crédito fica disponível na conta corrente para utilização em situações emergenciais.", "Consiste em uma ordem de pagamento à vista emitida em favor de terceiro."],
-	correctAnswer: 1
+	question: "O que é anuidade nos cartões de creditos?",
+	choices: ["A anuidade é uma cobrança feita pelo gerenciamento e manutenção do cartão", "Anuidade é uma taxa cobrada anualmente para manter cartão  ativado", "Anuidade é uma cobrança mensal feita para manutenção do cartão"],
+	correctAnswer: 0
 }, {
 	tamanhoPorcento: "30%",
 	numQuestao: "3/10",
 	numQuestao2: "Questão 3",
-	question: "Qual a taxa de juros do cheque especial?",
-	choices: ["3% ao mês", "10% ao mês", "8% ao mês"],
+	question: "A anuidade é cobrada após um ciclo de quantos meses?",
+	choices: ["6 meses", "10 mês", "12 meses"],
 	correctAnswer: 2
 }, {
 	tamanhoPorcento: "40%",
 	numQuestao: "4/10",
 	numQuestao2: "Questão 4",
-	question: "Quais os beneficios de pegar cheque especial?",
-	choices: ["Você tem dinheiro na hora,você pode usar pra pagar qualquer divida ", "Dinheiro cai na hora,você so pode usar dinheiro pra comprar coisas em lugares especifico", "Tem todas as vantagens o dinheiro pode ser usado para qualquer coisa","Nenhuma vantagem porque não é algo bom"],
-	correctAnswer: 3
+	question: "Eu consigo fazer um cartão de credito sem anuidade?",
+	choices: ["Sim,porém você precisa passar por pelo menos 1 ciclo de anuidade", "Sim consigo preciso apenas procurar instituições financeiras que façam esse cartão  ","Não é possivel todos tem anuidade"],
+	correctAnswer: 1
 }, {
 	tamanhoPorcento: "50%",
 	numQuestao: "5/10",
 	numQuestao2: "Questão 5",
-	question: "Por que não devo usar cheque especial?",
-	choices: ["Os juros são desproporcionais e abusivo,", "Você deve usar sim é um dinnheiro que banco te da para emergências"],
+	question: "O que é limite de cartão de credito ?",
+	choices: ["É limite de credito liberado para você baseado na pontuação do seu CPF", "É limite de compras que pode fazer por dia no cartão","É o limite de vezes que você pode parcela algo baseado na pontuação de CPF"],
 	correctAnswer: 0
 }, {
 	tamanhoPorcento: "60%",
 	numQuestao: "6/10",
 	numQuestao2: "Questão 6",
-	question: "Falando agora falando em hipóteses, uma instuição financeira pode me impor um limite minimo de 500 reais ou mais em caso de eu pegar cheque especial ?",
-	choices: ["Sim pode impor um limite minimo mas baseado na sua renda ", "Não pode impor um limite minimo", "Sim o banco pode porém o limite minimo é 300 reais "],
-	correctAnswer: 1
+	question: "Como funciona o pagamento do cartão ?",
+	choices: ["Selecione a data para ser descontado automaticamente da sua conta ", "O  banco  vai selecionar a melhor data baseado no dia que você recebe e faz desconto", "Você seleciona a data e faz o  pagamento em lotericas ou ate no proprio app da instituição "],
+	correctAnswer: 2
 
 }, {
 	tamanhoPorcento: "70%",
 	numQuestao: "7/10",
 	numQuestao2: "Questão 7",
-	question: "Por que o cheque especial tem juros tão altos?",
-	choices: ["Os benefícios do cheque entram no valor dos juros.", "o  valor da taxa é baseado no seu lucro mensal","O banco pré-aprova sem garantia que você vai pagar"],
-	correctAnswer: 2
+	question: "Qual a diferença do cartão de credito comum para o diferenciado?",
+	choices: ["O diferenciado vem personalizado com o tema que você selecionar ", "Ele além de pagamentos tem beneficios","Ele vem com uma cobrança com taxa menores"],
+	correctAnswer: 1
 }, {
 	tamanhoPorcento: "80%",
 	numQuestao: "8/10",
@@ -59,16 +59,16 @@ var questions = [{
 	tamanhoPorcento: "90%",
 	numQuestao: "9/10",
 	numQuestao2: "Questão 9",
-	question: "A instituição pode alterar meu limite do cheque especial?",
-	choices: ["Não pode devido o cotrato não ser permitido alteração ", "Sim pode com autorização do cliente,sem autorização deve ser feito aviso até 30 dias  "],
-	correctAnswer: 1
+	question: "Caso eu não tenha dinheiro para pagar a fatura do cartão o que eu posso fazer pra solucionar esse problema?",
+	choices: ["Pegar um emprestimo com banco ","Pedir cancelamento do cartão pra não gerar juros", "Fazer o parcelamento da fatura do cartão"],
+	correctAnswer: 2
 
 }, {
 	tamanhoPorcento: "100%",
 	numQuestao: "10/10",
 	numQuestao2: "Questão 10",
-	question: "Posso fazer cancelamento do meu limite de cheque especial a qualquer momento?",
-	choices: ["Sim posso", "Não, tenho que esperar cerca de 3 meses "],
+	question: "Marque a alternativa incorreta:",
+	choices: ["Não consigo pagar minhas compras no shopping com meu cartão de credito", "Consigo ter um cartão sem anuidade","Meu cartão de credito funciona sem saldo na minha conta"],
 	correctAnswer: 0
 
 }];
