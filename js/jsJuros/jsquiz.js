@@ -2,73 +2,73 @@ var questions = [{
 	tamanhoPorcento: "10%",
 	numQuestao: "1/10",
 	numQuestao2: "Questão 1",
-	question: "O que é cheque especial?",
-	choices: ["O Cheque Especial é um crédito que o banco te empresta.", "O cheque é um título de crédito", "O cheque é uma ordem de pagamento à vista"],
+	question: "Você sabe o que é juros simples ?",
+	choices: ["Rendimentos obtidos através de um investimento com capital inicial", "Rendimento obtido encima de uma divida ", "Rendimento encima de alguma comprar gerando credito"],
 	correctAnswer: 0
 }, {
 	tamanhoPorcento: "20%",
 	numQuestao: "2/10",
 	numQuestao2: "Questão 2",
-	question: "Como funciona o cheque especial?",
-	choices: ["Um credito é liberado na sua conta todos os meses", "O crédito fica disponível na conta corrente para utilização em situações emergenciais.", "Consiste em uma ordem de pagamento à vista emitida em favor de terceiro."],
-	correctAnswer: 1
+	question: "Quantos  tipos de juros existe?",
+	choices: ["5", "6","7","10"],
+	correctAnswer: 2
 }, {
 	tamanhoPorcento: "30%",
 	numQuestao: "3/10",
 	numQuestao2: "Questão 3",
-	question: "Qual a taxa de juros do cheque especial?",
-	choices: ["3% ao mês", "10% ao mês", "8% ao mês"],
+	question: "Quanto rende o juros simples se eu tiver 500 reais aplicado durante 10 meses?",
+	choices: ["250 reais ", "100 reais ", "150 reis "],
 	correctAnswer: 2
 }, {
 	tamanhoPorcento: "40%",
 	numQuestao: "4/10",
 	numQuestao2: "Questão 4",
-	question: "Quais os beneficios de pegar cheque especial?",
-	choices: ["Você tem dinheiro na hora,você pode usar pra pagar qualquer divida ", "Dinheiro cai na hora,você so pode usar dinheiro pra comprar coisas em lugares especifico", "Tem todas as vantagens o dinheiro pode ser usado para qualquer coisa","Nenhuma vantagem porque não é algo bom"],
-	correctAnswer: 3
+	question: "Qual tipo de juros que se refere ao juros calculado encima do percentual inicial mais os juros acumulados  ?",
+	choices: ["Juros simples", "Juros composto", "Juros básico"],
+	correctAnswer: 1
 }, {
 	tamanhoPorcento: "50%",
 	numQuestao: "5/10",
 	numQuestao2: "Questão 5",
-	question: "Por que não devo usar cheque especial?",
-	choices: ["Os juros são desproporcionais e abusivo", "Você deve usar sim é um dinnheiro que banco te da para emergências"],
+	question: "Qual a formula para  calcular juros simples ?",
+	choices: ["J = C. i. t", "C=J.i.t", "M = C (1+i)ᵑ"],
 	correctAnswer: 0
 }, {
 	tamanhoPorcento: "60%",
 	numQuestao: "6/10",
 	numQuestao2: "Questão 6",
-	question: "Falando agora falando em hipóteses, uma instuição financeira pode me impor um limite minimo de 500 reais ou mais em caso de eu pegar cheque especial ?",
-	choices: ["Sim pode impor um limite minimo mas baseado na sua renda ", "Não pode impor um limite minimo", "Sim o banco pode porém o limite minimo é 300 reais "],
+	question: "Como calcular juros composto ?",
+	choices: ["C=J.i.t", "M = C (1+i)ᵑ", "J = C. i. t"],
 	correctAnswer: 1
 
 }, {
 	tamanhoPorcento: "70%",
 	numQuestao: "7/10",
 	numQuestao2: "Questão 7",
-	question: "Por que o cheque especial tem juros tão altos?",
-	choices: ["Os benefícios do cheque entram no valor dos juros.", "o  valor da taxa é baseado no seu lucro mensal","O banco pré-aprova sem garantia que você vai pagar"],
-	correctAnswer: 2
+	question: "Quais investimentos rende juros composto?",
+	choices: ["Todos os investimentos disponíveis no mercado financeiro de renda fixa", "Os investimentos onde não renda fixa","Investimentos de alto valor"],
+	correctAnswer: 0
 }, {
 	tamanhoPorcento: "80%",
 	numQuestao: "8/10",
 	numQuestao2: "Questão 8",
-	question: "O que acontece se eu não tiver dinheiro na conta na data programada pra cobrar o cheque especial?",
-	choices: ["Ele acumula o juros e assim que o saldo estiver no valor é descontado ","Valor acumula pro mês seguinte"],
-	correctAnswer: 0
+	question: "Quais investimentos rende juros simples ?",
+	choices: ["Investimentos com renda fixa", "Investimentos aplicados no inicio e fim da aplicação", "Investimentos dde alto valor"],
+	correctAnswer: 1
 }, {
 	tamanhoPorcento: "90%",
 	numQuestao: "9/10",
 	numQuestao2: "Questão 9",
-	question: "A instituição pode alterar meu limite do cheque especial?",
-	choices: ["Não pode devido o cotrato não ser permitido alteração ", "Sim pode com autorização do cliente,sem autorização deve ser feito aviso até 30 dias  "],
-	correctAnswer: 1
+	question: "Qual tempo de aplicação de juros simples?",
+	choices: ["1 ano", "6 meses","5 meses e 15 dias"],
+	correctAnswer: 0
 
 }, {
 	tamanhoPorcento: "100%",
 	numQuestao: "10/10",
 	numQuestao2: "Questão 10",
-	question: "Posso fazer cancelamento do meu limite de cheque especial a qualquer momento?",
-	choices: ["Sim posso", "Não, tenho que esperar cerca de 3 meses "],
+	question: "O que é o montante do juros composto ?",
+	choices: ["Valor base do calculo", "O principal valor que influencia no calculo da formula.", "Valor secundário do calculo da formula "],
 	correctAnswer: 0
 
 }];
