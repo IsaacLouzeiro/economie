@@ -156,15 +156,23 @@ form.cadastrar-meta {
 }
 
 .jogo-palavras-cruzadas div input {
-  border: 3px solid #868686;
+  border: 2px solid #868686;
   margin:  0 -1px;
   width: 26px;
   height: 26px;
   font-size: 1em;
 }
 
+.night-mode .jogo-palavras-cruzadas div.texto-desativado input {
+  border: 2px solid #86868600;
+}
+
+.jogo-palavras-cruzadas div.texto-desativado input {
+  border: 2px solid #86868600;
+}
+
 .night-mode .jogo-palavras-cruzadas div input {
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   margin:  0 -1px;
   width: 26px;
   height: 26px;

@@ -612,19 +612,30 @@ select {
   color: #424242;
 }
 
-.texto-ativado ::-webkit-input-placeholder {
+.jogo-palavras-cruzadas div.texto-desativado input {
+  border: 4px solid #86868600;
+  pointer-events:none;
+  outline:none;
+  background-color: rgba(116, 57, 57, 0);
+}
+
+.texto-ativado ::-webkit-input-placeholder,
+.texto-desativado ::-webkit-input-placeholder {
   color: #08524b;
 }
 
-.texto-ativado :-moz-placeholder { /* Firefox 18- */
+.texto-ativado :-moz-placeholder,
+.texto-desativado :-moz-placeholder { /* Firefox 18- */
   color: #08524b;
 }
 
-.texto-ativado ::-moz-placeholder {  /* Firefox 19+ */
+.texto-ativado ::-moz-placeholder,
+.texto-desativado ::-moz-placeholder {  /* Firefox 19+ */
   color: #08524b;
 }
 
-.texto-ativado :-ms-input-placeholder {  
+.texto-ativado :-ms-input-placeholder,
+.texto-desativado :-ms-input-placeholder {  
   color: #08524b;
 }
 

@@ -1493,6 +1493,12 @@ select {
   overflow: auto;
 }
 
+/* titulos/subtitulos do texo aprender */
+h4.subtitulo-aprender {
+  margin-top: .9em;
+  margin-bottom: .4em;
+}
+
 
 
 /* PALAVRAS CRUZADAS */
@@ -1593,7 +1599,6 @@ select {
 }
 
 .texto-desativado input {
-  opacity: 0;
   cursor: default;
 }
 
@@ -1604,28 +1609,32 @@ select {
 }
 
 /* numero da palavra */
-.texto-ativado ::-webkit-input-placeholder {
+.texto-ativado ::-webkit-input-placeholder,
+.texto-desativado ::-webkit-input-placeholder {
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
   font-size: .7em;
 }
 
-.texto-ativado :-moz-placeholder { /* Firefox 18- */
+.texto-ativado :-moz-placeholder,
+.texto-desativado :-moz-placeholder { /* Firefox 18- */
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
   font-size: .5em; 
 }
 
-.texto-ativado ::-moz-placeholder {  /* Firefox 19+ */
+.texto-ativado ::-moz-placeholder,
+.texto-desativado ::-moz-placeholder {  /* Firefox 19+ */
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
   font-size: .5em;
 }
 
-.texto-ativado :-ms-input-placeholder {
+.texto-ativado :-ms-input-placeholder,
+.texto-desativado :-ms-input-placeholder {
   float: left;
   padding: 0 5px;
   margin-bottom: 200px;
