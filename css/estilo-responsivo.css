@@ -161,6 +161,7 @@ form.cadastrar-meta {
   width: 26px;
   height: 26px;
   font-size: 1em;
+  border-radius: 3px;
 }
 
 .night-mode .jogo-palavras-cruzadas div.texto-desativado input {
