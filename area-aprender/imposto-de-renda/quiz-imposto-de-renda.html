@@ -18,10 +18,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- font awesome -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- modernizr -->
+    <script src="../../js/modernizr.custom.js"></script>
       
-    <title>Aprender - Imposto de Renda</title>
+    <title>Imposto de Renda - Quiz</title>
 </head>
 <body>
     <!-- conteudo flex -->
@@ -61,7 +67,7 @@
 
             <!-- cabeçalho -->
             <header class="cabecalho">
-                <div class="bg-cabecalho circulo-dinie-aprender">
+                <div class="bg-cabecalho">
                     
                     <a href="#" id="bars"><i class="fa fa-bars"></i></a><!-- botao para abrir menu (parte responsivo) -->
 
@@ -78,103 +84,54 @@
                     </ul>
                     <!-- // lista no cabecalho -->
                 </div>
-
-                <!-- imagem cabecalho dinie -->
-                <div class="imagem-cabecalho-dinie imagem-dinie-aprender">
-                    <!-- imagem do dinie -->
-                    <div class="caixa-imagem-dinie">
-                        
-                        <img src="../../img/baby_dinie.png" alt="" class="img-dinie">
-                        
-                    </div>
-                    <!-- // imagem do dinie -->
-                </div>
-                <!-- // imagem cabecalho dinie -->
-                
             </header>
             <!-- // cabeçalho -->
 
             <!-- conteúdo principal -->
             <main class="principal bg-principal">
                 <!-- caixa de conteudo -->
-                <div id="caixa-conteudo" style="margin-top: 100px;">
+                <div id="caixa-conteudo">
 
-                <!-- conteudo da pagina aprender -->
-                        
-                    <!-- sessão de aprender -->
-                    <div class="saldo-flex">
-                        
-                        <!-- caixa de dica do dinie -->
-                        <div class="dica-dinie dica-dinie-aprender">
-                            <!-- box com escrita -->
-                            <div class="dica-meio" style="line-height: 27px;">
+                    
+                    <form class="quizContainer ac-custom ac-radio ac-fill" autocomplete='off'>
 
-                                Agora estamos no tema de Imposto 
-                                de Renda. Veja o vídeo e  leia o
-                                texto para conseguir responder!
-
-                            </div>
-
-                            <div class="dica-inicio-aprender"></div>
+                        <!-- caixa de porcentagem -->
+                        <div class="quizContainer caixa-porcentagem">
+                            <div id="porcentagem"></div><!-- barra de porcentagem -->
                         </div>
-                        <!-- // caixa de dica do dinie -->
-
-                    </div>
-                    <!-- // sessão de aprender -->
-
-                    <!-- sessão de conteudo aprender -->
-                    <div class="sessao-aprender-flex aprender-flex-aula" style="margin-top: 40px;">
+                        <!-- // caixa de porcentagem -->
                         
-                        <!-- caixa com o video -->
-                        <div class="box-conteudo-aprender">
-                            <h3>Imposto de Renda: Como funciona?</h3>
+                        <section class="quizContainer titulo-questao">
+                            <span class="numQuestion"></span>
+                            <h3 class="numQuestion2"></h3>
+                            <p class="question"></p>
 
-                            <iframe src="https://www.youtube.com/embed/3s0tJsfXSgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h2 class="fim" style="text-align: center;"></h2>
+                            <h4 class="quizMessage" style="margin-top: 10px; color: rgb(255, 64, 64);"></h4>
+                        
+                            <h3 class="result" style="color: #28F57C; text-align: center;"></h3>
+                        </section>
 
-                        </div>
-                        <!-- // caixa com o video -->
-
-                         <!-- caixa com o texto -->
-                         <div class="box-conteudo-aprender">
-                            <h3>O que é Imposto de Renda?</h3>
-
-                            <!-- caixa de rolagem -->
-                            <div class="caixa-de-rolagem">
-                                <h4 class="subtitulo-aprender">Olá, Economie Estudante! Hoje falaremos sobre Imposto de Renda:</h4>
-                                <p> É um imposto
-                                    federal cobrado anualmente de pessoas e empresas, conforme os rendimentos
-                                    obtidos ao longo do ano. Assim, os cidadãos com mais renda pagam mais impostos,
-                                    enquanto os com menor renda pagam menos.
-                                    Os impostos servem para cobrir os gastos púbicos como: segurança, saúde, escola...
-                                    Quem deve declarar é quem teve rendimento tributável superior a 28.559,70. Além
-                                    disso, se você teve rendimento isento e não tributável a superior a 40 mil reais. Bens
-                                    superiores ao valor de 300 mil reais. Exemplos: casa, carro, apartamento, terrenos...
-                                    Toda aplicação financeira, é considerado como um bem.
-                                    Como é pago tanto por cidadãos como por empresas, ele é dividido em duas
-                                    categorias:</p>
-                                
-                                <p><strong>Imposto de Renda Pessoa Física (IRPF):</strong> é aplicado sobre a rendimentos com fonte
-                                    no Brasil, para contribuintes residentes no país ou no exterior.</p>
-
-                                <p><strong>Imposto de Renda Pessoa Jurídica (IRPJ):</strong> no caso das empresas, a alíquota é
-                                    aplicada sobre o lucro da empresa. Dependendo do porte do negócio e da atividade
-                                    exercida, o imposto é calculado sobre lucro real, presumido ou arbitrado.</p>
-                            </div>
-                            <!-- // caixa de rolagem -->
-                        </div>
-                        <!-- // caixa com o texto -->
-
+                        <ul class="choiceList"></ul>
+                        
+                        
+                        <!-- <div class="nextButton">Próximo</div> -->
+                        
                         <!-- caixa com botao voltar e proximo -->
-                        <div class="caixa-botoes" style="width: 100%;">
-                            <button id="voltar"><a href="../../aprender.html">Voltar</a></button>
-                            <button id="proximo"><a href="palavras-cruzadas-imposto-de-renda.html">Proximo</a></button>
+                        <div class="caixa-botoes" style="padding-top: 30px;">
+                            <button id="voltar" class="voltar-inicio"><a href="palavras-cruzadas-imposto-de-renda.html">Voltar</a></button>
+                            <button id="proximo"><a href="#" class="nextButton">Proximo</a></button>
+                            <button id="voltar" class="finalizar-quiz"><a href="../../aprender.html">Finalizar</a></button>
+
+
+                            <!-- dinie -->
+                        <div class="dinie" style="margin-top: 20px;">
+                            <img src="../../img/baby_dinie.png" width="150" alt="">
+                        </div>
+                        <!-- // dinie -->
                         </div>
                         <!-- // caixa com botao voltar e proximo -->
-
-                    </div>
-                    <!-- // sessão de conteudo aprender -->
-
-                <!-- // conteudo da pagina aprender -->
+                    </form>
                 
                 </div>
                 <!-- // caixa de conteudo -->
@@ -185,7 +142,7 @@
 
             <!-- botao do chatbot -->
             
-            <script type="text/javascript">
+           <script type="text/javascript">
                 let headID = document.getElementsByTagName("head")[0];
                 let newCss = document.createElement('link');
                 newCss.rel = 'stylesheet';
@@ -209,6 +166,8 @@
     </div>
     <!-- // conteudo flex -->
 
+
+    <script type='text/javascript' src='../../js/jsImpostoDeRenda/jsquiz.js'></script>
 
     <script src="../../js/cor-modo.js"></script><!-- Alterar modo de cor -->
     
