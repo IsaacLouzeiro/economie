@@ -1,0 +1,119 @@
+#depoimentos {
+    width: 100%;
+    margin-top: 100px;
+    padding: 50px;
+    background: white;
+}
+
+
+
+
+
+.card {
+     width: 34% !important;
+    height: 300px;
+    font-size: 1rem;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    box-shadow: #ccc 10px 10px 5px;
+    margin: 0 10px 20px;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 25%;
+    border: 2px solid green;
+    float: left;
+}
+
+.card-text {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+    
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(previous.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(next.svg);
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(169, 169, 169, 0.3);
+    margin-right: 6px;
+    margin-left: 6px;
+    
+
+}
+
+.carousel-indicators .active {
+    background-color: rgb(23, 29, 114);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* responsivo deste componente */
+
+@media (min-width: 320px) and (max-width: 770px) {
+    
+    #depoimentos {
+        width: 100%;
+        padding: 30px;
+    }
+    .card {
+        width: 95% !important;
+        margin-bottom: 10px;
+    }
+    .card-img-top {
+        width: 30%;
+    }
+    .caixa-card {
+        display: block !important;
+    }
+    .carousel-indicators li {
+        display: none;
+    }
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+}
+
+.card-body {
+    height: 15px;
+}
+
+.justify-content-around {
+    -ms-flex-pack: distribute!important;
+    justify-content: space-around!important;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    color: black;
+}
+
+.carousel-item {
+    width: 100%;
+}
