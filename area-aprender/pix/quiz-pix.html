@@ -18,10 +18,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- font awesome -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/add7a07cd1.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- modernizr -->
+    <script src="../../js/modernizr.custom.js"></script>
       
-    <title>Aprender - PIX</title>
+    <title>PIX - Quiz</title>
 </head>
 <body>
     <!-- conteudo flex -->
@@ -61,7 +67,7 @@
 
             <!-- cabeçalho -->
             <header class="cabecalho">
-                <div class="bg-cabecalho circulo-dinie-aprender">
+                <div class="bg-cabecalho">
                     
                     <a href="#" id="bars"><i class="fa fa-bars"></i></a><!-- botao para abrir menu (parte responsivo) -->
 
@@ -78,93 +84,54 @@
                     </ul>
                     <!-- // lista no cabecalho -->
                 </div>
-
-                <!-- imagem cabecalho dinie -->
-                <div class="imagem-cabecalho-dinie imagem-dinie-aprender">
-                    <!-- imagem do dinie -->
-                    <div class="caixa-imagem-dinie">
-                        
-                        <img src="../../img/baby_dinie.png" alt="" class="img-dinie">
-                        
-                    </div>
-                    <!-- // imagem do dinie -->
-                </div>
-                <!-- // imagem cabecalho dinie -->
-                
             </header>
             <!-- // cabeçalho -->
 
             <!-- conteúdo principal -->
             <main class="principal bg-principal">
                 <!-- caixa de conteudo -->
-                <div id="caixa-conteudo" style="margin-top: 100px;">
+                <div id="caixa-conteudo">
 
-                <!-- conteudo da pagina aprender -->
-                        
-                    <!-- sessão de aprender -->
-                    <div class="saldo-flex">
-                        
-                        <!-- caixa de dica do dinie -->
-                        <div class="dica-dinie dica-dinie-aprender">
-                            <!-- box com escrita -->
-                            <div class="dica-meio" style="line-height: 27px;">
+                    
+                    <form class="quizContainer ac-custom ac-radio ac-fill" autocomplete='off'>
 
-                                Agora estamos no tema de PIX. 
-                                Veja o vídeo e  leia o
-                                texto para conseguir responder!
-
-                            </div>
-
-                            <div class="dica-inicio-aprender"></div>
+                        <!-- caixa de porcentagem -->
+                        <div class="quizContainer caixa-porcentagem">
+                            <div id="porcentagem"></div><!-- barra de porcentagem -->
                         </div>
-                        <!-- // caixa de dica do dinie -->
-
-                    </div>
-                    <!-- // sessão de aprender -->
-
-                    <!-- sessão de conteudo aprender -->
-                    <div class="sessao-aprender-flex aprender-flex-aula" style="margin-top: 40px;">
+                        <!-- // caixa de porcentagem -->
                         
-                        <!-- caixa com o video -->
-                        <div class="box-conteudo-aprender">
-                            <h3>PIX: Como funciona?</h3>
+                        <section class="quizContainer titulo-questao">
+                            <span class="numQuestion"></span>
+                            <h3 class="numQuestion2"></h3>
+                            <p class="question"></p>
 
-                            <iframe src="https://www.youtube.com/embed/LeojzQvsjgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h2 class="fim" style="text-align: center;"></h2>
+                            <h4 class="quizMessage" style="margin-top: 10px; color: rgb(255, 64, 64);"></h4>
                         
-                        </div>
-                        <!-- // caixa com o video -->
+                            <h3 class="result" style="color: #28F57C; text-align: center;"></h3>
+                        </section>
 
-                         <!-- caixa com o texto -->
-                         <div class="box-conteudo-aprender">
-                            <h3>O que é PIX?</h3>
-
-                            <!-- caixa de rolagem -->
-                            <div class="caixa-de-rolagem">
-                                <h4 class="subtitulo-aprender">Olá, Economie estudante! Que bom ter você aqui. Hoje vamos 
-                                    falar sobre PIX. Você sabe o que é? </h4>
-                                
-                                <p>O PIX, na prática, chega para tornar obsoletos o DOC e o TED, as duas modalidades de transferências bancárias que já vigoram há décadas. Ele se baseia no Sistema de Pagamentos Brasileiros (SPB) para permitir a movimentação financeira instantânea, mesmo se ela acontecer de madrugada ou em fins de semana ou feriados. O PIX é feito para funcionar 24 horas por dia, 7 dias por semana.</p>
-                                
-                                <p>No entanto, o sistema não se restringe a transferências interbancárias. Ele quer e tem o poder para substituir o dinheiro e os cartões na hora de realizar um pagamento por algum produto na padaria ao lado da sua casa, por exemplo.</p>
-
-                                <p>A economie  faz o pix pra você de conhecimento, então seja mais rápido e venha aprender mais!</p>
-
-                            </div>
-                            <!-- // caixa de rolagem -->
-                        </div>
-                        <!-- // caixa com o texto -->
-
+                        <ul class="choiceList"></ul>
+                        
+                        
+                        <!-- <div class="nextButton">Próximo</div> -->
+                        
                         <!-- caixa com botao voltar e proximo -->
-                        <div class="caixa-botoes" style="width: 100%;">
-                            <button id="voltar"><a href="../../aprender.html">Voltar</a></button>
-                            <button id="proximo"><a href="complete-pix.html">Proximo</a></button>
+                        <div class="caixa-botoes" style="padding-top: 30px;">
+                            <button id="voltar" class="voltar-inicio"><a href="complete-pix.html">Voltar</a></button>
+                            <button id="proximo"><a href="#" class="nextButton">Proximo</a></button>
+                            <button id="voltar" class="finalizar-quiz"><a href="../../aprender.html">Finalizar</a></button>
+
+
+                            <!-- dinie -->
+                        <div class="dinie" style="margin-top: 20px;">
+                            <img src="../../img/baby_dinie.png" width="150" alt="">
+                        </div>
+                        <!-- // dinie -->
                         </div>
                         <!-- // caixa com botao voltar e proximo -->
-
-                    </div>
-                    <!-- // sessão de conteudo aprender -->
-
-                <!-- // conteudo da pagina aprender -->
+                    </form>
                 
                 </div>
                 <!-- // caixa de conteudo -->
@@ -175,7 +142,7 @@
 
             <!-- botao do chatbot -->
             
-            <script type="text/javascript">
+           <script type="text/javascript">
                 let headID = document.getElementsByTagName("head")[0];
                 let newCss = document.createElement('link');
                 newCss.rel = 'stylesheet';
@@ -199,6 +166,8 @@
     </div>
     <!-- // conteudo flex -->
 
+
+    <script type='text/javascript' src='../../js/jsPix/jsquiz.js'></script>
 
     <script src="../../js/cor-modo.js"></script><!-- Alterar modo de cor -->
     
