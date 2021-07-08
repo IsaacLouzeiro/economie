@@ -1421,12 +1421,18 @@ select {
   text-transform: uppercase;
   font-size: .9em;
   transition: padding .5s;
+  position: relative;
 }
 
 .caixa-aula:hover {
   padding: 15px;
 }
 
+.bloqueado{
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 /* imagem do dinie no topo */
 .imagem-dinie-aprender {
   position: relative;
