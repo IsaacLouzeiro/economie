@@ -562,6 +562,13 @@ select {
 .bloqueado{
   color:rgba(47, 182, 115, 0.904);
 }
+
+.aviso{
+  background-color: rgba(47, 182, 115, 0.938);
+  color: #000;
+  
+}
+
 /* caixa de dica parte aprender */
 .dica-inicio-aprender {
   background-image: url(../img/b-l.png);

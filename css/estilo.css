@@ -1430,8 +1430,25 @@ select {
 
 .bloqueado{
   position: absolute;
-  left: 0;
-  right: 0;
+  right: 15px;
+  top: 10px;
+  font-size: 1.5em;
+}
+
+.aviso{
+  position: absolute;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+  transition: all 1s ;
+  font-weight: bold;
+  text-transform: initial;
+}
+
+.caixa-aula:hover .aviso{
+  opacity: 1;
+
 }
 /* imagem do dinie no topo */
 .imagem-dinie-aprender {

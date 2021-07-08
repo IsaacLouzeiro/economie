@@ -553,6 +553,11 @@ html.night-mode {
   color:#050f2ff3;
 }
 
+.night-mode .aviso{
+  background-color: #050f2ff3;
+  color: rgb(255, 255, 255);
+  
+}
 /* caixa de dica parte aprender */
 .night-mode .dica-inicio-aprender {
   background-image: url(../img/b-d-l.png);
