@@ -150,7 +150,18 @@ html.night-mode {
 
 
 /********* RESUMO DO MÊS ***********/
+.night-mode .dropdown-historico{
+  background-color: #080A15;
+  border: whitesmoke 1px solid;
+}
 
+.night-mode .dropdown-historico a{
+  background-image: linear-gradient( to bottom right, #00ffb3d2, #0a7e4caf)
+}
+
+.night-mode .dropdown-historico a:hover{
+  background-image: linear-gradient( to bottom left, #00ffb3d2, #0a7e4caf)
+}
 /*** box conteudo primario ***/
 .conteudo-primario {
     color: #fff;
