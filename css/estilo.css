@@ -448,20 +448,23 @@ nav ul li a i {
   display: flex;
   max-width: 200px;
   flex-wrap: wrap;
-  top: 70px;
+  top: 50px;
   right: 145px;
   width: 100%;
   text-align: center;
   padding: 10px;
   z-index: -10;
   border-radius: 5px;
-  transition: all 1s;
+  transition: all .7s;
   opacity: 0;
 }
-
+.historico-icone:hover ~ .dropdown-historico{
+  top: 70px;
+}
 .historico-icone:hover ~ .dropdown-historico, .dropdown-historico:hover{
   z-index: 99;
   opacity: 1;
+
 }
 .dropdown-historico a{
   display: inline-block;
