@@ -1324,13 +1324,7 @@ form.cadastrar-meta .container {
   display: inline-block;
 }
 
-.remover-cadastro button {
-  border: none;
-  background-color: #00000000;
-}
-
-.remover-cadastro a,
-.remover-cadastro i {
+.remover-cadastro a {
   font-size: 1.6em;
   cursor: pointer;
 }
