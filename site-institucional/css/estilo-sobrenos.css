@@ -74,17 +74,25 @@ body{ background: #080A16;
        border: 3px solid blue;
 }
 
-#isaac {
+.integrante-img {
        width: 150px;
        height: 150px;
        border-radius: 75px;
-       background-image: url(../img/isaac.jpeg);
        background-size: cover;
 }
 
+#bianca { background-image: url(../img/bianca.jpeg); } 
+#isaac { background-image: url(../img/isaac.jpeg); }
+#ellen { background-image: url(../img/ellen.jpeg); }
+#kamilly { background-image: url(../img/kamilly.jpeg); }
+#ana { background-image: url(../img/ana.jpeg); }
+#maria { background-image: url(../img/maria.jpeg); }
+#guilherme { background-image: url(../img/guilherme.png); }
+#nicolli { background-image: url(../img/nicolli.png); }
+
 
 .values 
-.box:hover .integrante-img { transform: scale(1); }
+.box:hover .integrante-img { transform: scale(1); cursor: pointer; }
 
 
 
