@@ -29,6 +29,20 @@ html {
 
 /********* PAGINA DO SISTEMA ***********/
 
+/********* RESUMO DO MÊS ***********/
+.dropdown-historico{
+  color: #404040;
+  background-color:whitesmoke;
+  border: #ddd 2px solid;
+}
+
+.dropdown-historico a{
+  background-image: linear-gradient( to bottom right, #6e7dff, #0D1D9F);
+}
+
+.dropdown-historico a:hover{
+  background-image: linear-gradient( to bottom left, #6e7dff, #0D1D9F);
+}
 
 /* BARRA DE ROLAGEM */
 ::-webkit-scrollbar {

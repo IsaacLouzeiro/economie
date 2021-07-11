@@ -151,6 +151,7 @@ html.night-mode {
 
 /********* RESUMO DO MÊS ***********/
 .night-mode .dropdown-historico{
+  color: whitesmoke;
   background-color: #080A15;
   border: whitesmoke 1px solid;
 }

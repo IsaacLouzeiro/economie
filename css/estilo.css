@@ -442,6 +442,7 @@ nav ul li a i {
 
 
 /********* RESUMO DO MÊS ***********/
+
 .dropdown-historico{
   position: absolute;
   display: flex;
@@ -452,10 +453,16 @@ nav ul li a i {
   width: 100%;
   text-align: center;
   padding: 10px;
-  z-index: 99;
+  z-index: -10;
   border-radius: 5px;
+  transition: all 1s;
+  opacity: 0;
 }
 
+.historico-icone:hover ~ .dropdown-historico, .dropdown-historico:hover{
+  z-index: 99;
+  opacity: 1;
+}
 .dropdown-historico a{
   display: inline-block;
   text-decoration: none;

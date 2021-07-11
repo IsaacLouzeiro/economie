@@ -27,7 +27,9 @@
 
 
   /********* RESUMO DO MÊS ***********/
-
+  .dropdown-historico{
+    right: 0px;
+  }
   /*** box conteudo primario ***/
   .conteudo-primario .divisor-conteudo-primario {
     width: 100%;
