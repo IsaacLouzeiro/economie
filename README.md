@@ -13,7 +13,7 @@
 
 ### -- About
 
-#### Website focused on helping young and adult people to organize financially, in a friendly way.
+#### Website focused on helping young and adult people to organize financially, in a friendly way. Demoday work project of the Proa Institute 4.0 in Web Java Programming in 2021.
 
 ### -- Technologies
 
@@ -32,7 +32,7 @@
 
 ### -- Sobre
 
-#### Site voltado a ajudar jovens e adultos a se organizar financeiramente, de uma maneira amigável.
+#### Site voltado a ajudar jovens e adultos a se organizar financeiramente, de uma maneira amigável. Projeto final Demoday do curso de Programação Java Web do Instituto Proa em 2021.
 
 ### -- Tecnologias
 
