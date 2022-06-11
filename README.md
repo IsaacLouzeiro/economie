@@ -7,7 +7,7 @@
 
 # Welcome!
 
-## Here you can see a bit of my project.
+## Here you can see a bit of our project.
 
 ![](https://github.com/IsaacLouzeiro/economie/blob/master/economie-gif.gif "Preview")
 
@@ -26,7 +26,7 @@
 
 # Bem vindo!
 
-## Aqui você consegue ver um pouco do meu projeto.
+## Aqui você consegue ver um pouco do nosso projeto.
 
 ![](https://github.com/IsaacLouzeiro/economie/blob/master/economie-gif.gif "Pré-visualização")
 
